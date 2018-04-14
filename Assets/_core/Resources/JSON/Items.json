@@ -1,0 +1,45 @@
+[{
+		"nItemID": 1,
+		"sName": "Unsharpened Stick",
+		"sDescription": "A long, solid shaft of wood found amid the debris of a wrecked merchant vessel"
+	},
+	{
+		"nItemID": 11,
+		"sName": "Makeshift Sword",
+		"sDescription": "This sword was made by sticking a long piece of metal into a short,thick stick with a generous amount of thick tree sap. User Berware."
+	}, {
+		"nItemID": 12,
+		"sName": "Longsword",
+		"sDescription": "An aged longsword that has definitely seen better days. After several hours of scrobbing it with sand, you have a usable weapon.. almost."
+	},
+	{
+		"nItemID": 101,
+		"sName": "Wooden Armor",
+		"sDescription": "So.Many.Splinters."
+	},
+	{
+		"nItemID": 201,
+		"sName": "Wooden Helmet",
+		"sDescription": "Still kinda sappy."
+	},
+	{
+		"nItemID": 301,
+		"sName": "Wooden Leggings",
+		"sDescription": "Dont sit down."
+	},
+	{
+		"nItemID": 401,
+		"sName": "Wooden Boots",
+		"sDescription": "Wooden boots with leaves as soles."
+	},
+	{
+		"nItemID": 601,
+		"sName": "Desert Flower",
+		"sDescription": "A flowering plant that enjoys having roots in both sand and dirt... at the same time."
+	},
+	{
+		"nItemID": 701,
+		"sName": "Beetle Carapace",
+		"sDescription": "The exoskeleton of a moderately sized beetle. It is both durable and resistant to heat."
+	}
+]
