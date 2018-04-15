@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 222233407319962136}
   - component: {fileID: 114909610091796508}
   - component: {fileID: 114960203622408136}
+  - component: {fileID: 114111816107607030}
   m_Layer: 0
   m_Name: ItemSlot
   m_TagString: Untagged
@@ -130,6 +131,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &114111816107607030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1807772932711832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa151bfa7d000954ead93e7656b21c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 114319192717779156}
+  descText: {fileID: 114486009915344144}
+  itemImg: {fileID: 114369000071891908}
 --- !u!114 &114319192717779156
 MonoBehaviour:
   m_ObjectHideFlags: 1

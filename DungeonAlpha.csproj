@@ -311,9 +311,11 @@
     <Compile Include="Assets\_core\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\_core\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\_core\IDamageable.cs" />
+    <Compile Include="Assets\_core\Inventory\InventoryItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\Item.cs" />
     <Compile Include="Assets\_core\Inventory\ItemDatabase.cs" />
-    <Compile Include="Assets\_core\Inventory\TestInventory.cs" />
+    <Compile Include="Assets\_core\Inventory\UIEventHandler.cs" />
+    <Compile Include="Assets\_core\Inventory\UIInventory.cs" />
     <Compile Include="Assets\_core\Loader.cs" />
     <Compile Include="Assets\_core\System Prefabs\GameManager.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\DungeonGenerator.cs" />

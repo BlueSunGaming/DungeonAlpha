@@ -67,6 +67,12 @@ public class GameManager : MonoBehaviour {
         return AllItems;
     }
 
+    public List<Item> GetItemsForPlayInventory()
+    {
+        // perform filtering
+        return AllItems;
+    }
+
     //Update is called every frame.
     void Update()
     {
