@@ -7,23 +7,19 @@ namespace RPG.CameraUI
 {
     [RequireComponent(typeof(CameraRaycaster))]
 
-    public class CursorAffordance : MonoBehaviour {
+    public class CursorAffordance : MonoBehaviour
+    {
 
+        [SerializeField] private Texture2D itemCursor = null;
         [SerializeField] Texture2D walkCursor = null;
-
         [SerializeField] Texture2D unknownCursor = null;
-
         [SerializeField] Texture2D targetCursor = null;
-
         [SerializeField] Texture2D buttonCursor = null;
-
         [SerializeField] Vector2 cursorHotspot = new Vector2(0, 0);
-
-        [SerializeField] const int walkableLayerNumber = 8;
-
-        [SerializeField] const int enemyLayerNumber = 11;
-
-        [SerializeField] private const int NPCLayer = 10;
+        public const int nWalkableLayerNumber = 8;
+        public const int nEnemyLayerNumber = 11;
+        public const int nNPCLayer = 10;
+        public const int nItemLayer = 9;
 
         CameraRaycaster cameraRaycaster;
 
@@ -44,19 +40,25 @@ namespace RPG.CameraUI
 
                     break;
 
-                case walkableLayerNumber:
+                case nWalkableLayerNumber:
 
                     Cursor.SetCursor(walkCursor, cursorHotspot, CursorMode.Auto);
 
                     break;
 
-                case enemyLayerNumber:
+                case nEnemyLayerNumber:
 
                     Cursor.SetCursor(targetCursor, cursorHotspot, CursorMode.Auto);
 
                     break;
 
-                case NPCLayer:
+                case nNPCLayer:
+
+                    Cursor.SetCursor(targetCursor, cursorHotspot, CursorMode.Auto);
+
+                    break;
+
+                case nItemLayer:
 
                     Cursor.SetCursor(targetCursor, cursorHotspot, CursorMode.Auto);
 

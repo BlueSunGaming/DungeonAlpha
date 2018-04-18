@@ -314,6 +314,7 @@
     <Compile Include="Assets\_core\Inventory\InventoryItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\Item.cs" />
     <Compile Include="Assets\_core\Inventory\ItemDatabase.cs" />
+    <Compile Include="Assets\_core\Inventory\NewBehaviourScript.cs" />
     <Compile Include="Assets\_core\Inventory\UIEventHandler.cs" />
     <Compile Include="Assets\_core\Inventory\UIInventory.cs" />
     <Compile Include="Assets\_core\Loader.cs" />

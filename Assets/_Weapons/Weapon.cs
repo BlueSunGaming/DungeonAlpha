@@ -1,27 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 
 namespace RPG.Weapons
 {
-    [CreateAssetMenu(menuName = ("RPG/Weapon"))]
+
 
     public class Weapon : ScriptableObject
     {
-        [SerializeField]
-        float minTimeBetweenHits = .5f;
-
-        [SerializeField]
-        float maxAttackRange = 2f;
-
-        [SerializeField]
-        GameObject weaponPrefab;
-
-        [SerializeField]
-        AnimationClip attackAnimation;
-
+        
+        public float minTimeBetweenHits = .5f;
+        public float maxAttackRange = 2f;
+        public GameObject weaponPrefab;
+        public uint itemID;
+        public AnimationClip attackAnimation;
         public Transform weaponGripTransform;
         
         public float GetMinTimeBetweenHit()

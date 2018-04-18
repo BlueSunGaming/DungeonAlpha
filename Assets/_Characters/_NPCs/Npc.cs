@@ -31,7 +31,6 @@ public class Npc: MonoBehaviour
                 TriggerDialogue();
             }
         }
-
     }
 
     private bool IsTargetInRange(GameObject target)

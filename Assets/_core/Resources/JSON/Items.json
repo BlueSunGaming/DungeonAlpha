@@ -1,5 +1,7 @@
-[{
+[
+	{
 		"nItemID": 1,
+		"ItemIcon":"UnsharpenedStickIcon.psd"
 		"sName": "Unsharpened Stick",
 		"sDescription": "A long, solid shaft of wood found amid the debris of a wrecked merchant vessel"
 	},
