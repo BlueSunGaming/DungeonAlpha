@@ -33,22 +33,15 @@ public class GenerateItemUI : MonoBehaviour {
         {
             Int32.TryParse(arg0, out x);
             Item i = GameManager.instance.IsValidItem(x);
-            //if (i != null)
-            //{
+            if (i != null)
+            {
                 UIEventHandler.ItemAddedToInventory(i);
-            //}
+            }
         }
         else
         {
             Debug.Log("Main Input Empty");
         }
-        //if (input.text.Length > 0)
-        //{
-        //    Debug.Log("Text has been entered: " + input.text);
-
-        //    
-        //}
-
     }
 
     public void SetItem(Item item, InputField GenerateItemText)

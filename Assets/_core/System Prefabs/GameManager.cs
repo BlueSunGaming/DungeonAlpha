@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour {
         {
             // if res/items.json exists then load it
             AllItems = JsonConvert.DeserializeObject<List<Item>>(Resources.Load<TextAsset>("JSON/Items").ToString());
+            Debug.Log("Count of items is " + AllItems.Count);
+            //foreach(Item i in AllItems)
+            //{
+            //    i.name = i.nItemID.ToString();
+            //}
         }
     }
 
@@ -70,10 +75,10 @@ public class GameManager : MonoBehaviour {
 
         bool t = AllItems.Exists(i => i.nItemID == _nItemId);
         Item item = AllItems.Find(x => x.nItemID == _nItemId);
-        //if (item != null)
-        //{
+        if (item != null)
+        {
             ret = item;
-        //}
+        }
 
         return ret;
     }

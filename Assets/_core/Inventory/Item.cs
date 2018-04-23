@@ -4,10 +4,7 @@ using UnityEngine;
 using Newtonsoft.Json;
 using RPG.CameraUI;
 
-public class Item : MonoBehaviour {
-    
-    CameraRaycaster cameraRaycaster;
-    // TODO: fix that Item's get a string besides null
+public class Item {
     // Setup of External references
     public int nItemID { get; set; }
     public string sName { get; set; }
@@ -20,10 +17,10 @@ public class Item : MonoBehaviour {
     //}
 
     // Use this for initialization
-    void Start()
-    {
-        RegisterForMouseClick();
-    }
+    //void Start()
+    //{
+    //    RegisterForMouseClick();
+    //}
 
     [JsonConstructor]
     public Item(int itemID, string name, string desc)
@@ -34,34 +31,34 @@ public class Item : MonoBehaviour {
         //this.sIcon = itemIcon;
     }
 
-    void OnMouseClick(RaycastHit raycastHit, int layerHit)
-    {
-        if (layerHit == RPG.CameraUI.CursorAffordance.nItemLayer)
-        {
-            var item = raycastHit.collider.gameObject;
+    //void OnMouseClick(RaycastHit raycastHit, int layerHit)
+    //{
+    //    if (layerHit == RPG.CameraUI.CursorAffordance.nItemLayer)
+    //    {
+    //        var item = raycastHit.collider.gameObject;
 
-            if (IsTargetInRange(item))
-            {
-                // Open Inventory Addition/Subtraction UI with the unique ID of the Item
+    //        if (IsTargetInRange(item))
+    //        {
+    //            // Open Inventory Addition/Subtraction UI with the unique ID of the Item
                 
-                Debug.Log("The item was hit.");
-                // Remove the item from the scene now??
-                GameObject.Destroy(item);
-            }
-        }
-    }
+    //            Debug.Log("The item was hit.");
+    //            // Remove the item from the scene now??
+    //            GameObject.Destroy(item);
+    //        }
+    //    }
+    //}
 
-    private bool IsTargetInRange(GameObject target)
-    {
-        float distanceToTarget = (target.transform.position - transform.position).magnitude;
+    //private bool IsTargetInRange(GameObject target)
+    //{
+    //    float distanceToTarget = (target.transform.position - transform.position).magnitude;
 
-        return distanceToTarget <= 2.0f;
-    }
+    //    return distanceToTarget <= 2.0f;
+    //}
 
-    private void RegisterForMouseClick()
-    {
-        cameraRaycaster = FindObjectOfType<CameraRaycaster>();
+    //private void RegisterForMouseClick()
+    //{
+    //    cameraRaycaster = FindObjectOfType<CameraRaycaster>();
 
-        cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
-    }
+    //    cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
+    //}
 }
