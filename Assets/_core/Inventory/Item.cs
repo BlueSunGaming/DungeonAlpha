@@ -7,7 +7,7 @@ using RPG.CameraUI;
 public class Item : MonoBehaviour {
     
     CameraRaycaster cameraRaycaster;
-
+    // TODO: fix that Item's get a string besides null
     // Setup of External references
     public int nItemID { get; set; }
     public string sName { get; set; }

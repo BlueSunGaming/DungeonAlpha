@@ -44,11 +44,11 @@ public class GameManager : MonoBehaviour {
     //Initializes the game for each level.
     void InitGame()
     {
-        if (level != 0)
-        {
-            //Call the SetupScene function of the DungeonGenerator script, pass it current level number.
-            dungeonGenteratorScript.SetupScene(level);
-        }
+        //if (level != 0)
+        //{
+        //    //Call the SetupScene function of the DungeonGenerator script, pass it current level number.
+        //    dungeonGenteratorScript.SetupScene(level);
+        //}
     }
 
     private void BuildItemDatabase()
@@ -60,6 +60,22 @@ public class GameManager : MonoBehaviour {
             // if res/items.json exists then load it
             AllItems = JsonConvert.DeserializeObject<List<Item>>(Resources.Load<TextAsset>("JSON/Items").ToString());
         }
+    }
+
+    // public method to check the validity of an item
+    // return value: Item if it exists or null
+    public Item IsValidItem(int _nItemId)
+    {
+        Item ret = null;
+
+        bool t = AllItems.Exists(i => i.nItemID == _nItemId);
+        Item item = AllItems.Find(x => x.nItemID == _nItemId);
+        //if (item != null)
+        //{
+            ret = item;
+        //}
+
+        return ret;
     }
 
     public List<Item> GetItems()

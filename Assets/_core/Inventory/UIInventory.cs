@@ -11,17 +11,19 @@ public class UIInventory : MonoBehaviour {
     private GameManager gm;
     private GameObject iw;
     List<InventoryItemUI> allItemUis = new List<InventoryItemUI>();
-    // 
     public InventoryItemUI itemSlot { get; set; }
     
-
     // Use this for initialization
     void Start ()
     {
         gm = Object.FindObjectOfType<GameManager>();
-        //iw = GameObject.FindGameObjectWithTag("ItemWindow");
         itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
-        if (gm) // iw)
+
+        // Connect up our delegate function to the Event Handler that will distribute occurrences
+        UIEventHandler.OnItemAddedToInventory += ItemAdded;
+        UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
+
+        if (gm && itemSlot)
         {
             foreach (Item i in gm.GetItems())
             {
@@ -34,7 +36,7 @@ public class UIInventory : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Could not locate Game ManagerByType or ItemWindowByTag");
+            Debug.Log("Could not locate Game ManagerByType or itemSlotByTag");
         }
     }
 	
@@ -43,4 +45,32 @@ public class UIInventory : MonoBehaviour {
 	{
 		
 	}
+
+    // process an item being added to the player inventory
+    void ItemAdded(Item item)
+    {
+        Debug.Log("Everything is connected and we are instantiating an item with id =" + item.nItemID);
+        InventoryItemUI emptyItem = Instantiate(itemSlot);
+        emptyItem.SetItem(item);
+        allItemUis.Add(emptyItem);
+        emptyItem.transform.SetParent(inventoryContent);
+    }
+
+    void ItemRemoved(Item item)
+    {
+        // Can we find the item
+        InventoryItemUI itemFound = allItemUis.Find(x => x.GetItemID() == itemSlot.GetItemID());
+        if (itemFound != null)
+        {
+            if (allItemUis.Remove(itemFound))
+            {
+                Destroy(itemFound);
+            }
+            else
+            {
+                // TODO: "System failure error within 3 .. 2 .. 1 ..; Just Kidding, your system is fine."
+                Debug.Log("Item was found but not able to be destroyed");
+            }
+        }
+    }
 }

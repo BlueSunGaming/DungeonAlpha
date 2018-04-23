@@ -11,11 +11,15 @@ public class InventoryItemUI : MonoBehaviour
     public Text descText;
     public Image itemImg;
 
+    public int GetItemID()
+    {
+        return item.nItemID;
+    }
+
     public void SetItem(Item inItem)
     {
         nameText.text = inItem.sName;
         descText.text = inItem.sDescription;
         item = inItem;
     }
-
 }
