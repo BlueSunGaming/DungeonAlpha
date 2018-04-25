@@ -9,7 +9,7 @@ public class InventoryItemUI : MonoBehaviour
 
     public Text nameText;
     public Text descText;
-    public Image itemImg;
+    public Sprite itemImg;
 
     public int GetItemID()
     {
@@ -20,6 +20,20 @@ public class InventoryItemUI : MonoBehaviour
     {
         nameText.text = inItem.sName;
         descText.text = inItem.sDescription;
+
+        if (inItem.sItemIcon != "")
+        {
+            itemImg = Resources.Load<Sprite>("UI/Inventory/Inventory Icons/" + inItem.sItemIcon);
+        }
+        
+        if (itemImg != null)
+        {
+            Debug.Log("Value of itemImg name is " + itemImg.name);
+        }
+        else
+        {
+            Debug.Log("itemImg is null");
+        }
         item = inItem;
     }
 }

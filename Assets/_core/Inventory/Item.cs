@@ -7,10 +7,10 @@ using RPG.CameraUI;
 public class Item {
     // Setup of External references
     public int nItemID { get; set; }
+    public string sItemIcon { get; set; }
     public string sName { get; set; }
     public string sDescription { get; set; }
-    public string sIcon { get; set; }
-
+    
     //public static Item CreateFromJSON(string jsonString)
     //{
     //    return JsonUtility.FromJson<Item>(jsonString);
@@ -23,12 +23,12 @@ public class Item {
     //}
 
     [JsonConstructor]
-    public Item(int itemID, string name, string desc)
+    public Item(int itemID, string name, string desc, string sItemIcon)
     {
         this.nItemID = itemID;
         this.sName = name;
         this.sDescription = desc;
-        //this.sIcon = itemIcon;
+        this.sItemIcon = sItemIcon;
     }
 
     //void OnMouseClick(RaycastHit raycastHit, int layerHit)

@@ -9,7 +9,7 @@ public class UIInventory : MonoBehaviour {
 
     private Text ListOfItems;
     private GameManager gm;
-    private GameObject iw;
+    // TODO: Validate this is unnecessary private GameObject iw;
     List<InventoryItemUI> allItemUis = new List<InventoryItemUI>();
     public InventoryItemUI itemSlot { get; set; }
     
@@ -28,10 +28,10 @@ public class UIInventory : MonoBehaviour {
             foreach (Item i in gm.GetItems())
             {
                 //ListOfItems.text += i.sName + " ";
-                InventoryItemUI emptyItem = Instantiate(itemSlot);
-                emptyItem.SetItem(i);
-                allItemUis.Add(emptyItem);
-                emptyItem.transform.SetParent(inventoryContent);
+                //InventoryItemUI emptyItem = Instantiate(itemSlot);
+                //emptyItem.SetItem(i);
+                //allItemUis.Add(emptyItem);
+                //emptyItem.transform.SetParent(inventoryContent);
             }
         }
         else
@@ -50,6 +50,7 @@ public class UIInventory : MonoBehaviour {
     void ItemAdded(Item item)
     {
         Debug.Log("Everything is connected and we are instantiating an item with id =" + item.nItemID);
+        itemSlot.SetItem(item);
         InventoryItemUI emptyItem = Instantiate(itemSlot);
         emptyItem.SetItem(item);
         allItemUis.Add(emptyItem);
