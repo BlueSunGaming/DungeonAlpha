@@ -16,7 +16,7 @@ public class UIInventory : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        gm = Object.FindObjectOfType<GameManager>();
+        gm = GameManager.instance;
         itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
 
         // Connect up our delegate function to the Event Handler that will distribute occurrences

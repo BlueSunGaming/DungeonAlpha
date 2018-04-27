@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Scene Change
   - ItemWindow
+  - TransferContent
   layers:
   - Default
   - TransparentFX
