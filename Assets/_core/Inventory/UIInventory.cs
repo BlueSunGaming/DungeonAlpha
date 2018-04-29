@@ -21,13 +21,13 @@ public class UIInventory : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        //animator = inventoryContent.transform.GetComponent<Animator>();
+        menuIsVisible = false;
         animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
         if (animator)
         {
             Debug.Log("animator was found");
         }
-        animator.SetBool("TransferPanelOpen", false);
+        animator.SetBool("TransferPanelOpen", menuIsVisible);
         gm = GameManager.instance;
         itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
 
@@ -35,7 +35,7 @@ public class UIInventory : MonoBehaviour {
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
 
-        inventoryContent.gameObject.SetActive(false);
+        inventoryContent.gameObject.SetActive(menuIsVisible);
 
         //if (gm && itemSlot)
         //{
@@ -57,8 +57,13 @@ public class UIInventory : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		
-	}
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            menuIsVisible = !menuIsVisible;
+            animator.SetBool("TransferPanelOpen", menuIsVisible);
+            inventoryContent.gameObject.SetActive(menuIsVisible);
+        }
+    }
 
     // process an item being added to the player inventory
     void ItemAdded(Item item)

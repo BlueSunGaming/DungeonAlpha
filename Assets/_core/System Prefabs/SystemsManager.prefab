@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4690705094481918}
   - component: {fileID: 114453880725691488}
   - component: {fileID: 114352643831906316}
+  - component: {fileID: 114885083678570324}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -194,7 +195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224312940836111092}
   - component: {fileID: 114261663451436906}
-  - component: {fileID: 114253052030094188}
   m_Layer: 0
   m_Name: InventoryContent
   m_TagString: Untagged
@@ -542,7 +542,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4953770578630340}
-  - component: {fileID: 114114128640818016}
   - component: {fileID: 114030724320228670}
   m_Layer: 0
   m_Name: Inventory
@@ -726,13 +725,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1898235792636420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ec658025eba03a408cdd3535ae508d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryContent: {fileID: 224023057788502856}
   viewportTransform: {fileID: 224950564260788584}
+  animator: {fileID: 95239376767846922}
 --- !u!114 &114045223527158532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -875,17 +875,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114114128640818016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1898235792636420}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d3e4f8f49b20e64eb8e4aef3d4a67b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114115683903663460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1079,19 +1068,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Button
---- !u!114 &114253052030094188
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1330643401707018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec658025eba03a408cdd3535ae508d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryContent: {fileID: 0}
-  viewportTransform: {fileID: 224613607691909864}
 --- !u!114 &114261663451436906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1238,7 +1214,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224513794667647988}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9412354
+  m_Size: 0.9999952
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1999,6 +1975,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114885083678570324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1041945831438960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec658025eba03a408cdd3535ae508d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryContent: {fileID: 224023057788502856}
+  viewportTransform: {fileID: 224950564260788584}
+  animator: {fileID: 95239376767846922}
 --- !u!114 &114930706153619190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2038,7 +2028,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224441927810125796}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999505
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2315,7 +2305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000044338765}
+  m_AnchoredPosition: {x: 0, y: 0.000009819061}
   m_SizeDelta: {x: 0, y: 149}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224049423459718898
@@ -2508,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000028285634, y: -0.0000037480856}
+  m_AnchoredPosition: {x: 0.000028285634, y: -0.00000061078714}
   m_SizeDelta: {x: -0.000015259, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224341777186796684

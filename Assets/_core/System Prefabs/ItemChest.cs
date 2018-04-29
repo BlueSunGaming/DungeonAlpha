@@ -55,11 +55,10 @@ public class ItemChest : MonoBehaviour, IInventory
     
     void OnMouseClick(RaycastHit raycastHit, int layerHit)
     {
-        Debug.Log("Treasure Chest clicked");
         if (layerHit == itemLayer)
         {
             var itemChest = raycastHit.collider.gameObject;
-            Debug.Log("Layer hit was correct");
+            bool bIsInRange = IsTargetInRange(itemChest);
             if (IsTargetInRange(itemChest))
             {
                 Debug.Log("Item Chest was in range");
@@ -73,17 +72,33 @@ public class ItemChest : MonoBehaviour, IInventory
     {
 
         Animator animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
-        animator.SetBool("TransferPanelOpen", false);
-        itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
+        if (animator != null)
+        {
+            animator.SetBool("TransferPanelOpen", true);
+            Debug.Log("animator was found");
+        }
+        else
+        {
+            Debug.Log("animator was not found");
+        }
+
         foreach (Item i in GetCurrentItems())
         {
-            Debug.Log("We are instantiating an item with id =" + i.nItemID);
-            itemSlot.SetItem(i);
-            InventoryItemUI emptyItem = Instantiate(itemSlot);
-            emptyItem.SetItem(i);
-            //allItemUis.Add(emptyItem);
-            emptyItem.transform.SetParent(inventoryContent);
+            if (i != null)
+            {
+                UIEventHandler.ItemAddedToInventory(i);
+            }
         }
+
+        //itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
+
+        //    Debug.Log("We are instantiating an item with id =" + i.nItemID);
+        //    itemSlot.SetItem(i);
+        //    InventoryItemUI emptyItem = Instantiate(itemSlot);
+        //    emptyItem.SetItem(i);
+        //    //allItemUis.Add(emptyItem);
+        //    emptyItem.transform.SetParent(inventoryContent);
+        
     }
 
     private bool IsTargetInRange(GameObject target)
