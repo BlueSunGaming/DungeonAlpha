@@ -12,7 +12,10 @@ public class UIInventory : MonoBehaviour {
     // TODO: Validate this is unnecessary private GameObject iw;
     List<InventoryItemUI> allItemUis = new List<InventoryItemUI>();
     public InventoryItemUI itemSlot { get; set; }
-    
+    bool menuIsVisible { get; set; }
+
+    Item currentSelection { get; set; }
+
     // Use this for initialization
     void Start ()
     {
@@ -22,6 +25,8 @@ public class UIInventory : MonoBehaviour {
         // Connect up our delegate function to the Event Handler that will distribute occurrences
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
+
+        inventoryContent.gameObject.SetActive(false);
 
         if (gm && itemSlot)
         {
