@@ -37,21 +37,21 @@ public class UIInventory : MonoBehaviour {
 
         inventoryContent.gameObject.SetActive(false);
 
-        if (gm && itemSlot)
-        {
-            foreach (Item i in gm.GetItems())
-            {
-                //ListOfItems.text += i.sName + " ";
-                //InventoryItemUI emptyItem = Instantiate(itemSlot);
-                //emptyItem.SetItem(i);
-                //allItemUis.Add(emptyItem);
-                //emptyItem.transform.SetParent(inventoryContent);
-            }
-        }
-        else
-        {
-            Debug.Log("Could not locate Game ManagerByType or itemSlotByTag");
-        }
+        //if (gm && itemSlot)
+        //{
+        //    foreach (Item i in gm.GetItems())
+        //    {
+        //        ListOfItems.text += i.sName + " ";
+        //        InventoryItemUI emptyItem = Instantiate(itemSlot);
+        //        emptyItem.SetItem(i);
+        //        allItemUis.Add(emptyItem);
+        //        emptyItem.transform.SetParent(inventoryContent);
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.Log("Could not locate Game ManagerByType or itemSlotByTag");
+        //}
     }
 	
 	// Update is called once per frame

@@ -23,12 +23,12 @@ public class Item {
     //}
 
     [JsonConstructor]
-    public Item(int itemID, string name, string desc, string sItemIcon)
+    public Item(int itemID, string itemIcon, string name, string desc )
     {
         this.nItemID = itemID;
+        this.sItemIcon = itemIcon;
         this.sName = name;
-        this.sDescription = desc;
-        this.sItemIcon = sItemIcon;
+        this.sDescription = desc;        
     }
 
     //void OnMouseClick(RaycastHit raycastHit, int layerHit)

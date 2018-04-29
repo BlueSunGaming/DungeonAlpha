@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class InventoryItemUI : MonoBehaviour
 
     public Text nameText;
     public Text descText;
-    public Sprite itemImg;
+    public Sprite itemImgSprite;
 
     public int GetItemID()
     {
@@ -23,17 +24,11 @@ public class InventoryItemUI : MonoBehaviour
 
         if (inItem.sItemIcon != "")
         {
-            itemImg = Resources.Load<Sprite>("UI/Inventory/Inventory Icons/" + inItem.sItemIcon);
+            // Utilize System.IO.Path method to strip the file type extension
+            string newPath = Path.ChangeExtension(inItem.sItemIcon, null);
+            itemImgSprite = Resources.Load<Sprite>("UI/Inventory/InventoryIcons/" + newPath);
         }
-        
-        if (itemImg != null)
-        {
-            Debug.Log("Value of itemImg name is " + itemImg.name);
-        }
-        else
-        {
-            Debug.Log("itemImg is null");
-        }
+
         item = inItem;
     }
 }
