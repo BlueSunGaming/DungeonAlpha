@@ -7,6 +7,8 @@ public class UIInventory : MonoBehaviour {
     public RectTransform inventoryContent;
     public RectTransform viewportTransform;
 
+    public Animator animator;
+
     private Text ListOfItems;
     private GameManager gm;
     // TODO: Validate this is unnecessary private GameObject iw;
@@ -19,6 +21,13 @@ public class UIInventory : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        //animator = inventoryContent.transform.GetComponent<Animator>();
+        animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
+        if (animator)
+        {
+            Debug.Log("animator was found");
+        }
+        animator.SetBool("TransferPanelOpen", false);
         gm = GameManager.instance;
         itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
 

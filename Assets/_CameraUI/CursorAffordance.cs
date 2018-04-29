@@ -10,11 +10,12 @@ namespace RPG.CameraUI
     public class CursorAffordance : MonoBehaviour
     {
 
-        [SerializeField] private Texture2D itemCursor = null;
+        [SerializeField] Texture2D itemCursor = null;
         [SerializeField] Texture2D walkCursor = null;
         [SerializeField] Texture2D unknownCursor = null;
         [SerializeField] Texture2D targetCursor = null;
         [SerializeField] Texture2D buttonCursor = null;
+     
         [SerializeField] Vector2 cursorHotspot = new Vector2(0, 0);
         public const int nWalkableLayerNumber = 8;
         public const int nEnemyLayerNumber = 11;

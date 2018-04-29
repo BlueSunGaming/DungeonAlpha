@@ -9,6 +9,8 @@ public class ItemChest : MonoBehaviour, IInventory
 {
     // Default Items to randomly generate in chest
     private int numItemsInChest = 4;
+
+    [SerializeField] private int itemLayer;
     //_core.IInventory.invType; //=  InventoryType.CHEST;
 
     public RectTransform inventoryContent;
@@ -53,13 +55,14 @@ public class ItemChest : MonoBehaviour, IInventory
     
     void OnMouseClick(RaycastHit raycastHit, int layerHit)
     {
-        if (layerHit == CursorAffordance.nItemLayer)
+        Debug.Log("Treasure Chest clicked");
+        if (layerHit == itemLayer)
         {
             var itemChest = raycastHit.collider.gameObject;
-
+            Debug.Log("Layer hit was correct");
             if (IsTargetInRange(itemChest))
             {
-                // 
+                Debug.Log("Item Chest was in range");
                 AddAllItems();
                 //TriggerDialogue();
             }
@@ -68,6 +71,9 @@ public class ItemChest : MonoBehaviour, IInventory
 
     void AddAllItems()
     {
+
+        Animator animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
+        animator.SetBool("TransferPanelOpen", false);
         itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
         foreach (Item i in GetCurrentItems())
         {
