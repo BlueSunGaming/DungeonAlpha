@@ -8,7 +8,14 @@ namespace RPG.CameraUI
     public class CameraRaycaster : MonoBehaviour
     {
         // INSPECTOR PROPERTIES RENDERED BY CUSTOM EDITOR SCRIPT
-        [SerializeField] int[] layerPriorities;
+        // Works in descending order where nWalkableLayerNumber is hit last
+        private int[] layerPriorities =
+        {
+            CursorAffordance.nEnemyLayerNumber,
+            CursorAffordance.nNPCLayer,
+            CursorAffordance.nItemLayer,
+            CursorAffordance.nWalkableLayerNumber
+        };
 
         float maxRaycastDepth = 100f; // Hard coded value
         int topPriorityLayerLastFrame = -1; // So get ? from start with Default layer terrain

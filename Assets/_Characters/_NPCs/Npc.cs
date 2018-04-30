@@ -6,8 +6,8 @@ using RPG.CameraUI;
 public class Npc: MonoBehaviour
 {
 
-    [SerializeField]
-    int NPCLayer = 10;
+    //[SerializeField]
+    //int NPCLayer = 10;
 
     CameraRaycaster cameraRaycaster;
 
@@ -22,7 +22,7 @@ public class Npc: MonoBehaviour
 
     void OnMouseClick(RaycastHit raycastHit, int layerHit)
     {
-        if (layerHit == NPCLayer)
+        if (layerHit == CursorAffordance.nNPCLayer)
         {
             var NPC = raycastHit.collider.gameObject;
 

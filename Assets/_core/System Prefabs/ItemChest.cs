@@ -18,6 +18,7 @@ public class ItemChest : MonoBehaviour, IInventory
     //RectTransform transferPanelTransform;
 
     CameraRaycaster cameraRaycaster;
+    private Animator mTransferPanelAnimator;
 
     public InventoryItemUI itemSlot { get; set; }
     
@@ -33,6 +34,8 @@ public class ItemChest : MonoBehaviour, IInventory
     void Start () {
         currentItems = new List<Item>();
         invType = InventoryType.CHEST;
+
+        mTransferPanelAnimator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
 
         foreach (string itemID in Contents)
         {
@@ -63,18 +66,16 @@ public class ItemChest : MonoBehaviour, IInventory
             {
                 Debug.Log("Item Chest was in range");
                 AddAllItems();
-                //TriggerDialogue();
             }
         }
     }
 
     void AddAllItems()
     {
-
-        Animator animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
-        if (animator != null)
+        if (mTransferPanelAnimator != null)
         {
-            animator.SetBool("TransferPanelOpen", true);
+            mTransferPanelAnimator.SetBool("TransferPanelOpen", true);
+            //inventoryContent.gameObject.SetActive(true);
             Debug.Log("animator was found");
         }
         else
@@ -116,8 +117,13 @@ public class ItemChest : MonoBehaviour, IInventory
     }
 
     // Update is called once per frame
-    void Update () {
-		
+    void Update ()
+    {
+        ;
+        if (!IsTargetInRange(GameObject.FindGameObjectWithTag("Player")))
+        {
+            mTransferPanelAnimator.SetBool("TransferPanelOpen", false);
+        }
 	}
 
     public void RandomPopulate()
