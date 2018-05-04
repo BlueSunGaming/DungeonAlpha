@@ -262,9 +262,6 @@
     <Reference Include="AS3DelaunayExtended">
       <HintPath>Assets/Plugins/AS3DelaunayExtended.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets/Plugins/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="AS3DelaunayExtended">
       <HintPath>Assets/_Environment/AS3DelaunayExtended.dll</HintPath>
     </Reference>
@@ -289,6 +286,18 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Krista/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Antlr4.Runtime.Standard">
+      <HintPath>Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="YarnSpinner">
+      <HintPath>Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="DungeonAlpha.csproj">
@@ -299,6 +308,8 @@
   <ItemGroup>
     <Compile Include="Assets\RockVR\Video\Editor\VideoCaptureEditor.cs" />
     <Compile Include="Assets\RockVR\Video\Editor\VideoCaptureMenuEditor.cs" />
+    <Compile Include="Assets\YarnSpinner\Code\Editor\YarnSpinnerEditorWindow.cs" />
+    <Compile Include="Assets\YarnSpinner\Code\Editor\YarnSpinnerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\External Assets\MedievalTownExteriors\Readme.txt" />
@@ -310,7 +321,12 @@
     <None Include="Assets\RockVR\Video\Shaders\DownsamplePro.shader" />
     <None Include="Assets\RockVR\Video\Shaders\FlippingTexture.shader" />
     <None Include="Assets\RockVR\Video\Shaders\Stereoscopic.shader" />
+    <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
+    <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
+    <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
+    <None Include="Assets\YarnSpinner\README.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

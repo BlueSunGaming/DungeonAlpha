@@ -1,0 +1,62 @@
+[
+	{
+		"title": "Start(ShipwreckedFriend)",
+		"tags": "",
+		"body": "Hey!\n\n[[... |...1]]\n",
+		"position": {
+			"x": 345,
+			"y": -144
+		},
+		"colorID": 1
+	},
+	{
+		"title": "...1",
+		"tags": "",
+		"body": "Wake up!\n\n[[Open your eyes|OpenyourEyes]]\n\n",
+		"position": {
+			"x": 337,
+			"y": 114
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Openyoureyes",
+		"tags": "",
+		"body": "Whew, For a second there, I thought I was the only one to make it to land alive.\n\n[[What Happened?|What1]]\n[[Where are we?|Where1]]\n[[Who are you?|Who1]]\n",
+		"position": {
+			"x": 333,
+			"y": 376
+		},
+		"colorID": 0
+	},
+	{
+		"title": "What1",
+		"tags": "",
+		"body": "You don't remember? Wow, you must have hit your head pretty hard during the fighting.\nI wasn't on deck at the beginning, but apparently, our ship was attacked by a swarm of monsters.\nNot many people made it off the ship, and you are the only person I've found that made it to the beach with me.\nLucky for us, none of the monsters followed us to the island.\n",
+		"position": {
+			"x": -133,
+			"y": 572
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Where1",
+		"tags": "",
+		"body": "Honestly, I'm not sure. As far as I knew, there weren't supposed to be any landmasses in this area of the sea.\nOur best bet would be to explore inland and see if we can find any signs of civilization.\n",
+		"position": {
+			"x": 322,
+			"y": 640
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Who1",
+		"tags": "",
+		"body": "Oh, my apologies. Name's <Place name here>. I'm a <Place background here>.\n",
+		"position": {
+			"x": 856,
+			"y": 589
+		},
+		"colorID": 0
+	}
+]

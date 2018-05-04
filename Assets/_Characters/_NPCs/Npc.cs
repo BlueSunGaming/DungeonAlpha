@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.CameraUI;
@@ -10,13 +11,22 @@ public class Npc: MonoBehaviour
     //int NPCLayer = 10;
 
     CameraRaycaster cameraRaycaster;
-
+    [SerializeField]
+    private string dialogueAsset;
     public Dialogue dialogue;
 
 
     // Use this for initialization
     void Start()
     {
+        if (dialogueAsset != "")
+        {
+            TextAsset jsonRes = Resources.Load<TextAsset>("JSON/Dialogue/" + dialogueAsset);
+            if (jsonRes)
+            {
+                GameManager.instance.dr.AddScript(jsonRes);
+            }
+        }
         RegisterForMouseClick();
     }
 
@@ -28,7 +38,8 @@ public class Npc: MonoBehaviour
 
             if (IsTargetInRange(NPC))
             {
-                TriggerDialogue();
+                GameManager.instance.dr.StartDialogue();
+                //TriggerDialogue();
             }
         }
     }
@@ -49,6 +60,7 @@ public class Npc: MonoBehaviour
 
     public void TriggerDialogue()
     {
+        Debug.Log("Attempting to perform trigger Dialogue.");
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
