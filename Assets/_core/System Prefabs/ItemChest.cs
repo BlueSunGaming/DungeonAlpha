@@ -75,7 +75,7 @@ public class ItemChest : MonoBehaviour, IInventory
         if (mTransferPanelAnimator != null)
         {
             mTransferPanelAnimator.SetBool("TransferPanelOpen", true);
-            //inventoryContent.gameObject.SetActive(true);
+            //transferContent.gameObject.SetActive(true);
             Debug.Log("animator was found");
         }
         else
@@ -98,15 +98,16 @@ public class ItemChest : MonoBehaviour, IInventory
         //    InventoryItemUI emptyItem = Instantiate(itemSlot);
         //    emptyItem.SetItem(i);
         //    //allItemUis.Add(emptyItem);
-        //    emptyItem.transform.SetParent(inventoryContent);
+        //    emptyItem.transform.SetParent(transferContent);
         
     }
 
     private bool IsTargetInRange(GameObject target)
     {
-        float distanceToTarget = (target.transform.position - transform.position).magnitude;
+     //   this.transform.position;
+        float distanceToTarget = (target.transform.position - this.transform.position).magnitude;
 
-        return distanceToTarget <= 2.0f;
+        return distanceToTarget <= 10.0f;
     }
 
     private void RegisterForMouseClick()
@@ -119,12 +120,11 @@ public class ItemChest : MonoBehaviour, IInventory
     // Update is called once per frame
     void Update ()
     {
-        ;
         if (!IsTargetInRange(GameObject.FindGameObjectWithTag("Player")))
         {
             mTransferPanelAnimator.SetBool("TransferPanelOpen", false);
         }
-	}
+    }
 
     public void RandomPopulate()
     {

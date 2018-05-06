@@ -70,11 +70,17 @@ namespace Yarn.Unity.Example {
         /// dialogue is active and to restore them when dialogue ends
         public RectTransform gameControlsContainer;
 
+        public Animator animator = null;
+
         void Awake ()
         {
+            animator = GameObject.Find("DialogueBox").transform.GetComponent<Animator>();
             // Start by hiding the container, line and option buttons
-            if (dialogueContainer != null)
+            if (dialogueContainer != null && animator != null)
+            {
                 dialogueContainer.SetActive(false);
+                animator.SetBool("IsOpen", false);
+            }
 
             lineText.gameObject.SetActive (false);
 
@@ -184,7 +190,10 @@ namespace Yarn.Unity.Example {
 
             // Enable the dialogue controls.
             if (dialogueContainer != null)
+            {
                 dialogueContainer.SetActive(true);
+                animator.SetBool("IsOpen", true);
+            }
 
             // Hide the game controls.
             if (gameControlsContainer != null) {
@@ -201,7 +210,10 @@ namespace Yarn.Unity.Example {
 
             // Hide the dialogue interface.
             if (dialogueContainer != null)
+            {
                 dialogueContainer.SetActive(false);
+                animator.SetBool("IsOpen", false);
+            }
 
             // Show the game controls.
             if (gameControlsContainer != null) {

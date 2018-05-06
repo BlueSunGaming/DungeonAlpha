@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIInventory : MonoBehaviour {
-    public RectTransform inventoryContent;
+    public RectTransform transferContent;
     public RectTransform viewportTransform;
 
     public Animator animator;
@@ -35,23 +35,7 @@ public class UIInventory : MonoBehaviour {
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
 
-        inventoryContent.gameObject.SetActive(menuIsVisible);
-
-        //if (gm && itemSlot)
-        //{
-        //    foreach (Item i in gm.GetItems())
-        //    {
-        //        ListOfItems.text += i.sName + " ";
-        //        InventoryItemUI emptyItem = Instantiate(itemSlot);
-        //        emptyItem.SetItem(i);
-        //        allItemUis.Add(emptyItem);
-        //        emptyItem.transform.SetParent(inventoryContent);
-        //    }
-        //}
-        //else
-        //{
-        //    Debug.Log("Could not locate Game ManagerByType or itemSlotByTag");
-        //}
+        transferContent.gameObject.SetActive(menuIsVisible);
     }
 	
 	// Update is called once per frame
@@ -61,7 +45,7 @@ public class UIInventory : MonoBehaviour {
         {
             menuIsVisible = !menuIsVisible;
             animator.SetBool("TransferPanelOpen", menuIsVisible);
-            inventoryContent.gameObject.SetActive(menuIsVisible);
+            transferContent.gameObject.SetActive(menuIsVisible);
         }
     }
 
@@ -73,7 +57,7 @@ public class UIInventory : MonoBehaviour {
         InventoryItemUI emptyItem = Instantiate(itemSlot);
         emptyItem.SetItem(item);
         allItemUis.Add(emptyItem);
-        emptyItem.transform.SetParent(inventoryContent);
+        emptyItem.transform.SetParent(transferContent);
     }
 
     void ItemRemoved(Item item)

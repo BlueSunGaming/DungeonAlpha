@@ -3,17 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.CameraUI;
+using Yarn.Unity.Example;
 
 public class Npc: MonoBehaviour
 {
 
-    //[SerializeField]
-    //int NPCLayer = 10;
-
+  
     CameraRaycaster cameraRaycaster;
     [SerializeField]
     private string dialogueAsset;
-    public Dialogue dialogue;
+    public ExampleDialogueUI dialogue;
 
 
     // Use this for initialization
@@ -36,10 +35,10 @@ public class Npc: MonoBehaviour
         {
             var NPC = raycastHit.collider.gameObject;
 
-            if (IsTargetInRange(NPC))
+            if (IsTargetInRange(GameObject.FindGameObjectWithTag("Player")))
             {
                 GameManager.instance.dr.StartDialogue();
-                //TriggerDialogue();
+                
             }
         }
     }
@@ -58,11 +57,7 @@ public class Npc: MonoBehaviour
         cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
     }
 
-    public void TriggerDialogue()
-    {
-        Debug.Log("Attempting to perform trigger Dialogue.");
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    }
+ 
 
     // Update is called once per frame
     void Update()

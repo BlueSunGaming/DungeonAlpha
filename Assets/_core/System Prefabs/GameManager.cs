@@ -31,7 +31,16 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        dr = new DialogueRunner();
+        dr = GameObject.FindObjectOfType<DialogueRunner>();
+        if (dr != null)
+        {
+            Debug.Log("Dialogue manager was found");
+        }
+        else
+        {
+            Debug.Log("Dialogue manager was not found");
+        }
+
         BuildItemDatabase();
 
         //Sets this to not be destroyed when reloading scene
