@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 222478363043250778}
   - component: {fileID: 114387825841110130}
   m_Layer: 0
-  m_Name: Next Button
+  m_Name: NPC Name Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 222888555163662916}
   - component: {fileID: 114459909716821496}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 223250850589263892}
   - component: {fileID: 114156900784507266}
   - component: {fileID: 114087622720789554}
+  - component: {fileID: 114526731489869012}
   m_Layer: 0
   m_Name: Dialogue UI
   m_TagString: Untagged
@@ -479,7 +480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1810669087131752
 GameObject:
   m_ObjectHideFlags: 1
@@ -730,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec658025eba03a408cdd3535ae508d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryContent: {fileID: 224023057788502856}
+  transferContent: {fileID: 0}
   viewportTransform: {fileID: 224950564260788584}
   animator: {fileID: 95239376767846922}
 --- !u!114 &114045223527158532
@@ -1214,7 +1215,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224513794667647988}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999952
+  m_Size: 0.99999845
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1286,6 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bfed5bf0bf26be4bbf3544766fc0541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dr: {fileID: 0}
 --- !u!114 &114363889853397108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1671,6 +1673,24 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114526731489869012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758805578527940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 1312432627016360}
+  lineText: {fileID: 114452175221868406}
+  continuePrompt: {fileID: 0}
+  textSpeed: 0.025
+  optionButtons: []
+  gameControlsContainer: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &114529997902296632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1986,7 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec658025eba03a408cdd3535ae508d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryContent: {fileID: 224023057788502856}
+  transferContent: {fileID: 224023057788502856}
   viewportTransform: {fileID: 224950564260788584}
   animator: {fileID: 95239376767846922}
 --- !u!114 &114930706153619190
@@ -2028,7 +2048,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224441927810125796}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999505
+  m_Size: 0.99999857
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2305,7 +2325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000009819061}
+  m_AnchoredPosition: {x: 0, y: -0.0000037811865}
   m_SizeDelta: {x: 0, y: 149}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224049423459718898
@@ -2498,7 +2518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000028285634, y: -0.00000061078714}
+  m_AnchoredPosition: {x: 0.000015179522, y: 0.000019429533}
   m_SizeDelta: {x: -0.000015259, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224341777186796684
@@ -2797,7 +2817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.402, y: 1}
-  m_AnchoredPosition: {x: 41.175, y: -1}
+  m_AnchoredPosition: {x: 172.6, y: -1}
   m_SizeDelta: {x: 97.65, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224928207140580438

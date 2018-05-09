@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
     public DialogueRunner dr = null;
     private DungeonGenerator dungeonGenteratorScript; //Store a reference to our DungeonGenerator which will set up the level.
 
+    private GameObject mUITriggeringGO = null;
+
     private List<Item> AllItems { get; set; }
     private int level = 5;   //Current level number, expressed in game as "Day 1".
 
@@ -40,7 +42,7 @@ public class GameManager : MonoBehaviour {
         {
             Debug.Log("Dialogue manager was not found");
         }
-
+        
         BuildItemDatabase();
 
         //Sets this to not be destroyed when reloading scene
@@ -77,6 +79,16 @@ public class GameManager : MonoBehaviour {
             //    i.name = i.nItemID.ToString();
             //}
         }
+    }
+
+    public void SetUITriggeringGO(GameObject newUItriggerGO)
+    {
+        mUITriggeringGO = newUItriggerGO;
+    }
+
+    public GameObject GetUITriggeringGO()
+    {
+        return mUITriggeringGO;
     }
 
     // public method to check the validity of an item

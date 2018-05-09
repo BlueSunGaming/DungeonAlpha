@@ -47,6 +47,29 @@ public class UIInventory : MonoBehaviour {
             animator.SetBool("TransferPanelOpen", menuIsVisible);
             transferContent.gameObject.SetActive(menuIsVisible);
         }
+
+	    if (animator.GetBool("TransferPanelOpen"))
+	    {
+	        GameObject uiTriggerGo = GameManager.instance.GetUITriggeringGO();
+            var objectToTest = uiTriggerGo != null ? uiTriggerGo : GameObject.FindGameObjectWithTag("Player");
+	        if (!IsTargetInRange(objectToTest))
+	        {
+	            menuIsVisible = false;
+
+                animator.SetBool("TransferPanelOpen", menuIsVisible);
+	            transferContent.gameObject.SetActive(menuIsVisible);
+                GameManager.instance.SetUITriggeringGO(null);
+	        }
+	    }
+    }
+
+    private bool IsTargetInRange(GameObject target)
+    {
+        //   this.transform.position;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        float distanceToTarget = (target.transform.position - player.transform.position).magnitude;
+
+        return distanceToTarget <= 2.0f;
     }
 
     // process an item being added to the player inventory

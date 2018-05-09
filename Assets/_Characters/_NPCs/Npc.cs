@@ -8,8 +8,9 @@ using Yarn.Unity.Example;
 public class Npc: MonoBehaviour
 {
 
-  
+    [SerializeField] private string dialogueTextIdentifier;
     CameraRaycaster cameraRaycaster;
+    private TextAsset jsonRes;
     [SerializeField]
     private string dialogueAsset;
     public ExampleDialogueUI dialogue;
@@ -20,10 +21,11 @@ public class Npc: MonoBehaviour
     {
         if (dialogueAsset != "")
         {
-            TextAsset jsonRes = Resources.Load<TextAsset>("JSON/Dialogue/" + dialogueAsset);
-            if (jsonRes)
+            jsonRes = Resources.Load<TextAsset>("JSON/Dialogue/" + dialogueAsset);
+            if (jsonRes != null && dialogueTextIdentifier != "")
             {
-                GameManager.instance.dr.AddScript(jsonRes);
+                //GameManager.instance.dr.startNode = dialogueTextIdentifier;
+                //GameManager.instance.dr.AddScript(jsonRes);
             }
         }
         RegisterForMouseClick();
@@ -37,8 +39,10 @@ public class Npc: MonoBehaviour
 
             if (IsTargetInRange(GameObject.FindGameObjectWithTag("Player")))
             {
+                //GameManager.instance.dr.Clear();
+                GameManager.instance.dr.startNode = dialogueTextIdentifier;
+                GameManager.instance.dr.AddScript(jsonRes);
                 GameManager.instance.dr.StartDialogue();
-                
             }
         }
     }
