@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,18 +35,27 @@ public class UIInventory : MonoBehaviour {
         // Connect up our delegate function to the Event Handler that will distribute occurrences
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
+        UIEventHandler.OnInventoryDisplayed += InventoryDisplay;
 
         transferContent.gameObject.SetActive(menuIsVisible);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void InventoryDisplay(bool shouldShow)
+    {
+        menuIsVisible = shouldShow;
+        animator.SetBool("TransferPanelOpen", menuIsVisible);
+        transferContent.gameObject.SetActive(menuIsVisible);
+    }
+
+    // Update is called once per frame
+    void Update ()
 	{
         if (Input.GetKeyDown(KeyCode.I))
         {
-            menuIsVisible = !menuIsVisible;
-            animator.SetBool("TransferPanelOpen", menuIsVisible);
-            transferContent.gameObject.SetActive(menuIsVisible);
+            InventoryDisplay(!menuIsVisible);
+            //menuIsVisible = !menuIsVisible;
+            //animator.SetBool("TransferPanelOpen", menuIsVisible);
+            //transferContent.gameObject.SetActive(menuIsVisible);
         }
 
 	    if (animator.GetBool("TransferPanelOpen"))
@@ -54,10 +64,11 @@ public class UIInventory : MonoBehaviour {
             var objectToTest = uiTriggerGo != null ? uiTriggerGo : GameObject.FindGameObjectWithTag("Player");
 	        if (!IsTargetInRange(objectToTest))
 	        {
-	            menuIsVisible = false;
+                InventoryDisplay(false);
+                //   menuIsVisible = false;
 
-                animator.SetBool("TransferPanelOpen", menuIsVisible);
-	            transferContent.gameObject.SetActive(menuIsVisible);
+                //   animator.SetBool("TransferPanelOpen", menuIsVisible);
+	            //transferContent.gameObject.SetActive(menuIsVisible);
                 GameManager.instance.SetUITriggeringGO(null);
 	        }
 	    }
@@ -65,7 +76,6 @@ public class UIInventory : MonoBehaviour {
 
     private bool IsTargetInRange(GameObject target)
     {
-        //   this.transform.position;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         float distanceToTarget = (target.transform.position - player.transform.position).magnitude;
 

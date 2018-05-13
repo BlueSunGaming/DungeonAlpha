@@ -9,6 +9,11 @@ public class UIEventHandler : MonoBehaviour
     public static event ItemEventHandler OnItemRemovedFromInventory;
     public static event ItemEventHandler OnItemEquipped;
 
+    // Dialogue Or Menu Display Event Handlers
+    public delegate void DisplayEventHandler(bool shouldShow);
+    public static event DisplayEventHandler OnInventoryDisplayed;
+
+
     public static void ItemAddedToInventory(Item item)
     {
         if (OnItemAddedToInventory != null)
@@ -30,6 +35,14 @@ public class UIEventHandler : MonoBehaviour
         if (OnItemEquipped != null)
         {
             OnItemEquipped(item);
+        }
+    }
+
+    public static void InventoryDisplayed(bool shouldShow)
+    {
+        if (OnInventoryDisplayed != null)
+        {
+            OnInventoryDisplayed(shouldShow);
         }
     }
 }
