@@ -8,9 +8,8 @@ namespace RPG.Character
     // TODO: Give this a better name
     public class PlayerAttributes : MonoBehaviour
     {
-        // TODO: figure out how to set const global vars
-        int MAX_ATTRIBUTE_VALUE = 25;
-        int MIN_ATTRIBUTE_VALUE = 3;
+        const int MAX_ATTRIBUTE_VALUE = 25;
+        const int MIN_ATTRIBUTE_VALUE = 3;
 
         // Range accuracy, spot traps, find hidden items, detect stealthed enemies
         [SerializeField]
@@ -84,9 +83,7 @@ namespace RPG.Character
             UnityEngine.Random rnd = new UnityEngine.Random();
             float randVal = UnityEngine.Random.Range(1, 100);
             float retVal = Luck* randVal;
-//#if DEBUG
-//            Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
-//#endif
+            Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
             return retVal;
         }
 

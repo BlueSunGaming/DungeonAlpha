@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 114580261778964392}
   m_Layer: 10
   m_Name: Carpenter
-  m_TagString: Untagged
+  m_TagString: Interactable Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1495,7 +1495,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1365038181309600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75, y: 0, z: -59.5}
+  m_LocalPosition: {x: 323.9431, y: 100, z: 196.10387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4167452916048898}
@@ -2407,7 +2407,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1090010358035284}
-  m_LocalRotation: {x: 0.53267515, y: 0.07034045, z: 0.83613265, w: -0.11041513}
+  m_LocalRotation: {x: 0.5326752, y: 0.070340455, z: 0.83613276, w: -0.110415146}
   m_LocalPosition: {x: 0.000022271464, y: -0.00006150465, z: 0.026027026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2518,13 +2518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cf03fb90c675840b924a8745c2608c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCLayer: 10
-  dialogue:
-    name: Carpenter
-    sentences:
-    - Sup?
-    - You really need to set up better dialogue.
-    - Quit staring at me!
+  m_nmPlayerAgent: {fileID: 0}
+  dialogueTextIdentifier: Start(Carpenter)
+  dialogueAssetFileName: ShipwreckedFriend
 --- !u!114 &114790436696192738
 MonoBehaviour:
   m_ObjectHideFlags: 1

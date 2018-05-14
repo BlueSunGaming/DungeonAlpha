@@ -326,12 +326,14 @@
     <Compile Include="Assets\_core\Inventory\IInventory.cs" />
     <Compile Include="Assets\_core\Inventory\InventoryItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\InventoryTrigger.cs" />
+    <Compile Include="Assets\_core\Inventory\InventoryUIItem.cs" />
     <Compile Include="Assets\_core\Inventory\Item.cs" />
     <Compile Include="Assets\_core\Inventory\UIEventHandler.cs" />
     <Compile Include="Assets\_core\Inventory\UIInventory.cs" />
     <Compile Include="Assets\_core\Loader.cs" />
     <Compile Include="Assets\_core\System Prefabs\GameManager.cs" />
     <Compile Include="Assets\_core\System Prefabs\ItemChest.cs" />
+    <Compile Include="Assets\_core\WorldInteractions.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\DungeonGenerator.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\Room.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomConnection.cs" />
@@ -386,6 +388,7 @@
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
+    <None Include="Assets\YarnSpinner\Examples\DemoAssets\file.yarn.txt" />
     <None Include="Assets\YarnSpinner\README.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />

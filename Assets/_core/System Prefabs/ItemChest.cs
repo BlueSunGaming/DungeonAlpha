@@ -5,7 +5,7 @@ using RPG.CameraUI;
 using UnityEngine;
 using _core;
 
-public class ItemChest : MonoBehaviour, IInventory
+public class ItemChest : Interactable //MonoBehaviour, IInventory
 {
     // Default Items to randomly generate in chest
     private int numItemsInChest = 4;
@@ -13,16 +13,11 @@ public class ItemChest : MonoBehaviour, IInventory
     [SerializeField]
     private GameObject chestObject;
     [SerializeField] private int itemLayer;
-    //_core.IInventory.invType; //=  InventoryType.CHEST;
-    [SerializeField]
-    public RectTransform inventoryContent;
-    public RectTransform viewportTransform;
-    //RectTransform transferPanelTransform;
 
-    CameraRaycaster cameraRaycaster;
-    private Animator mTransferPanelAnimator;
+    //CameraRaycaster cameraRaycaster;
+    //private Animator mTransferPanelAnimator;
 
-    public InventoryItemUI itemSlot { get; set; }
+    public InventoryUIItem itemSlot { get; set; }
     
     public List<Item> currentItems { get; set; }
 
@@ -37,7 +32,7 @@ public class ItemChest : MonoBehaviour, IInventory
         currentItems = new List<Item>();
         invType = InventoryType.CHEST;
 
-        mTransferPanelAnimator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
+        //mTransferPanelAnimator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
         //inventoryContent = (RectTransform)GameObject.FindGameObjectWithTag("TransferContent").transform;
 
         foreach (string itemID in Contents)
@@ -55,37 +50,36 @@ public class ItemChest : MonoBehaviour, IInventory
                 Debug.Log("No attempted add for the id = " + x);
             }
         }
-        RegisterForMouseClick();
+        //RegisterForMouseClick();
     }
 
-    
-    void OnMouseClick(RaycastHit raycastHit, int layerHit)
+    public Item ItemDrop { get; set; }
+    public override void Interact()
     {
-        if (layerHit == itemLayer)
-        {
-            var itemChest = raycastHit.collider.gameObject;
-            if (IsTargetInRange(itemChest))
-            {
-                GameManager.instance.SetUITriggeringGO(itemChest);
-                Debug.Log("Item Chest was in range");
-                AddAllItems();
-            }
-        }
+        GameManager.instance.SetUITriggeringGO(chestObject);
+        AddAllItems();
+        //InventoryController.Instance.GiveItem(ItemDrop);
+        Destroy(gameObject);
     }
 
-    void AddAllItems()
-    {
-        if (mTransferPanelAnimator != null)
-        {
-            mTransferPanelAnimator.SetBool("TransferPanelOpen", true);
-            inventoryContent.gameObject.SetActive(true);
-            Debug.Log("animator was found");
-        }
-        else
-        {
-            Debug.Log("animator was not found");
-        }
 
+
+    //void OnMouseClick(RaycastHit raycastHit, int layerHit)
+    //{
+    //    if (layerHit == itemLayer)
+    //    {
+    //        var itemChest = raycastHit.collider.gameObject;
+    //        if (IsTargetInRange(itemChest))
+    //        {
+    //            GameManager.instance.SetUITriggeringGO(itemChest);
+    //            Debug.Log("Item Chest was in range");
+    //            AddAllItems();
+    //        }
+    //    }
+    //}
+
+    public void AddAllItems()
+    {
         foreach (Item i in GetCurrentItems())
         {
             if (i != null)
@@ -93,39 +87,17 @@ public class ItemChest : MonoBehaviour, IInventory
                 UIEventHandler.ItemAddedToInventory(i);
             }
         }
-        //TODO: Cleanup unused code
-        //itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
-
-        //    Debug.Log("We are instantiating an item with id =" + i.nItemID);
-        //    itemSlot.SetItem(i);
-        //    InventoryItemUI emptyItem = Instantiate(itemSlot);
-        //    emptyItem.SetItem(i);
-        //    //allItemUis.Add(emptyItem);
-        //    emptyItem.transform.SetParent(transferContent);
-        
     }
 
     private bool IsTargetInRange(GameObject target)
     {
-        //   this.transform.position;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         float distanceToTarget = (target.transform.position - player.transform.position).magnitude;
 
         return distanceToTarget <= 2.0f;
     }
-
-    private void RegisterForMouseClick()
-    {
-        cameraRaycaster = FindObjectOfType<CameraRaycaster>();
-        cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
-    }
-
-    // Update is called once per frame
-    void Update ()
-    {
-    }
-
+    
     public void RandomPopulate()
     {
         throw new NotImplementedException();

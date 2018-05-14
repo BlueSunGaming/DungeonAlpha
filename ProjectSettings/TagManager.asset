@@ -7,6 +7,7 @@ TagManager:
   - Scene Change
   - ItemWindow
   - TransferContent
+  - Interactable Object
   layers:
   - Default
   - TransparentFX

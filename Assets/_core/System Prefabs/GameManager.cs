@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Newtonsoft.Json;
 using Yarn.Unity;
 
@@ -14,7 +15,13 @@ public class GameManager : MonoBehaviour {
 
     private GameObject mUITriggeringGO = null;
 
-    private List<Item> AllItems { get; set; }
+    private List<Item> playerItems = new List<Item>();
+    private List<Item> AllItems = new List<Item>();
+
+    //public PlayerWeaponController playerWeaponController;
+    //public ConsumableController consumableController;
+    public InventoryItemDetails inventoryDetailsPanel = null;
+
     private int level = 5;   //Current level number, expressed in game as "Day 1".
 
     //Awake is always called before any Start functions
@@ -53,6 +60,16 @@ public class GameManager : MonoBehaviour {
 
         //Call the InitGame function to initialize the first level 
         InitGame();
+
+        if (inventoryDetailsPanel == null)
+        {
+            Debug.Log("inventoryDetailsPanel should have been set on the object " + this.gameObject);
+        }
+
+        //playerWeaponController = GetComponent<PlayerWeaponController>();
+        //consumableController = GetComponent<ConsumableController>();
+
+        //GiveItem("potion_log");
     }
 
     //Initializes the game for each level.
@@ -63,6 +80,40 @@ public class GameManager : MonoBehaviour {
         //    //Call the SetupScene function of the DungeonGenerator script, pass it current level number.
         //    dungeonGenteratorScript.SetupScene(level);
         //}
+    }
+
+    public void GiveItem(int itemID)
+    {
+        Item item = GameManager.instance.IsValidItem(itemID);
+        playerItems.Add(item);
+        UIEventHandler.ItemAddedToPlayerInventory(item);
+    }
+
+    public void GiveItem(Item item)
+    {
+        playerItems.Add(item);
+        UIEventHandler.ItemAddedToInventory(item);
+    }
+
+    public void GiveItem(List<Item> items)
+    {
+        playerItems.AddRange(items);
+        UIEventHandler.ItemAddedToInventory(items);
+    }
+
+    public void SetItemDetails(Item item, Button selectedButton)
+    {
+        inventoryDetailsPanel.SetItem(item, selectedButton);
+    }
+
+    public void EquipItem(Item itemToEquip)
+    {
+        //TODO: implement playerWeaponController.EquipWeapon(itemToEquip);
+    }
+
+    public void ConsumeItem(Item itemToConsume)
+    {
+        //TODO: implement consumableController.ConsumeItem(itemToConsume);
     }
 
     private void BuildItemDatabase()
@@ -112,10 +163,10 @@ public class GameManager : MonoBehaviour {
         return AllItems;
     }
 
-    public List<Item> GetItemsForPlayInventory()
+    public List<Item> GetItemsForPlayerInventory()
     {
         // perform filtering
-        return AllItems;
+        return playerItems;
     }
 
     //Update is called every frame.
