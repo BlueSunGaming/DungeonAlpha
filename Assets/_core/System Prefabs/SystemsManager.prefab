@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 1555873146530204}
   lineText: {fileID: 114361293469803680}
-  continuePrompt: {fileID: 0}
+  continuePrompt: {fileID: 1919614127792822}
   textSpeed: 0.025
   optionButtons: []
   gameControlsContainer: {fileID: 0}
@@ -1694,9 +1694,9 @@ MonoBehaviour:
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
-  variableStorage: {fileID: 0}
+  variableStorage: {fileID: 114665162601062090}
   dialogueUI: {fileID: 114314617507655484}
-  startNode: Start
+  startNode: Start(shipwreckedfriend)
   startAutomatically: 1
   automaticCommands: 1
 --- !u!114 &114646728424946294
@@ -2561,7 +2561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0000048340735}
+  m_AnchoredPosition: {x: 0, y: -0.000006161393}
   m_SizeDelta: {x: 0, y: 149}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224568358491961966
@@ -2791,7 +2791,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000019455554, y: 0.000009473173}
+  m_AnchoredPosition: {x: 0.000019455554, y: 0.000009520825}
   m_SizeDelta: {x: -0.000015259, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224929133520300170

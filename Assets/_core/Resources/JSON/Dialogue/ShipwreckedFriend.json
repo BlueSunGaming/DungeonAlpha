@@ -62,10 +62,20 @@
 	{
 		"title": "Start(Carpenter)",
 		"tags": "",
-		"body": "Can we build it!?!\n->Yes we..\n    Whoa, whoa, whoa there buddy, we havent even checked the material cost. Slow your roll.",
+		"body": "Can we build it!?!\n->Yes we\n    Whoa whoa whao\n->No we can't.\n    Test Option 2",
 		"position": {
-			"x": -1124,
-			"y": -159
+			"x": -1125,
+			"y": -158
+		},
+		"colorID": 0
+	},
+	{
+		"title": "yesWeDot",
+		"tags": "#FF00FF",
+		"body": "",
+		"position": {
+			"x": -1129,
+			"y": 170
 		},
 		"colorID": 0
 	}
