@@ -102,8 +102,8 @@ namespace RPG.Character
             if (Time.time - lastHitTime > weaponInUse.GetMinTimeBetweenHit())
             {
                 animator.SetTrigger("Attack"); // TODO make const
-
-                enemyComponent.TakeDamage(damagePerHit);
+                
+                //enemyComponent.TakeDamage(damagePerHit);
 
                 lastHitTime = Time.time;   
             }

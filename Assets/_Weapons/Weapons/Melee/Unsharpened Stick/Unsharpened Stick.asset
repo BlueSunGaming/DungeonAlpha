@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Unsharpened Stick
   m_EditorClassIdentifier: 
   minTimeBetweenHits: 0.2
-  maxAttackRange: 4
+  maxAttackRange: 4.23
   weaponPrefab: {fileID: 1132402002615212, guid: d5ba7b0c5750525468956018640f8053,
     type: 2}
   itemID: 1

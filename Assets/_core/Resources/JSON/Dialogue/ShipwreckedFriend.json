@@ -62,20 +62,40 @@
 	{
 		"title": "Start(Carpenter)",
 		"tags": "",
-		"body": "Can we build it!?!\n->Yes we\n    Whoa whoa whao\n->No we can't.\n    Test Option 2",
+		"body": "Can we build it!?!\n->Yes we ...\n    Whoa, whoa, whoa there buddy. We haven't even checked the materials list yet, slow your roll.\n->No we can't.\n    Hmm... Let's put together a materials list and see what we are capabale of at the moment then.",
 		"position": {
-			"x": -1125,
+			"x": -1127,
 			"y": -158
 		},
 		"colorID": 0
 	},
 	{
-		"title": "yesWeDot",
-		"tags": "#FF00FF",
-		"body": "",
+		"title": "Start(cactusfarmer)",
+		"tags": "",
+		"body": "Please watch yourselves around the cacti. Not only are they our primary source\nof clean water, their thorns sting like no other.",
 		"position": {
-			"x": -1129,
-			"y": 170
+			"x": 1935,
+			"y": -251
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Start(desertvillager1)",
+		"tags": "",
+		"body": "Hm?\nIs someone there?\nOh, Eserveh, you look like you've just made your way though the three tides!\nFollow me into the village, let us help you!",
+		"position": {
+			"x": 3104,
+			"y": -215
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Start(chief)",
+		"tags": "",
+		"body": "Welcome to our village traveler.\nRest well, I will have someone send for me when you awaken.",
+		"position": {
+			"x": 3914,
+			"y": -210
 		},
 		"colorID": 0
 	}

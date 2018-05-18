@@ -10,7 +10,7 @@ namespace RPG.Weapons
 
     public class Weapon : ScriptableObject
     {
-        
+        //TODO: set default tag and layer (maybe a new Weapon Layer)
         public float minTimeBetweenHits = .5f;
         public float maxAttackRange = 2f;
         public GameObject weaponPrefab;
@@ -39,7 +39,6 @@ namespace RPG.Weapons
             RemoveAnimationEvent();
 
             return attackAnimation;
-
         }
 
         //So that asset packs cannot cause crashes

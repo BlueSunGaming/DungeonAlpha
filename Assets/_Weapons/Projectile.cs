@@ -40,12 +40,13 @@ namespace RPG.Weapons
             }
         }
 
+        // Process Damage if damage-able using all collisions between this projectile and another game object
         private void DamageIfDamageable(Collision collision)
         {
 
             Component damageableComponent = collision.gameObject.GetComponent(typeof(IDamageable));
 
-            if (damageableComponent)
+            if (damageableComponent != null)
             {
 
                 (damageableComponent as IDamageable).TakeDamage(damageCaused);
