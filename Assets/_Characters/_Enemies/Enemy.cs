@@ -7,37 +7,24 @@ using System;
 
 namespace RPG.Character
 {
-    public class Enemy : PlayerAttributes, IDamageable
+    public class Enemy : IDamageable
     {
-
-        [SerializeField] float maxHealthPoints;
-
         [SerializeField] float attackRadius = 5f;
-
         [SerializeField] float chaseRadius = 7f;
-
         [SerializeField] float damagePerShot = 7f;
-
         [SerializeField] float secondsBetweenShots = .5f;
-
-
-        [SerializeField] GameObject projectileToUse;
-
-        [SerializeField] GameObject projectileSocket;
         
-
+        [SerializeField] GameObject projectileToUse;
+        [SerializeField] GameObject projectileSocket;
         [SerializeField] Vector3 aimOffset = new Vector3(0, 1f, 0);
-        Vector3 hitChanceAffect = new Vector3(0, 0f, 0);
 
+        Vector3 hitChanceAffect = new Vector3(0, 0f, 0);
         GameObject player = null;
 
         bool isAttacking = false;
 
-        float currentHealthPoints;
-
         AICharacterControl aiCharacterControl = null;
-
-
+        
         public float healthAsPercentage
         {
             get
@@ -88,15 +75,24 @@ namespace RPG.Character
         {
             GameObject newProjectile = Instantiate(projectileToUse, projectileSocket.transform.position, Quaternion.identity);
 
-            
+            Component weaponComponent = projectileToUse.GetComponent(typeof(Weapon));
+
+            float dmg = 0.0f;
+            if (weaponComponent != null)
+            {
+                 dmg = GetDamageModifier((weaponComponent as Weapon));
+            }
+            else
+            {
+                Debug.Log("Intended projectile to use does not inherit from Weapon. It's value was: " + projectileToUse);
+            }
+
             Projectile projectileComponent = newProjectile.GetComponent<Projectile>();
-            
-            float dmg = damagePerShot*GetDamageModifier();
+            // TODO: protect with a #Debug
             Debug.Log("Damage Calculated with modifier is " + dmg);
             // Check the chance to hit affects the damage done with the projectile
             dmg = GetChanceToHit() < 50.0f ? 0 : dmg;       // TODO: potential for partial damage
             Debug.Log("Damage Calculated with chance to hit modifier is " + dmg);
-            projectileComponent.SetDamage(dmg);
             projectileComponent.setShooter(gameObject);     // TODO: is this parentage relationship necessary, validate yes or no.
 
             Vector3 unitVectorToPlayer = (player.transform.position - projectileSocket.transform.position + aimOffset + hitChanceAffect).normalized;
@@ -106,9 +102,10 @@ namespace RPG.Character
             newProjectile.GetComponent<Rigidbody>().velocity = unitVectorToPlayer * projectileSpeed;
         }
 
-        public void TakeDamage(float damage)
+        public override void TakeDamage(float damage)
         {
-            currentHealthPoints = Mathf.Clamp(currentHealthPoints - damage, 1.0f, maxHealthPoints);
+            damage = (damage - naturalBaseDefense) > 0.0f ? damage - naturalBaseDefense : 0.0f;
+            base.TakeDamage(damage);
 
             if (currentHealthPoints <= 1.0f)
             {

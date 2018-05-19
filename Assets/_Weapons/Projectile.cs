@@ -6,23 +6,16 @@ using RPG.Core;
 
 namespace RPG.Weapons
 {
-    public class Projectile : MonoBehaviour
+    public class Projectile : Weapon
     {
-
         public float projectileSpeed;
 
+        [HideInInspector]
         GameObject shooter;
-
-        float damageCaused;
 
         public void setShooter(GameObject shooter)
         {
             this.shooter = shooter;
-        }
-
-        public void SetDamage(float damage)
-        {
-            damageCaused = damage;
         }
 
         public float GetDefaultLaunchSpeed()
@@ -49,17 +42,10 @@ namespace RPG.Weapons
             if (damageableComponent != null)
             {
 
-                (damageableComponent as IDamageable).TakeDamage(damageCaused);
+                (damageableComponent as IDamageable).TakeDamage(m_fBaseDamage);
 
             }
             Destroy(gameObject);
-
-
         }
-        
-        
-
-
-
     }
 }

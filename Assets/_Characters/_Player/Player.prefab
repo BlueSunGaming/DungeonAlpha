@@ -128,13 +128,13 @@ GameObject:
   - component: {fileID: 54346194675802528}
   - component: {fileID: 136366834727597466}
   - component: {fileID: 114477411475654976}
-  - component: {fileID: 114902280461669076}
-  - component: {fileID: 114355778963900556}
   - component: {fileID: 222658878965752372}
   - component: {fileID: 114785151483193096}
   - component: {fileID: 195279213458078728}
   - component: {fileID: 114743205625844680}
   - component: {fileID: 114044226992128632}
+  - component: {fileID: 114902280461669076}
+  - component: {fileID: 114355778963900556}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1064738742889864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f38397a5b56d9b44b4c13df92053e12, type: 3}
   m_Name: 
@@ -2504,6 +2504,7 @@ MonoBehaviour:
   weaponSocket: {fileID: 1297976241341276}
   animatorOverrideController: {fileID: 22100000, guid: f9064796bcfc16148bd13e1ab91547f1,
     type: 2}
+  m_attributes: {fileID: 0}
 --- !u!114 &114477411475654976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2793,7 +2794,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1064738742889864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -68.4}
+  m_LocalPosition: {x: 0, y: 0, z: 197.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4611844508204860}
@@ -2804,6 +2805,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80.6, y: -0.0000002682209}
+  m_AnchoredPosition: {x: 271.61, y: 100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

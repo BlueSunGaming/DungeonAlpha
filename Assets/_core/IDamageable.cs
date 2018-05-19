@@ -1,13 +1,31 @@
-﻿using UnityEngine;
+﻿using RPG.Character;
+using UnityEngine;
 
 namespace RPG.Core
 {
-    public interface IDamageable
+    struct Damage
     {
-        //void OnCollisionEnter(Collision collision);
+        private float baseDamage;
+        private float percentPierce;
+    }
+    public class IDamageable : PlayerAttributes
+    {
+        protected float currentHealthPoints;
 
-        void TakeDamage(float damage);
+        [SerializeField]
+        protected float maxHealthPoints = 100.0f;
+        [SerializeField]
+        protected float naturalBaseDefense = 3f;
 
-        //bool StillAlive();
+        //protected virtual void OnCollisionEnter(Collision collision)
+        //{
+
+        //}
+
+        public virtual void TakeDamage(float damage)
+        {
+            Debug.Log("Damage to be taken =" + damage);
+            currentHealthPoints = Mathf.Clamp(currentHealthPoints - damage, 1.0f, maxHealthPoints);
+        }
     }
 }

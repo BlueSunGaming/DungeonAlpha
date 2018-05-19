@@ -6,9 +6,7 @@ using UnityEngine.UI;
 
 namespace RPG.Weapons
 {
-
-
-    public class Weapon : ScriptableObject
+    public class Weapon : MonoBehaviour //TODO: investigate difference between ScriptableObject & Mono Behaviour
     {
         //TODO: set default tag and layer (maybe a new Weapon Layer)
         public float minTimeBetweenHits = .5f;
@@ -17,6 +15,8 @@ namespace RPG.Weapons
         public uint itemID;
         public AnimationClip attackAnimation;
         public Transform weaponGripTransform;
+
+        [SerializeField] protected float m_fBaseDamage = 1.0f;
         
         public float GetMinTimeBetweenHit()
         {
@@ -26,6 +26,16 @@ namespace RPG.Weapons
         public float GetMaxAttackRange()
         {
             return maxAttackRange;
+        }
+
+        public virtual float GetBaseDamage()
+        {
+            return m_fBaseDamage;
+        }
+
+        protected virtual void SetBaseDamage( float baseDamage)
+        {
+            m_fBaseDamage = baseDamage;
         }
 
         public GameObject GetWeaponPrefab()

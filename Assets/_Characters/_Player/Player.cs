@@ -1,28 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 using RPG.CameraUI;
 using RPG.Core;
 using RPG.Weapons;
 
 namespace RPG.Character
 {
-    public class Player : MonoBehaviour, IDamageable
+    public class Player : IDamageable
     {
         Animator animator;
 
         [SerializeField]
         int enemyLayer = 11;
-
-        [SerializeField]
-        float maxHealthPoints = 100f;
-
+        
         [SerializeField]
         float damagePerHit = 12f;
 
         [SerializeField]
         Weapon weaponInUse;
-
+        
         [SerializeField]
         GameObject weaponSocket;
 
@@ -31,10 +29,7 @@ namespace RPG.Character
 
         [SerializeField]
         PlayerAttributes m_attributes;
-
-
-        float currentHealthPoints;
-
+        
         float lastHitTime = 0;
 
         CameraRaycaster cameraRaycaster;
@@ -103,7 +98,7 @@ namespace RPG.Character
             {
                 animator.SetTrigger("Attack"); // TODO make const
                 
-                //enemyComponent.TakeDamage(damagePerHit);
+                enemyComponent.TakeDamage(damagePerHit);
 
                 lastHitTime = Time.time;   
             }
@@ -128,9 +123,18 @@ namespace RPG.Character
             }
         }
 
-        public void TakeDamage(float damage)
+        private List<RPG.Armor.Armor> GetAllArmorPieces()
         {
-            currentHealthPoints = Mathf.Clamp(currentHealthPoints - damage, 1f, maxHealthPoints);
+            List<RPG.Armor.Armor> retArmors = new List<RPG.Armor.Armor>();
+            return retArmors;
+        }
+
+        public override void TakeDamage(float damage)
+        {
+            float defenseDamageReduction = naturalBaseDefense + GetDefenseRating(GetAllArmorPieces());
+            // TODO: make less convoluted using an if statement or two.
+            damage = (damage - defenseDamageReduction) > 0.0f ? damage - defenseDamageReduction : 0.0f;
+            base.TakeDamage(damage);
         }
 
         public void OnCollisionEnter(Collision collision)

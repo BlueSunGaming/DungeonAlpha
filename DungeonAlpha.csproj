@@ -321,6 +321,7 @@
     <Compile Include="Assets\_core\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\_core\IDamageable.cs" />
     <Compile Include="Assets\_core\Interactable.cs" />
+    <Compile Include="Assets\_core\Inventory\Armor.cs" />
     <Compile Include="Assets\_core\Inventory\GenerateItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\IInventory.cs" />
     <Compile Include="Assets\_core\Inventory\InventoryItemUI.cs" />

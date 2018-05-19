@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using RPG.Character;
 
 namespace RPG.Character
 {
-
-
+    // TODO: Give this a better name
     public class PlayerAttributes : MonoBehaviour
     {
         // TODO: figure out how to set const global vars
@@ -40,9 +40,11 @@ namespace RPG.Character
         [SerializeField]
         protected int Luck = 1;
 
-        protected virtual float GetDamageModifier()
+        protected virtual float GetDamageModifier(RPG.Weapons.Weapon wpn)
         {
-            return Strength*Agility*10.0f;
+            float baseDamage =  wpn.GetBaseDamage();
+            float dam = baseDamage + (baseDamage * (0.03f*Strength));
+            return dam;
         }
 
         protected virtual float GetMaxCarryWeight()
@@ -60,14 +62,31 @@ namespace RPG.Character
             return Strength * Agility * 10.0f;
         }
 
+        protected virtual float GetDefenseRating(List<RPG.Armor.Armor> armorPiecesList)
+        {
+            float retVal = 0.0f;
+            if (armorPiecesList.Count > 0)
+            {
+                float totalBaseArmor = 0.0f;
+                foreach (var armorPiece in armorPiecesList)
+                {
+                    totalBaseArmor += armorPiece.GetBaseProtection();
+                }
+
+                retVal = totalBaseArmor + (totalBaseArmor * (.03f * Vitality));
+            }
+
+            return retVal;
+        }
+
         protected virtual float GetLuckModifierRandomAwfulness()
         {
             UnityEngine.Random rnd = new UnityEngine.Random();
             float randVal = UnityEngine.Random.Range(1, 100);
             float retVal = Luck* randVal;
-#if DEBUG
-            Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
-#endif
+//#if DEBUG
+//            Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
+//#endif
             return retVal;
         }
 
