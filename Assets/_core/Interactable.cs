@@ -13,8 +13,8 @@ public class Interactable : MonoBehaviour {
         m_bIsEnemy = gameObject.tag == "Enemy";
         m_bHasInteracted = false;
         this.m_nmPlayerAgent = playerAgent;
-        playerAgent.stoppingDistance = 3f;
-        playerAgent.destination = GetTargetPosition();
+        m_nmPlayerAgent.stoppingDistance = 2.0f;
+        m_nmPlayerAgent.destination = GetTargetPosition();
         EnsureLookDirection();
     }
 
@@ -35,10 +35,10 @@ public class Interactable : MonoBehaviour {
 
     void EnsureLookDirection()
     {
-        m_nmPlayerAgent.updateRotation = false;
+        //m_nmPlayerAgent.updateRotation = true;
         Vector3 lookDirection = new Vector3(transform.position.x, m_nmPlayerAgent.transform.position.y, transform.position.z);
         m_nmPlayerAgent.transform.LookAt(lookDirection);
-        m_nmPlayerAgent.updateRotation = true;
+        //m_nmPlayerAgent.updateRotation = false;
     }
 
     public virtual void Interact()

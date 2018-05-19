@@ -324,6 +324,7 @@
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
     <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
+    <None Include="Assets\YarnSpinner\Examples\DemoAssets\file.yarn.txt" />
     <None Include="Assets\YarnSpinner\README.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />

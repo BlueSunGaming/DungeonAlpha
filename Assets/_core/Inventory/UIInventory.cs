@@ -5,16 +5,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIInventory : MonoBehaviour {
+    public RectTransform panelInventory;
+    public RectTransform scrollViewContent;
+
+    InventoryUIItem itemContainer { get; set; }
+
     public RectTransform transferContent;
     public RectTransform viewportTransform;
-
-    public Animator animator;
-
+    
     private Text ListOfItems;
     private GameManager gm;
     // TODO: Validate this is unnecessary private GameObject iw;
-    List<InventoryItemUI> allItemUis = new List<InventoryItemUI>();
-    public InventoryItemUI itemSlot { get; set; }
+    List<InventoryUIItem> allItemUis = new List<InventoryUIItem>();
+    //public InventoryItemUI itemSlot { get; set; }
     bool menuIsVisible { get; set; }
 
     Item currentSelection { get; set; }
@@ -23,28 +26,22 @@ public class UIInventory : MonoBehaviour {
     void Start ()
     {
         menuIsVisible = false;
-        animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
-        if (animator)
-        {
-            Debug.Log("animator was found");
-        }
-        animator.SetBool("TransferPanelOpen", menuIsVisible);
+        
         gm = GameManager.instance;
-        itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
+        itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
 
         // Connect up our delegate function to the Event Handler that will distribute occurrences
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
         UIEventHandler.OnInventoryDisplayed += InventoryDisplay;
 
-        transferContent.gameObject.SetActive(menuIsVisible);
+        scrollViewContent.gameObject.SetActive(menuIsVisible);
     }
 
     private void InventoryDisplay(bool shouldShow)
     {
         menuIsVisible = shouldShow;
-        animator.SetBool("TransferPanelOpen", menuIsVisible);
-        transferContent.gameObject.SetActive(menuIsVisible);
+        scrollViewContent.gameObject.SetActive(menuIsVisible);
     }
 
     // Update is called once per frame
@@ -53,24 +50,18 @@ public class UIInventory : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.I))
         {
             InventoryDisplay(!menuIsVisible);
-            //menuIsVisible = !menuIsVisible;
-            //animator.SetBool("TransferPanelOpen", menuIsVisible);
-            //transferContent.gameObject.SetActive(menuIsVisible);
         }
 
-	    if (animator.GetBool("TransferPanelOpen"))
+        GameObject uiTriggerGo = GameManager.instance.GetUITriggeringGO();
+        var objectToTest = uiTriggerGo != null ? uiTriggerGo : GameObject.FindGameObjectWithTag("Player");
+	    if (!IsTargetInRange(objectToTest))
 	    {
-	        GameObject uiTriggerGo = GameManager.instance.GetUITriggeringGO();
-            var objectToTest = uiTriggerGo != null ? uiTriggerGo : GameObject.FindGameObjectWithTag("Player");
-	        if (!IsTargetInRange(objectToTest))
-	        {
-                InventoryDisplay(false);
-                //   menuIsVisible = false;
+            InventoryDisplay(false);
+            //   menuIsVisible = false;
 
-                //   animator.SetBool("TransferPanelOpen", menuIsVisible);
-	            //transferContent.gameObject.SetActive(menuIsVisible);
-                GameManager.instance.SetUITriggeringGO(null);
-	        }
+            //   animator.SetBool("TransferPanelOpen", menuIsVisible);
+	        //transferContent.gameObject.SetActive(menuIsVisible);
+            GameManager.instance.SetUITriggeringGO(null);
 	    }
     }
 
@@ -86,17 +77,17 @@ public class UIInventory : MonoBehaviour {
     void ItemAdded(Item item)
     {
         Debug.Log("Everything is connected and we are instantiating an item with id =" + item.nItemID);
-        itemSlot.SetItem(item);
-        InventoryItemUI emptyItem = Instantiate(itemSlot);
+        itemContainer.SetItem(item);
+        InventoryUIItem emptyItem = Instantiate(itemContainer);
         emptyItem.SetItem(item);
         allItemUis.Add(emptyItem);
-        emptyItem.transform.SetParent(transferContent);
+        emptyItem.transform.SetParent(scrollViewContent);
     }
 
     void ItemRemoved(Item item)
     {
         // Can we find the item
-        InventoryItemUI itemFound = allItemUis.Find(x => x.GetItemID() == itemSlot.GetItemID());
+        InventoryUIItem itemFound = allItemUis.Find(x => x.GetItemID() == itemContainer.GetItemID());
         if (itemFound != null)
         {
             if (allItemUis.Remove(itemFound))

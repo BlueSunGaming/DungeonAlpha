@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 
     private GameObject mUITriggeringGO = null;
 
+    private List<Item> playerItems { get; set; }
     private List<Item> AllItems { get; set; }
     private int level = 5;   //Current level number, expressed in game as "Day 1".
 
@@ -112,10 +113,10 @@ public class GameManager : MonoBehaviour {
         return AllItems;
     }
 
-    public List<Item> GetItemsForPlayInventory()
+    public List<Item> GetItemsForPlayerInventory()
     {
         // perform filtering
-        return AllItems;
+        return playerItems;
     }
 
     //Update is called every frame.
