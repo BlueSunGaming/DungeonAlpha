@@ -117,7 +117,7 @@ MonoBehaviour:
   itemID: 0
   attackAnimation: {fileID: 0}
   weaponGripTransform: {fileID: 0}
-  m_fBaseDamage: 5
+  m_fBaseDamage: 20
   projectileSpeed: 10
 --- !u!135 &135661763384253732
 SphereCollider:

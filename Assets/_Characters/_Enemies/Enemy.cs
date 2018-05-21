@@ -3,6 +3,7 @@ using System.Collections;
 using UnityStandardAssets.Characters.ThirdPerson;
 using RPG.Core;
 using RPG.Weapons;
+using core;
 using System;
 
 namespace RPG.Character
@@ -60,14 +61,20 @@ namespace RPG.Character
                 CancelInvoke();
             }
 
-            if (distanceToPlayer <= chaseRadius)
+            if (aiCharacterControl != null)
             {
-                aiCharacterControl.SetTarget(player.transform);
+                if (distanceToPlayer <= chaseRadius)
+                {
+                    aiCharacterControl.SetTarget(player.transform);
+                }
+                else
+                {
+                    aiCharacterControl.SetTarget(transform);
+                }
             }
-
             else
             {
-                aiCharacterControl.SetTarget(transform);
+                Debug.Log("aiCharacterControl serializable field is not set on " + gameObject.name);
             }
 
         }
@@ -106,6 +113,27 @@ namespace RPG.Character
         {
             damage = (damage - naturalBaseDefense) > 0.0f ? damage - naturalBaseDefense : 0.0f;
             base.TakeDamage(damage);
+            // Set resulting damageText location
+            Vector3 resultPosition = gameObject.transform.position;
+            resultPosition.y += 1.0f;
+            Debug.Log("Enemy position original =" + gameObject.transform.position.y);
+            Debug.Log("Enemy DmgText position =" + resultPosition.y);
+            GameObject damageText = GameObject.Instantiate(Resources.Load("UI/Canvas/damageTextParent"),
+                resultPosition, Quaternion.identity, gameObject.transform) as GameObject;
+            damageText.transform.SetParent(GameObject.Find("Game Canvas").transform);
+
+            if (damageText != null && damageText.transform.childCount > 0)
+            {
+                Debug.Log("damageText was instantiated and damageText set with dmg =" + damage);
+                GameObject childTransform = damageText.transform.Find("damageText").gameObject;
+                if (childTransform != null)
+                {
+                    UnityEngine.UI.Text txt = childTransform.GetComponent<UnityEngine.UI.Text>();
+                    txt.text = damage.ToString();
+                    
+                    Destroy(damageText, UIConstants.TIME_TO_DISPLAY_DAMAGE_TEXT);
+                }
+            }
 
             if (currentHealthPoints <= 1.0f)
             {

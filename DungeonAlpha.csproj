@@ -263,16 +263,16 @@
       <HintPath>Assets/Plugins/AS3DelaunayExtended.dll</HintPath>
     </Reference>
     <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+      <HintPath>Assets/_core/Dialogue/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
-      <HintPath>Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+      <HintPath>Assets/_core/Dialogue/YarnSpinner/Code/CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets/_core/Dialogue/YarnSpinner/Code/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner">
-      <HintPath>Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+      <HintPath>Assets/_core/Dialogue/YarnSpinner/Code/YarnSpinner.dll</HintPath>
     </Reference>
     <Reference Include="AS3DelaunayExtended">
       <HintPath>Assets/_Environment/AS3DelaunayExtended.dll</HintPath>
@@ -316,24 +316,34 @@
     <Compile Include="Assets\_Characters\ICharacterAttributes.cs" />
     <Compile Include="Assets\_Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\_Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\_core\DebugStatements.cs" />
     <Compile Include="Assets\_core\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\_core\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\_core\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Code\DialogueRunner.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\CameraFollow.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\ExampleDialogueUI.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\ExampleVariableStorage.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\MobileOnly.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\NPC.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\PlayerCharacter.cs" />
+    <Compile Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoScripts\SpriteSwitcher.cs" />
     <Compile Include="Assets\_core\IDamageable.cs" />
     <Compile Include="Assets\_core\Interactable.cs" />
+    <Compile Include="Assets\_core\Inventory\_Weapons\WeaponScripts\Projectile.cs" />
+    <Compile Include="Assets\_core\Inventory\_Weapons\WeaponScripts\Weapon.cs" />
     <Compile Include="Assets\_core\Inventory\Armor.cs" />
     <Compile Include="Assets\_core\Inventory\GenerateItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\IInventory.cs" />
     <Compile Include="Assets\_core\Inventory\InventoryItemUI.cs" />
     <Compile Include="Assets\_core\Inventory\InventoryTrigger.cs" />
-    <Compile Include="Assets\_core\Inventory\InventoryUIItem.cs" />
     <Compile Include="Assets\_core\Inventory\Item.cs" />
     <Compile Include="Assets\_core\Inventory\UIEventHandler.cs" />
     <Compile Include="Assets\_core\Inventory\UIInventory.cs" />
     <Compile Include="Assets\_core\Loader.cs" />
     <Compile Include="Assets\_core\System Prefabs\GameManager.cs" />
     <Compile Include="Assets\_core\System Prefabs\ItemChest.cs" />
-    <Compile Include="Assets\_core\WorldInteractions.cs" />
+    <Compile Include="Assets\_core\UIConstants.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\DungeonGenerator.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\Room.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomConnection.cs" />
@@ -348,51 +358,40 @@
     <Compile Include="Assets\_Environment\Water\Scripts\Water.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\WaterTile.cs" />
-    <Compile Include="Assets\_Weapons\Projectile.cs" />
-    <Compile Include="Assets\_Weapons\Weapon.cs" />
-    <Compile Include="Assets\RockVR\Common\Scripts\EventDelegate.cs" />
-    <Compile Include="Assets\RockVR\Common\Scripts\FPSDisplay.cs" />
-    <Compile Include="Assets\RockVR\Common\Scripts\Platform.cs" />
-    <Compile Include="Assets\RockVR\Common\Scripts\Process.cs" />
-    <Compile Include="Assets\RockVR\Common\Scripts\Singleton.cs" />
-    <Compile Include="Assets\RockVR\Video\Demo\Scripts\AutoRotate.cs" />
-    <Compile Include="Assets\RockVR\Video\Demo\Scripts\VideoCaptureUI.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\AudioCapture.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\Base\VideoCaptureBase.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\Base\VideoCaptureCtrlBase.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\Config.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\Screenshot.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\Utils\Utils.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\VideoCapture.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\VideoCaptureCtrl.cs" />
-    <Compile Include="Assets\RockVR\Video\Scripts\VideoPlayer.cs" />
-    <Compile Include="Assets\YarnSpinner\Code\DialogueRunner.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\CameraFollow.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\ExampleDialogueUI.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\ExampleVariableStorage.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\MobileOnly.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\NPC.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\PlayerCharacter.cs" />
-    <Compile Include="Assets\YarnSpinner\Examples\DemoScripts\SpriteSwitcher.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Common\Scripts\EventDelegate.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Common\Scripts\FPSDisplay.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Common\Scripts\Platform.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Common\Scripts\Process.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Common\Scripts\Singleton.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Demo\Scripts\AutoRotate.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Demo\Scripts\VideoCaptureUI.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\AudioCapture.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\Base\VideoCaptureBase.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\Base\VideoCaptureCtrlBase.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\Config.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\Screenshot.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\Utils\Utils.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoCapture.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoCaptureCtrl.cs" />
+    <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\External Assets\MedievalTownExteriors\Readme.txt" />
-    <None Include="Assets\RockVR\Video\Shaders\CopyReverse.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\Cubemap2Equirectangular.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\Cubemap2EquirectangularPro.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\CubemapDisplayPro.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\CubemapToCylindrical.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\DownsamplePro.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\FlippingTexture.shader" />
-    <None Include="Assets\RockVR\Video\Shaders\Stereoscopic.shader" />
-    <None Include="Assets\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
-    <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
-    <None Include="Assets\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
-    <None Include="Assets\YarnSpinner\Examples\DemoAssets\file.yarn.txt" />
-    <None Include="Assets\YarnSpinner\README.txt" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\CopyReverse.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\Cubemap2Equirectangular.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\Cubemap2EquirectangularPro.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\CubemapDisplayPro.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\CubemapToCylindrical.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\DownsamplePro.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\FlippingTexture.shader" />
+    <None Include="Assets\External Assets\RockVR\Video\Shaders\Stereoscopic.shader" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoAssets\SimpleExampleScript.yarn.txt" />
+    <None Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoAssets\Space\Sally.yarn.txt" />
+    <None Include="Assets\_core\Dialogue\YarnSpinner\Examples\DemoAssets\Space\Ship.yarn.txt" />
+    <None Include="Assets\_core\Dialogue\YarnSpinner\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
