@@ -5,12 +5,17 @@ using Newtonsoft.Json;
 using RPG.CameraUI;
 
 public class Item {
+    public enum ItemTypes { Consumable, Weapon, Quest }
+
     // Setup of External references
     public int nItemID { get; set; }
     public string sItemIcon { get; set; }
     public string sName { get; set; }
     public string sDescription { get; set; }
-    
+    [JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+    public ItemTypes ItemType { get; set; }
+    public string ActionName { get; set; }
+
     //public static Item CreateFromJSON(string jsonString)
     //{
     //    return JsonUtility.FromJson<Item>(jsonString);

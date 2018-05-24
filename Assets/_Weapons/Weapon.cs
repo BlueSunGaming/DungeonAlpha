@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 namespace RPG.Weapons
 {
-
-
     public class Weapon : ScriptableObject
     {
         //TODO: set default tag and layer (maybe a new Weapon Layer)

@@ -17,6 +17,11 @@ public class InventoryUIItem : MonoBehaviour {
         return item.nItemID;
     }
 
+    public Item GetItem()
+    {
+        return item;
+    }
+
     public void SetItem(Item inItem)
     {
         this.transform.Find("Item_Name").GetComponent<Text>().text = inItem.sName;
@@ -35,6 +40,12 @@ public class InventoryUIItem : MonoBehaviour {
 
     public void OnSelectItemButton()
     {
+        Button temp = gameObject.GetComponent<Button>();
+        if (temp == null)
+        {
+            Debug.Log("Button was not found on the gameObject as expected.");
+        }
+        GameManager.instance.SetItemDetails(item, temp);
         Debug.Log("Hey It worked");
     }
 }

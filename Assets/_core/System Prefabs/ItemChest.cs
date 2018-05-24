@@ -17,7 +17,7 @@ public class ItemChest : Interactable //MonoBehaviour, IInventory
     //CameraRaycaster cameraRaycaster;
     //private Animator mTransferPanelAnimator;
 
-    public InventoryItemUI itemSlot { get; set; }
+    public InventoryUIItem itemSlot { get; set; }
     
     public List<Item> currentItems { get; set; }
 
@@ -78,7 +78,7 @@ public class ItemChest : Interactable //MonoBehaviour, IInventory
     //    }
     //}
 
-    void AddAllItems()
+    public void AddAllItems()
     {
         foreach (Item i in GetCurrentItems())
         {
@@ -87,15 +87,6 @@ public class ItemChest : Interactable //MonoBehaviour, IInventory
                 UIEventHandler.ItemAddedToInventory(i);
             }
         }
-        //TODO: Cleanup unused code
-        //itemSlot = Resources.Load<InventoryItemUI>("UI/ItemSlot");
-
-        //    Debug.Log("We are instantiating an item with id =" + i.nItemID);
-        //    itemSlot.SetItem(i);
-        //    InventoryItemUI emptyItem = Instantiate(itemSlot);
-        //    emptyItem.SetItem(i);
-        //    //allItemUis.Add(emptyItem);
-        //    emptyItem.transform.SetParent(transferContent);
     }
 
     private bool IsTargetInRange(GameObject target)
@@ -106,13 +97,7 @@ public class ItemChest : Interactable //MonoBehaviour, IInventory
 
         return distanceToTarget <= 2.0f;
     }
-
-    //private void RegisterForMouseClick()
-    //{
-    //    cameraRaycaster = FindObjectOfType<CameraRaycaster>();
-    //    cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
-    //}
-
+    
     public void RandomPopulate()
     {
         throw new NotImplementedException();

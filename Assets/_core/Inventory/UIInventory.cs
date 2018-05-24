@@ -5,43 +5,50 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UIInventory : MonoBehaviour {
-    public RectTransform panelInventory;
+    public GameObject playerInventoryPanel;
+    public GameObject itemDetailsInventoryPanel;
     public RectTransform scrollViewContent;
 
     InventoryUIItem itemContainer { get; set; }
 
     public RectTransform transferContent;
-    public RectTransform viewportTransform;
+    public GameObject transferInventoryPanel;
     
     private Text ListOfItems;
-    private GameManager gm;
-    // TODO: Validate this is unnecessary private GameObject iw;
     List<InventoryUIItem> allItemUis = new List<InventoryUIItem>();
+    List<InventoryUIItem> allPlayerItemUis = new List<InventoryUIItem>();
     //public InventoryItemUI itemSlot { get; set; }
     bool menuIsVisible { get; set; }
+    Animator animator;
 
     Item currentSelection { get; set; }
 
     // Use this for initialization
     void Start ()
     {
-        menuIsVisible = false;
+        menuIsVisible = true;
         
-        gm = GameManager.instance;
         itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
+        animator = GameObject.Find("TransferPanel").transform.GetComponent<Animator>();
 
         // Connect up our delegate function to the Event Handler that will distribute occurrences
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
+        UIEventHandler.OnItemAddedToPlayerInventory += ItemAddedPlayer;
         UIEventHandler.OnItemRemovedFromInventory += ItemRemoved;
         UIEventHandler.OnInventoryDisplayed += InventoryDisplay;
 
-        scrollViewContent.gameObject.SetActive(menuIsVisible);
+        InventoryDisplay(menuIsVisible);
+
+        GameManager.instance.GiveItem(201);
+        GameManager.instance.GiveItem(101);
     }
 
     private void InventoryDisplay(bool shouldShow)
     {
         menuIsVisible = shouldShow;
-        scrollViewContent.gameObject.SetActive(menuIsVisible);
+        playerInventoryPanel.SetActive(menuIsVisible);
+        transferInventoryPanel.SetActive(menuIsVisible);
+        itemDetailsInventoryPanel.SetActive(menuIsVisible);
     }
 
     // Update is called once per frame
@@ -65,6 +72,17 @@ public class UIInventory : MonoBehaviour {
 	    }
     }
 
+    public void AddAllItems()
+    {
+        //Debug.Log("Attempting to perform add all items with count of allItemUis at " + allItemUis.Count);
+        foreach (InventoryUIItem i in allItemUis)
+        {
+            if (i != null)
+            {
+                UIEventHandler.ItemAddedToPlayerInventory(i.GetItem());
+            }
+        }
+    }
     private bool IsTargetInRange(GameObject target)
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -73,15 +91,31 @@ public class UIInventory : MonoBehaviour {
         return distanceToTarget <= 2.0f;
     }
 
-    // process an item being added to the player inventory
+    // process an item being added to the transferPanel inventory
     void ItemAdded(Item item)
     {
-        Debug.Log("Everything is connected and we are instantiating an item with id =" + item.nItemID);
-        itemContainer.SetItem(item);
-        InventoryUIItem emptyItem = Instantiate(itemContainer);
-        emptyItem.SetItem(item);
-        allItemUis.Add(emptyItem);
-        emptyItem.transform.SetParent(scrollViewContent);
+        Debug.Log("Item Added to transfer Inv with id =" + item.nItemID);
+
+        InventoryUIItem tempItem = CreateTemporaryUIItem(item);
+        allItemUis.Add(tempItem);
+        tempItem.transform.SetParent(transferContent);
+    }
+
+    // process an item being added to the player inventory
+    void ItemAddedPlayer(Item item)
+    {
+        Debug.Log("Item Added to Player Inv with id =" + item.nItemID);
+
+        InventoryUIItem tempItem = CreateTemporaryUIItem(item);
+        allPlayerItemUis.Add(tempItem);
+        tempItem.transform.SetParent(scrollViewContent);
+        // TODO: make sure that the correct Item container is being cleared out.
+        //InventoryUIItem uiItem = allItemUis.Find(x => x.GetItemID() == item.nItemID);
+        //if (uiItem != null)
+        //{
+        //    allItemUis.Remove(uiItem);
+        //    Destroy(uiItem);
+        //}
     }
 
     void ItemRemoved(Item item)
@@ -100,5 +134,14 @@ public class UIInventory : MonoBehaviour {
                 Debug.Log("Item was found but not able to be destroyed");
             }
         }
+    }
+
+    InventoryUIItem CreateTemporaryUIItem(Item item)
+    {
+        itemContainer.SetItem(item);
+        InventoryUIItem emptyItem = Instantiate(itemContainer);
+        emptyItem.SetItem(item);
+        
+        return emptyItem;
     }
 }
