@@ -649,6 +649,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1448513893014630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4949962953154542}
+  m_Layer: 11
+  m_Name: TextPopUpSocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1452100766607670
 GameObject:
   m_ObjectHideFlags: 1
@@ -1922,7 +1937,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305295393630182}
-  m_LocalRotation: {x: 0.5326752, y: 0.070340455, z: 0.83613276, w: -0.110415146}
+  m_LocalRotation: {x: 0.53267515, y: 0.07034045, z: 0.83613265, w: -0.11041513}
   m_LocalPosition: {x: 0.000022271464, y: -0.00006150465, z: 0.026027026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2087,7 +2102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375014333634736}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -123.57515, y: 0, z: -72.35637}
+  m_LocalPosition: {x: 269.27625, y: 100, z: 197.98256}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4734517290436236}
@@ -2095,6 +2110,7 @@ Transform:
   - {fileID: 4958312732165196}
   - {fileID: 4356872297194658}
   - {fileID: 4863982176272218}
+  - {fileID: 4949962953154542}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2486,6 +2502,19 @@ Transform:
   m_Father: {fileID: 4121240979809726}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4949962953154542
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448513893014630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4619494126360340}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4954670944586114
 Transform:
   m_ObjectHideFlags: 1
@@ -2576,9 +2605,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0c2e5fc55160443bca9ceafeb20656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Perception: 1
+  Vitality: 1
+  Agility: 1
+  Strength: 1
+  Charisma: 1
+  Intelligence: 1
+  Luck: 1
   maxHealthPoints: 100
-  attackRadius: 10
-  chaseRadius: 8
+  naturalBaseDefense: 3
+  attackRadius: 5
+  chaseRadius: 5
   damagePerShot: 7
   secondsBetweenShots: 0.5
   projectileToUse: {fileID: 1227777259163904, guid: 5b42b61ebfe10ea4b92736cc61536e06,

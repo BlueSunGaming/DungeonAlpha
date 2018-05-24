@@ -114,14 +114,18 @@ namespace RPG.Character
             damage = (damage - naturalBaseDefense) > 0.0f ? damage - naturalBaseDefense : 0.0f;
             base.TakeDamage(damage);
             // Set resulting damageText location
-            Vector3 resultPosition = gameObject.transform.position;
-            resultPosition.y += 1.0f;
-            Debug.Log("Enemy position original =" + gameObject.transform.position.y);
-            Debug.Log("Enemy DmgText position =" + resultPosition.y);
-            GameObject damageText = GameObject.Instantiate(Resources.Load("UI/Canvas/damageTextParent"),
-                resultPosition, Quaternion.identity, gameObject.transform) as GameObject;
-            damageText.transform.SetParent(GameObject.Find("Game Canvas").transform);
-
+            //Vector3 resultPosition = gameObject.transform.position;
+            GameObject textPopUpSocket = gameObject.transform.Find("TextPopUpSocket1").gameObject;
+            //resultPosition.x += 9.5f;
+            //resultPosition.y += 9.5f;
+            //Debug.Log("Enemy position original =" + gameObject.transform.position.y);
+            //Debug.Log("Enemy DmgText position =" + resultPosition.y);
+            GameObject damageText = GameObject.Instantiate(Resources.Load("UI/Canvas/damageTextParent")) as GameObject;
+            damageText.transform.SetParent(GameObject.Find("Game Canvas").transform, false);
+            damageText.transform.position = new Vector3(textPopUpSocket.transform.position.x,
+                textPopUpSocket.transform.position.y + 25f, textPopUpSocket.transform.position.z);
+            Debug.Log("TextPopupSocket position is " + textPopUpSocket.transform.position);
+            Debug.Log("damageText position is " + damageText.transform.position);
             if (damageText != null && damageText.transform.childCount > 0)
             {
                 Debug.Log("damageText was instantiated and damageText set with dmg =" + damage);
@@ -129,9 +133,11 @@ namespace RPG.Character
                 if (childTransform != null)
                 {
                     UnityEngine.UI.Text txt = childTransform.GetComponent<UnityEngine.UI.Text>();
+                    //childTransform.transform.position = new Vector3(textPopUpSocket.transform.position.x + 25f,
+                    //    textPopUpSocket.transform.position.y, textPopUpSocket.transform.position.z);
                     txt.text = damage.ToString();
-                    
-                    Destroy(damageText, UIConstants.TIME_TO_DISPLAY_DAMAGE_TEXT);
+
+                    Destroy(damageText, 1.0f); // UIConstants.TIME_TO_DISPLAY_DAMAGE_TEXT);
                 }
             }
 
