@@ -4,7 +4,7 @@
 // Attack this script to the socket
 // Link to a canvas prefab that contains NPC UI
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     public class EnemyUI : MonoBehaviour
     {

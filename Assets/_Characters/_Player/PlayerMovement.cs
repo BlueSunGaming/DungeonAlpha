@@ -2,10 +2,10 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.Characters.ThirdPerson;
 using UnityEngine.AI;
-using RPG.CameraUI;
+using DungeonRPG.CameraUI;
 
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     [RequireComponent(typeof(NavMeshAgent))]
 

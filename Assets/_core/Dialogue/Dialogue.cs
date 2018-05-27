@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn;
-using Yarn.Unity;
+//using Yarn;
+//using Yarn.Unity;
 
 //[System.Serializable]
 

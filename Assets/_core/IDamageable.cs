@@ -1,7 +1,7 @@
-﻿using RPG.Character;
+﻿using DungeonRPG.Character;
 using UnityEngine;
 
-namespace RPG.Core
+namespace DungeonRPG.Core
 {
     struct Damage
     {

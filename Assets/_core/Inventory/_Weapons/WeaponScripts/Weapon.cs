@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace RPG.Weapons
+namespace DungeonRPG.Weapons
 {
     public class Weapon : MonoBehaviour //TODO: investigate difference between ScriptableObject & Mono Behaviour
     {

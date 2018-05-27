@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     public class EnemyHealthBar : MonoBehaviour
     {

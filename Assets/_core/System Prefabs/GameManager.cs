@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Newtonsoft.Json;
-using Yarn.Unity;
+using DungeonRPG;
+//using Yarn.Unity;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
 
-    public DialogueRunner dr = null;
+    //public DialogueRunner dr = null;
     private DungeonGenerator dungeonGenteratorScript; //Store a reference to our DungeonGenerator which will set up the level.
 
     private GameObject mUITriggeringGO = null;
@@ -40,15 +41,15 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        dr = GameObject.FindObjectOfType<DialogueRunner>();
-        if (dr != null)
-        {
-            Debug.Log("Dialogue manager was found");
-        }
-        else
-        {
-            Debug.Log("Dialogue manager was not found");
-        }
+        //dr = GameObject.FindObjectOfType<DialogueRunner>();
+        //if (dr != null)
+        //{
+        //    Debug.Log("Dialogue manager was found");
+        //}
+        //else
+        //{
+        //    Debug.Log("Dialogue manager was not found");
+        //}
         
         BuildItemDatabase();
 

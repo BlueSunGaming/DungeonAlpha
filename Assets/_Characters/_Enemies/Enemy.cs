@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.Characters.ThirdPerson;
-using RPG.Core;
-using RPG.Weapons;
-using core;
+using DungeonRPG.Core;
+using DungeonRPG.Weapons;
 using System;
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     public class Enemy : IDamageable
     {

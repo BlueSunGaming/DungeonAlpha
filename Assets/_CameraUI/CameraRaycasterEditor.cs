@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace RPG.CameraUI
+namespace DungeonRPG.CameraUI
 {
     // TODO consider changing to a property drawer
     [CustomEditor(typeof(CameraRaycaster))]

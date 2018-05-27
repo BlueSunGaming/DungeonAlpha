@@ -1,5 +1,5 @@
 ﻿
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     public interface ICharacterAttributes
     {

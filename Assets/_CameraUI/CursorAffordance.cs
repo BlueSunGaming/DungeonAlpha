@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace RPG.CameraUI
+namespace DungeonRPG.CameraUI
 {
     [RequireComponent(typeof(CameraRaycaster))]
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.Character;
+using DungeonRPG.Character;
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     // TODO: Give this a better name
     public class PlayerAttributes : MonoBehaviour
@@ -39,7 +39,7 @@ namespace RPG.Character
         [SerializeField]
         protected int Luck = 1;
 
-        protected virtual float GetDamageModifier(RPG.Weapons.Weapon wpn)
+        protected virtual float GetDamageModifier(DungeonRPG.Weapons.Weapon wpn)
         {
             float baseDamage =  wpn.GetBaseDamage();
             float dam = baseDamage + (baseDamage * (0.03f*Strength));
@@ -61,7 +61,7 @@ namespace RPG.Character
             return Strength * Agility * 10.0f;
         }
 
-        protected virtual float GetDefenseRating(List<RPG.Armor.Armor> armorPiecesList)
+        protected virtual float GetDefenseRating(List<DungeonRPG.Armor.Armor> armorPiecesList)
         {
             float retVal = 0.0f;
             if (armorPiecesList.Count > 0)

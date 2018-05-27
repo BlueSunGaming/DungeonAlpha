@@ -2,11 +2,11 @@
 using System.Collections;
 using System;
 using System.Collections.Generic;
-using RPG.CameraUI;
-using RPG.Core;
-using RPG.Weapons;
+using DungeonRPG.CameraUI;
+using DungeonRPG.Core;
+using DungeonRPG.Weapons;
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     public class Player : IDamageable
     {
@@ -123,9 +123,9 @@ namespace RPG.Character
             }
         }
 
-        private List<RPG.Armor.Armor> GetAllArmorPieces()
+        private List<DungeonRPG.Armor.Armor> GetAllArmorPieces()
         {
-            List<RPG.Armor.Armor> retArmors = new List<RPG.Armor.Armor>();
+            List<DungeonRPG.Armor.Armor> retArmors = new List<DungeonRPG.Armor.Armor>();
             return retArmors;
         }
 

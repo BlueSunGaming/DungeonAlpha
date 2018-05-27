@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.CameraUI;
+using DungeonRPG.CameraUI;
+using DungeonRPG;
 
 public class WorldInteractions : MonoBehaviour
 {

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using RPG.CameraUI;
+using DungeonRPG.CameraUI;
 using UnityEngine;
 using _core;
+using DungeonRPG;
 
 public class ItemChest : Interactable //MonoBehaviour, IInventory
 {

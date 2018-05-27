@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using RPG.Character;
+using DungeonRPG.Character;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

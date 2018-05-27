@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DungeonRPG;
 
 public class GenerateItemUI : MonoBehaviour {
     private Item item = null;

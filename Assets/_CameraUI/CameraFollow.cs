@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPG.CameraUI
+namespace DungeonRPG.CameraUI
 {
     public class CameraFollow : MonoBehaviour
     {
-
-
         GameObject player = null;
 
         // Use this for initialization

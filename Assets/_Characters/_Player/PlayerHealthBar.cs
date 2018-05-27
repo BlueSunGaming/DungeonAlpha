@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace RPG.Character
+namespace DungeonRPG.Character
 {
     [RequireComponent(typeof(RawImage))]
 
@@ -12,12 +12,12 @@ namespace RPG.Character
     {
         RawImage healthBarRawImage;
 
-        Player player;
+        DungeonRPG.Character.Player player;
 
         // Use this for initialization
         void Start()
         {
-            player = FindObjectOfType<Player>();
+            player = FindObjectOfType<DungeonRPG.Character.Player>();
 
             healthBarRawImage = GetComponent<RawImage>();
         }

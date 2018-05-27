@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPG.Armor
+namespace DungeonRPG.Armor
 {
     public class Armor : MonoBehaviour //TODO: investigate difference between ScriptableObject & Mono Behaviour
     {

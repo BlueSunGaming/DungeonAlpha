@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.Core;
+using DungeonRPG.Core;
 
 
-namespace RPG.Weapons
+namespace DungeonRPG.Weapons
 {
     public class Projectile : Weapon
     {
