@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonAlpha", "DungeonAlpha.csproj", "{0D7DE9D2-B7C4-19C4-C525-9FEB3B2C5D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonAlpha.Plugins", "DungeonAlpha.Plugins.csproj", "{E6ABA2BD-5217-7A0E-2A08-745FE8882FE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonAlpha.Editor", "DungeonAlpha.Editor.csproj", "{911CA125-861B-9FF6-0F85-D22DB29BA202}"
 EndProject
@@ -15,6 +17,10 @@ Global
 		{0D7DE9D2-B7C4-19C4-C525-9FEB3B2C5D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D7DE9D2-B7C4-19C4-C525-9FEB3B2C5D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D7DE9D2-B7C4-19C4-C525-9FEB3B2C5D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6ABA2BD-5217-7A0E-2A08-745FE8882FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6ABA2BD-5217-7A0E-2A08-745FE8882FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6ABA2BD-5217-7A0E-2A08-745FE8882FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6ABA2BD-5217-7A0E-2A08-745FE8882FE4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{911CA125-861B-9FF6-0F85-D22DB29BA202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{911CA125-861B-9FF6-0F85-D22DB29BA202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911CA125-861B-9FF6-0F85-D22DB29BA202}.Release|Any CPU.ActiveCfg = Release|Any CPU

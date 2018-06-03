@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Environment/Scenes/Intro area 1/Intro area 1.unity
-    guid: 02bc9f4be0cb6fe4692e817ac39d25bc
+    path: Assets/Scenes/CoreScenes/Intro.unity
+    guid: a3c2750a8dcbc6b4d9ca48e4d5d41955
+  - enabled: 1
+    path: Assets/Scenes/CoreScenes/MainMenu.unity
+    guid: 8c7c0dd0f450c7544a3df4316c42982b
+  - enabled: 1
+    path: Assets/Scenes/CoreScenes/CharCreate.unity
+    guid: 8b2c49ccc53763c4091f8f1c3bfdbe29
+  - enabled: 1
+    path: Assets/Scenes/DemoScenes/DemoScene.unity
+    guid: 404c006dd82fb734a8405d2bf59896d8
   - enabled: 1
     path: Assets/_Environment/Scenes/Dungeon Entrance/DungeonEntrance.unity
     guid: fa0da454bd5d05844ae5c91bb4fa0f8b
+  - enabled: 1
+    path: Assets/_Environment/Scenes/Desert Island/Desert Island.unity
+    guid: 3ea56705866a7844bbd1d5aeeb292a0e

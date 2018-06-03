@@ -79,7 +79,7 @@ public class MainMenuGUI : MonoBehaviour
 
     public void NewClick()
     {
-        PlayClickSound();
+       // PlayClickSound();
         SceneManager.LoadScene("CharCreate");
     }
 

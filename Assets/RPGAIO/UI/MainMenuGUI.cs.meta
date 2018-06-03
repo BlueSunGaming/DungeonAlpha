@@ -1,8 +1,23 @@
 fileFormatVersion: 2
 guid: aa8c8cd9216268849823fdb4377e5565
+timeCreated: 1527478352
+licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ContinueButton: {instanceID: 0}
+  - LoadButton: {instanceID: 0}
+  - CreditsHandler: {instanceID: 0}
+  - GameTitle: {instanceID: 0}
+  - GameCompany: {instanceID: 0}
+  - SaveSection: {instanceID: 0}
+  - SaveContainer: {instanceID: 0}
+  - SaveSelectButton: {instanceID: 0}
+  - SaveFullInfo: {instanceID: 0}
+  - ClickSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

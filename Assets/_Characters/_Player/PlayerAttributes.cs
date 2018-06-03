@@ -83,7 +83,7 @@ namespace DungeonRPG.Character
             UnityEngine.Random rnd = new UnityEngine.Random();
             float randVal = UnityEngine.Random.Range(1, 100);
             float retVal = Luck* randVal;
-            Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
+            //Debug.Log("GetLuckModifierRandomAwfulness is " + retVal);
             return retVal;
         }
 
