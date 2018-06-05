@@ -4009,10 +4009,10 @@ namespace Assets.Scripts.Beta.NewImplementation
             if (Character == null) return;
             if (GameMaster.CutsceneActive) return;
 
-            if(Character.AnimationType == RPGAnimationType.Mecanim)
-            {
-                Animator.SetBool("jumping", !IsGrounded);
-            }
+            //if(Character.AnimationType == RPGAnimationType.Mecanim)
+            //{
+            //    Animator.SetBool("jumping", !IsGrounded);
+            //}
             //Debug.Log("IsGrounded: " + IsGrounded);
 
             if(GameMaster.isMobile)
