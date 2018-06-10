@@ -33,11 +33,11 @@ namespace LogicSpawn.RPGMaker
 
             ControlSettings = new List<ControlDefinition>()
                                   {
-                                        new ControlDefinition("Select_Target",ControlAction.Custom, MouseButton.Left),
-                                        new ControlDefinition("Confirm_Cast",ControlAction.Custom, MouseButton.Left),
+                                        new ControlDefinition("Select_Target",ControlAction.Custom, MouseButton.Right),
+                                        //new ControlDefinition("Confirm_Cast",ControlAction.Custom, MouseButton.Left),
                                         new ControlDefinition("Attack",ControlAction.Custom, MouseButton.Right){InputAxisName = RPG.Gamepad.GamepadTriggers, IsAxis = true, IsPositiveAxis = true},
                                         new ControlDefinition("Attack_In_Place",ControlAction.Custom, KeyCode.LeftShift),
-                                        new ControlDefinition("Interact",ControlAction.Custom, MouseButton.Right),
+                                        new ControlDefinition("Interact",ControlAction.Custom, MouseButton.Left),
                                         new ControlDefinition("Target_Nearest/Lock",ControlAction.Custom, KeyCode.Tab){InputAxisName = RPG.Gamepad.GamepadLB, IsAxis = false},
                                         new ControlDefinition("Sprint",ControlAction.Custom, KeyCode.LeftShift){KeyAlt = KeyCode.RightShift, InputAxisName = RPG.Gamepad.GamepadLeftStickClick, IsAxis = false},
                                         new ControlDefinition("Alternate_Skills",ControlAction.Custom, KeyCode.None){InputAxisName = RPG.Gamepad.GamepadTriggers, IsAxis = true, IsPositiveAxis = false},
@@ -54,9 +54,9 @@ namespace LogicSpawn.RPGMaker
                                           new ControlDefinition("RotateCam_Up",ControlAction.Rotate_Up, KeyCode.None){InputAxisName = RPG.Gamepad.RightStickVert, IsAxis = true, IsPositiveAxis = false},
                                           new ControlDefinition("RotateCam_Down",ControlAction.Rotate_Down, KeyCode.None){InputAxisName = RPG.Gamepad.RightStickVert, IsAxis = true, IsPositiveAxis = true},
                                           new ControlDefinition("Reset_Camera",ControlAction.Rotate_Down, KeyCode.None){InputAxisName = RPG.Gamepad.GamepadRightStickClick, IsAxis = false},
-                                          new ControlDefinition("Strafe_Left",ControlAction.Strafe_Left, KeyCode.Q),
-                                          new ControlDefinition("Strafe_Right",ControlAction.Strafe_Right, KeyCode.E),
-                                          new ControlDefinition("Jump",ControlAction.Jump, KeyCode.Space){InputAxisName = RPG.Gamepad.GamepadA, IsAxis = false},
+                                          //new ControlDefinition("Strafe_Left",ControlAction.Strafe_Left, KeyCode.Q),
+                                          //new ControlDefinition("Strafe_Right",ControlAction.Strafe_Right, KeyCode.E),
+                                          //new ControlDefinition("Jump",ControlAction.Jump, KeyCode.Space){InputAxisName = RPG.Gamepad.GamepadA, IsAxis = false},
 
                                           new ControlDefinition("Interact_Key",ControlAction.InteractKey, KeyCode.F){InputAxisName = RPG.Gamepad.GamepadX, IsAxis = false},
 
@@ -69,8 +69,8 @@ namespace LogicSpawn.RPGMaker
                                           new ControlDefinition("Talents",ControlAction.Talents, KeyCode.T),
                                           new ControlDefinition("WorldMap",ControlAction.WorldMap, KeyCode.M){InputAxisName = RPG.Gamepad.DpadVert, IsAxis = true, IsPositiveAxis = false},
 
-                                          new ControlDefinition("Hide_Ui",ControlAction.Hide_Ui, KeyCode.Z),
-                                          new ControlDefinition("Save_Game",ControlAction.Save_Game, KeyCode.F7),
+                                          new ControlDefinition("Hide_Ui",ControlAction.Hide_Ui, KeyCode.Backspace),
+                                          new ControlDefinition("Save_Game",ControlAction.Save_Game, KeyCode.F5),
                                           new ControlDefinition("Load_Game",ControlAction.Load_Game, KeyCode.F8),
                                           new ControlDefinition("Take_Screenshot",ControlAction.Take_Screenshot, KeyCode.Print)
                                       };
