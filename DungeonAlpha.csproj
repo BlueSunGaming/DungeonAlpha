@@ -679,6 +679,7 @@
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Items\WeaponTypeDefinition.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\CombatCalcEvaluator.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\BooleanNode.cs" />
+    <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\BuildingUpgrade.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\CategorisedNodes.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\Combat\AttackerCombatNode.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\Combat\CustomDamageCombatNode.cs" />

@@ -324,11 +324,11 @@
     "EnableElementalDamage": true,
     "ElementalDamageDefinitions": [],
     "BaseNpcMovementSpeed": 2.0,
-    "BaseMovementSpeed": 4.0,
+    "BaseMovementSpeed": 10.0,
     "UseStatForMovementSpeed": false,
     "StatForMovementID": "",
     "RegenInterval": 0.9,
-    "JumpHeight": 5.0,
+    "JumpHeight": 0.0,
     "AllowExpToOverflow": false
   },
   "Items": {
@@ -851,8 +851,8 @@
         "HasStartingPet": false,
         "StartAtWorldLocation": false,
         "StartingScene": "Desert Island",
-        "StartingWorldArea": null,
-        "StartingLocation": null,
+        "StartingWorldArea": "",
+        "StartingLocation": "",
         "AutoAttackPrefabPath": "",
         "AutoAttackImpactPrefabPath": "",
         "ProjectileTravelSound": {
@@ -14390,8 +14390,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 133.0,
-                "Y": 72.0,
+                "X": 148.0,
+                "Y": 97.0,
                 "Width": 282.0,
                 "Height": 157.0
               },
@@ -14464,8 +14464,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 470.0,
-                "Y": 72.0,
+                "X": 593.0,
+                "Y": 34.0,
                 "Width": 299.0,
                 "Height": 107.0
               },
@@ -15202,7 +15202,7 @@
                     "X": 0.0,
                     "Y": 0.0
                   },
-                  "Value": "Which buildign would you like?",
+                  "Value": "Which building would you like?",
                   "InputNodeId": {
                     "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
                     "ID": ""
@@ -15252,7 +15252,7 @@
               "NextNodeLinks": [
                 {
                   "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                  "ID": "e21c6d09-d060-4125-a171-848ed8306fb9"
+                  "ID": "4f563311-ec3f-4699-85ad-dffbb590f003"
                 }
               ],
               "Parameters": {
@@ -15285,8 +15285,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 1033.0,
-                "Y": 52.0,
+                "X": 1029.0,
+                "Y": 50.0,
                 "Width": 390.0,
                 "Height": 195.0
               },
@@ -15296,7 +15296,7 @@
               "PrevNodeLinks": [
                 {
                   "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                  "ID": "e21c6d09-d060-4125-a171-848ed8306fb9"
+                  "ID": "91c1ab37-bfbd-415d-be22-3e8cd5af6cb2"
                 }
               ],
               "NextNodeLinks": [
@@ -15577,74 +15577,12 @@
             },
             {
               "$type": "LogicSpawn.RPGMaker.Core.DestroyGameObject, Assembly-CSharp",
-              "ID": "e21c6d09-d060-4125-a171-848ed8306fb9",
-              "NodeChainName": "NodeChain",
-              "SerializableRect": {
-                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 756.0,
-                "Y": 66.0,
-                "Width": 245.0,
-                "Height": 126.0
-              },
-              "WindowID": 86,
-              "Identifier": null,
-              "Target": 0,
-              "PrevNodeLinks": [
-                {
-                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                  "ID": "91c1ab37-bfbd-415d-be22-3e8cd5af6cb2"
-                }
-              ],
-              "NextNodeLinks": [
-                {
-                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                  "ID": "4f563311-ec3f-4699-85ad-dffbb590f003"
-                }
-              ],
-              "Parameters": {
-                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
-                "GameObject": {
-                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
-                  "Name": "GameObject",
-                  "PropertyType": 39,
-                  "PropertyFamily": 1,
-                  "Source": 2,
-                  "Property": null,
-                  "Value": "Prefabs/Buildings/Player_Building1",
-                  "InputNodeId": {
-                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                    "ID": ""
-                  },
-                  "SubParams": {
-                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
-                  }
-                },
-                "Destroy After": {
-                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
-                  "Name": "Destroy After",
-                  "PropertyType": 2,
-                  "PropertyFamily": 0,
-                  "Source": 1,
-                  "Property": null,
-                  "Value": 0.0,
-                  "InputNodeId": {
-                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                    "ID": ""
-                  },
-                  "SubParams": {
-                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
-                  }
-                }
-              }
-            },
-            {
-              "$type": "LogicSpawn.RPGMaker.Core.DestroyGameObject, Assembly-CSharp",
               "ID": "5bbf814e-2031-4ccc-bc3e-7e2e2d3edc56",
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 747.0,
-                "Y": 211.0,
+                "X": 764.0,
+                "Y": 280.0,
                 "Width": 245.0,
                 "Height": 126.0
               },
@@ -15675,7 +15613,7 @@
                   "Value": "Prefabs/Buildings/Player_Tent1",
                   "InputNodeId": {
                     "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
-                    "ID": ""
+                    "ID": "16cf5879-7713-4afc-93e6-34de96844eb4"
                   },
                   "SubParams": {
                     "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
@@ -15731,6 +15669,50 @@
               ],
               "Parameters": {
                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib"
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.GetGameObjectByNameNode, Assembly-CSharp",
+              "InheritedPropertyType": 44,
+              "ID": "16cf5879-7713-4afc-93e6-34de96844eb4",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 529.0,
+                "Y": 349.0,
+                "Width": 196.0,
+                "Height": 68.0
+              },
+              "PropertyFamily": 1,
+              "PropertyType": 39,
+              "WindowID": 90,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": null
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Name": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Name",
+                  "PropertyType": 0,
+                  "PropertyFamily": 0,
+                  "Source": 2,
+                  "Property": null,
+                  "Value": "Player_Tent1",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
               }
             }
           ],
