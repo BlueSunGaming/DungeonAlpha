@@ -21,6 +21,7 @@ public class WorldInteractions : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("World Interactions is active");
         if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
             GetInteraction();
 

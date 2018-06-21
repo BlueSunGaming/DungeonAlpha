@@ -30,6 +30,7 @@ namespace DungeonRPG.CameraUI
 
         void Update()
         {
+            Debug.Log("Camera Raycaster is active");
             // Check if pointer is over an interactable UI element
             if (EventSystem.current.IsPointerOverGameObject())
             {

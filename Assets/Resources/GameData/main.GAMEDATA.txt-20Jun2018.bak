@@ -1349,7 +1349,7 @@
             "Enabled": false,
             "SlotID": "18c1b26d-1a17-4026-968d-ead9cab9483d",
             "SlotName": "Ring",
-            "ItemID": ""
+            "ItemID": "e7dae836-9cc4-4fc9-9352-9b1a8ab23153"
           }
         ],
         "HasStartingQuest": false,
@@ -2068,7 +2068,7 @@
     "FloatDuration": 1.5,
     "FloatDistBetweenVals": 0.3,
     "ShadersToLerp": [],
-    "TargetStyle": 0,
+    "TargetStyle": 1,
     "ShowSelected": false,
     "ShowSelectedWithTexture": false,
     "SelectedTexture": {

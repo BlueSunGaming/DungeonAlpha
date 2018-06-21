@@ -27,8 +27,8 @@ namespace LogicSpawn.RPGMaker.Core
 
         public float GetDamageReductionPercent(float characterArmor, int physicalDamage)
         {
-            //1 Point of damage reduced for every 10 points of armour
-            var reduction = characterArmor / (characterArmor + (10 * physicalDamage));
+            //1 Point of damage reduced for every 2.5 points of armour
+            var reduction = characterArmor / (characterArmor + (1.0f * physicalDamage));
 
             return reduction;
         }
