@@ -344,7 +344,7 @@
       {
         "$type": "LogicSpawn.RPGMaker.SlotDefinition, Assembly-CSharp",
         "ID": "OffHand",
-        "Name": "OffHand",
+        "Name": "Off-Hand",
         "PrefabPath": ""
       },
       {
@@ -362,7 +362,7 @@
       {
         "$type": "LogicSpawn.RPGMaker.SlotDefinition, Assembly-CSharp",
         "ID": "dfff2b34-7ca4-4a9b-9f99-732deb9240c9",
-        "Name": "Chest",
+        "Name": "Body",
         "PrefabPath": ""
       },
       {
@@ -708,7 +708,7 @@
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
         "SlotIdentifier": "OffHand",
         "Multiplier": 1,
-        "SlotName": "OffHand"
+        "SlotName": "Off-Hand"
       },
       {
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
@@ -726,7 +726,7 @@
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
         "SlotIdentifier": "dfff2b34-7ca4-4a9b-9f99-732deb9240c9",
         "Multiplier": 1,
-        "SlotName": "Chest"
+        "SlotName": "Body"
       },
       {
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
@@ -1328,7 +1328,7 @@
             "Enabled": false,
             "SlotID": "5e59cd7a-5963-4113-8465-61e9f3e070d8",
             "SlotName": "Belt",
-            "ItemID": "e7dae836-9cc4-4fc9-9352-9b1a8ab23153"
+            "ItemID": ""
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
@@ -2031,11 +2031,11 @@
     "TopDownDistance": 10.0,
     "CameraXOffset": 0.0,
     "CameraYOffset": 0.0,
-    "CameraZOffset": 4.0,
+    "CameraZOffset": 0.0,
     "PressBothMouseButtonsToMove": false,
     "RotateCameraWithPlayer": true,
     "EnableOrbitPlayer": false,
-    "OrbitPlayerOption": 2,
+    "OrbitPlayerOption": 1,
     "EnableClickToRotate": false,
     "ClickToRotateOption": 1
   },
@@ -7030,7 +7030,7 @@
       "AllEnemies": [
         {
           "$type": "LogicSpawn.RPGMaker.Core.CombatCharacter, Assembly-CSharp",
-          "IsAggressive": false,
+          "IsAggressive": true,
           "OverrideAggroRadius": false,
           "OverrideAggroRadiusValue": 25.0,
           "MonsterTypeID": "8685c742-6fff-4f07-8503-3e5051dbc7f8",
@@ -12777,7 +12777,7 @@
                   "PropertyFamily": 0,
                   "Source": 1,
                   "Property": null,
-                  "Value": "a0249302-dbda-4162-97ba-7c2239186fc5",
+                  "Value": "e7dae836-9cc4-4fc9-9352-9b1a8ab23153",
                   "InputNodeId": {
                     "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
                     "ID": ""
@@ -16549,7 +16549,7 @@
           "OldModifierKey": 0,
           "ModifierKey": 32,
           "OldKeyCode": 0,
-          "Key": 61,
+          "Key": 0,
           "OldMouseButton": 0,
           "MouseButton": -1,
           "OldIsShiftAlt": false,
@@ -16567,7 +16567,7 @@
           "IsAxis": true,
           "IsPositiveAxis": false,
           "CustomAction": 0,
-          "KeyString": "Equals",
+          "KeyString": "None",
           "AltKeyString": "None"
         },
         {
@@ -16583,11 +16583,11 @@
           "IsShift": false,
           "OldHasModifier": false,
           "HasModifier": false,
-          "OldModifierKey": 32,
+          "OldModifierKey": 0,
           "ModifierKey": 32,
           "OldKeyCode": 0,
-          "Key": 45,
-          "OldMouseButton": -1,
+          "Key": 0,
+          "OldMouseButton": 0,
           "MouseButton": -1,
           "OldIsShiftAlt": false,
           "IsShiftAlt": false,
@@ -16604,7 +16604,7 @@
           "IsAxis": true,
           "IsPositiveAxis": true,
           "CustomAction": 0,
-          "KeyString": "Minus",
+          "KeyString": "None",
           "AltKeyString": "None"
         },
         {

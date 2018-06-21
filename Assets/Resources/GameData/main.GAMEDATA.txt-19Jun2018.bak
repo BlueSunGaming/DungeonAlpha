@@ -344,7 +344,7 @@
       {
         "$type": "LogicSpawn.RPGMaker.SlotDefinition, Assembly-CSharp",
         "ID": "OffHand",
-        "Name": "OffHand",
+        "Name": "Off-Hand",
         "PrefabPath": ""
       },
       {
@@ -362,7 +362,7 @@
       {
         "$type": "LogicSpawn.RPGMaker.SlotDefinition, Assembly-CSharp",
         "ID": "dfff2b34-7ca4-4a9b-9f99-732deb9240c9",
-        "Name": "Chest",
+        "Name": "Body",
         "PrefabPath": ""
       },
       {
@@ -708,7 +708,7 @@
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
         "SlotIdentifier": "OffHand",
         "Multiplier": 1,
-        "SlotName": "OffHand"
+        "SlotName": "Off-Hand"
       },
       {
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
@@ -726,7 +726,7 @@
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
         "SlotIdentifier": "dfff2b34-7ca4-4a9b-9f99-732deb9240c9",
         "Multiplier": 1,
-        "SlotName": "Chest"
+        "SlotName": "Body"
       },
       {
         "$type": "LogicSpawn.RPGMaker.CraftSlotScaling, Assembly-CSharp",
@@ -1282,7 +1282,7 @@
         "StartingItems": [],
         "StartingEquippedWeapon": {
           "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-          "Enabled": true,
+          "Enabled": false,
           "SlotID": "",
           "SlotName": "",
           "ItemID": "e7dae836-9cc4-4fc9-9352-9b1a8ab23153"
@@ -1297,7 +1297,7 @@
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-            "Enabled": true,
+            "Enabled": false,
             "SlotID": "952a8a0f-1d61-4e2c-b6d4-f16971601231",
             "SlotName": "Head",
             "ItemID": "d81f4efd-c9f3-4a43-94f4-6f4e9e697c98"
@@ -1311,14 +1311,14 @@
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-            "Enabled": true,
+            "Enabled": false,
             "SlotID": "dfff2b34-7ca4-4a9b-9f99-732deb9240c9",
             "SlotName": "Body",
             "ItemID": "bf9b6bba-f9f3-42c8-825e-4783e35cce75"
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-            "Enabled": true,
+            "Enabled": false,
             "SlotID": "c252b480-7928-4d48-9bf4-41a78800faeb",
             "SlotName": "Hands",
             "ItemID": "a0249302-dbda-4162-97ba-7c2239186fc5"
@@ -1328,18 +1328,18 @@
             "Enabled": false,
             "SlotID": "5e59cd7a-5963-4113-8465-61e9f3e070d8",
             "SlotName": "Belt",
-            "ItemID": "e7dae836-9cc4-4fc9-9352-9b1a8ab23153"
+            "ItemID": ""
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-            "Enabled": true,
+            "Enabled": false,
             "SlotID": "7f86f65f-0a37-4fe2-aafb-e979b665678b",
             "SlotName": "Legs",
             "ItemID": "7dc86add-6dc1-4f6d-97a7-72c6058bd9ed"
           },
           {
             "$type": "LogicSpawn.RPGMaker.StartEquipDefinition, Assembly-CSharp",
-            "Enabled": true,
+            "Enabled": false,
             "SlotID": "13519e88-18a9-43a2-a246-df1ec2d2e644",
             "SlotName": "Feet",
             "ItemID": "3063df33-60ad-4310-bc06-e390a9025280"
