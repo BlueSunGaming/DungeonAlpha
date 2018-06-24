@@ -269,6 +269,33 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets/Plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="AsyncBridge.Net35">
+      <HintPath>Assets/Plugins/GitHub/Editor/AsyncBridge.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Api">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Unity">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets/Plugins/GitHub/Editor/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>Assets/Plugins/GitHub/Editor/Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="ReadOnlyCollectionsInterfaces">
+      <HintPath>Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="sfw.net">
+      <HintPath>Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>Assets/Plugins/GitHub/Editor/System.Threading.dll</HintPath>
+    </Reference>
     <Reference Include="AS3DelaunayExtended">
       <HintPath>Assets/_Environment/AS3DelaunayExtended.dll</HintPath>
     </Reference>
@@ -307,6 +334,35 @@
     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\DungeonArchitect\CHANGELOG.txt" />
+    <None Include="Assets\DungeonArchitect\Docs\Online Version.txt" />
+    <None Include="Assets\DungeonArchitect\LICENSE.txt" />
+    <None Include="Assets\DungeonArchitect\Scripts\Core\Frameworks\Navigation_SN\DungeonNavMesh2DShader.shader" />
+    <None Include="Assets\DungeonArchitect\Scripts\Core\Frameworks\Navigation_SN\DungeonNavMeshShader.shader" />
+    <None Include="Assets\DungeonArchitect\Scripts\Core\Frameworks\Splatmaps\Debug\SplatmapVisualizerShader.shader" />
+    <None Include="Assets\DungeonArchitect\VERSION.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\DemoBuilder_SimpleCity\Art\OpenGameArt\Kenney\Medieval Town (base) License.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\DemoBuilder_SimpleCity\Art\OpenGameArt\eracoon\Landscape_asset_v2\Landscape_asset_v2_license.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\DemoBuilder_SimpleCity\Art\OpenGameArt\eracoon\Landscape_asset_v2\readme.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\DemoBuilder_SimpleCity\Art\OpenGameArt\eracoon\suburb_assets_pt1\readme.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\DemoBuilder_SimpleCity\Art\OpenGameArt\eracoon\suburb_assets_pt1\suburb_assets_pt1_license.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Demo_SpatialConstraints\README.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Demo_Theme_OutdoorCliffs\Art\Nature pack License.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Readme.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\Buch_Happyland_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\Buch_Outdoor_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\Buch_SciFi_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\Buch_potions.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\Surge_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\a-cute-dungeon_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\a_blocky_dungeon_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\classic_hero_baddies_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game2D_JackRabbit\Textures\forest_Credits.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game3D_SurvivalShooter\Fonts\LuckiestGuy\LuckiestGuy_font_LICENSE.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Game3D_SurvivalShooter\Prefabs\Minimap\Materials\MiniMapShader.shader" />
+    <None Include="Assets\DungeonArchitect_Samples\Misc_Examples\Scenes\ConnectedCorridors_README.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Misc_Examples\Scenes\DynamicVolumeSpawning_README.txt" />
+    <None Include="Assets\DungeonArchitect_Samples\Misc_Examples\Scenes\NavigationSimpleDemo_README.txt" />
     <None Include="Assets\External Assets\MedievalTownExteriors\Readme.txt" />
     <None Include="Assets\External Assets\RockVR\Video\Shaders\CopyReverse.shader" />
     <None Include="Assets\External Assets\RockVR\Video\Shaders\Cubemap2Equirectangular.shader" />
@@ -317,6 +373,8 @@
     <None Include="Assets\External Assets\RockVR\Video\Shaders\FlippingTexture.shader" />
     <None Include="Assets\External Assets\RockVR\Video\Shaders\Stereoscopic.shader" />
     <None Include="Assets\InstallationGuide.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
     <None Include="Assets\RPGAIO\Shaders\Projector Additive Shader.shader" />
     <None Include="Assets\Resources\GameData\main.GAMEDATA.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

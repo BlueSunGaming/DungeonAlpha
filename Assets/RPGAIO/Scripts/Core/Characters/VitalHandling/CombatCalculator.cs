@@ -1,3 +1,6 @@
+using System;
+using UnityEngine;
+
 namespace LogicSpawn.RPGMaker.Core
 {
     public class CombatCalculator
@@ -27,6 +30,7 @@ namespace LogicSpawn.RPGMaker.Core
 
         public float GetDamageReductionPercent(float characterArmor, int physicalDamage)
         {
+            Debug.Log("GetDamageReductionPercent");
             //1 Point of damage reduced for every 2.5 points of armour
             var reduction = characterArmor / (characterArmor + (1.0f * physicalDamage));
 
