@@ -3076,7 +3076,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014491293916272}
-  m_LocalRotation: {x: -0.093746535, y: 0.6978551, z: 0.707469, w: 0.06080672}
+  m_LocalRotation: {x: -0.093746535, y: 0.6978551, z: 0.707469, w: 0.060806714}
   m_LocalPosition: {x: -0.05543403, y: 0.0017306843, z: 0.098653734}
   m_LocalScale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
   m_Children:
@@ -3749,7 +3749,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844560413819162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150.25354, y: 99.7, z: 232.5}
+  m_LocalPosition: {x: 248.45, y: 100, z: 188.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4021379875113774}
@@ -5445,7 +5445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 
   Initialised: 0
-  Name: 
+  Name: Enemy1
   EnemyID: 1b6ad333-d744-4e0d-82c1-b37fcb3e4501
 --- !u!114 &114388918567601408
 MonoBehaviour:

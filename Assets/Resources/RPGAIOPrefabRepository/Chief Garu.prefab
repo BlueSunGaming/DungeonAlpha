@@ -3997,7 +3997,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902731303016770}
-  m_LocalRotation: {x: -0.09374654, y: 0.6978552, z: 0.70746905, w: 0.060806718}
+  m_LocalRotation: {x: -0.09374654, y: 0.6978552, z: 0.70746905, w: 0.060806714}
   m_LocalPosition: {x: -0.05543403, y: 0.0017306843, z: 0.098653734}
   m_LocalScale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
   m_Children:
@@ -4580,7 +4580,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1183412374030154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 339.09, y: 99.87, z: 179.97}
+  m_LocalPosition: {x: 340.8, y: 99.87, z: 177.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4453216865324886}
@@ -5269,7 +5269,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141498047323212}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5303,7 +5303,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1588007512492050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5473,7 +5473,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1831365863740204}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5507,7 +5507,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622799491853898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5872,19 +5872,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820afbd79feb4f84fa669b32eb36369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldPatrol: 0
-  PatrolMode: 0
-  MinWaitTimeBetweenPoints: 1
-  MaxWaitTimeBetweenPoints: 5
-  ShowPath: 1
+  ShouldPatrol: 1
+  PatrolMode: 2
+  MinWaitTimeBetweenPoints: 0.05
+  MaxWaitTimeBetweenPoints: 0.05
+  ShowPath: 0
   CurrentWaypoint: {fileID: 4091517161457106}
   patrolList:
     circuit: {fileID: 114575859156488744}
-    items:
-    - {fileID: 4091517161457106}
-    - {fileID: 4934550545553102}
-    - {fileID: 4971393475483892}
-    - {fileID: 4395255277375168}
+    items: []
 --- !u!114 &114588936210983426
 MonoBehaviour:
   m_ObjectHideFlags: 1

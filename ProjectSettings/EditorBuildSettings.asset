@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Environment/Scenes/Desert Island/Desert Island.unity
     guid: 3ea56705866a7844bbd1d5aeeb292a0e
+  - enabled: 1
+    path: Assets/_Environment/Scenes/Player_House/Player_House.unity
+    guid: b8bf5c83e69254d4a8440e4c01814d93
+  - enabled: 1
+    path: Assets/_Environment/Scenes/Dungeon Entrance/DungeonEntrance.unity
+    guid: fa0da454bd5d05844ae5c91bb4fa0f8b
