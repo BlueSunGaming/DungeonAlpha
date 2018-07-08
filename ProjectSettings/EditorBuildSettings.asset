@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Environment/Scenes/Dungeon Entrance/DungeonEntrance.unity
     guid: fa0da454bd5d05844ae5c91bb4fa0f8b
+  - enabled: 1
+    path: Assets/_Environment/Scenes/Dungeon/Dungeon.unity
+    guid: d8ce6fe97fc93904b8e1e9b95ae3816e

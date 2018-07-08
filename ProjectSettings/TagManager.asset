@@ -27,6 +27,8 @@ TagManager:
   - ShadowSource
   - MinimapCamera
   - Draggable
+  - PlayerBuilding
+  - DungeonCreator
   layers:
   - Default
   - TransparentFX

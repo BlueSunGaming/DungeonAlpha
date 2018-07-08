@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 473886}
   - component: {fileID: 11455964}
   - component: {fileID: 11457970}
+  - component: {fileID: 114718898270895876}
   - component: {fileID: 114094275185137718}
   - component: {fileID: 11405048}
   - component: {fileID: 11447134}
@@ -33,7 +34,7 @@ GameObject:
   - component: {fileID: 11473026}
   m_Layer: 0
   m_Name: DungeonGrid
-  m_TagString: Untagged
+  m_TagString: DungeonCreator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,10 +90,1257 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ToolData: {fileID: 0}
   DoorManager:
-    doors: []
-  State: 0
-  Config: {fileID: 0}
-  Cells: []
+    doors:
+    - adjacentTiles:
+      - x: 3
+        y: 0
+        z: 13
+      - x: 4
+        y: 0
+        z: 13
+      enabled: 1
+      adjacentCells: 3300000010000000
+    - adjacentTiles:
+      - x: 4
+        y: 0
+        z: 13
+      - x: 5
+        y: 0
+        z: 13
+      enabled: 1
+      adjacentCells: 3300000025000000
+    - adjacentTiles:
+      - x: 8
+        y: 0
+        z: 14
+      - x: 9
+        y: 0
+        z: 14
+      enabled: 1
+      adjacentCells: 3600000025000000
+    - adjacentTiles:
+      - x: 14
+        y: 0
+        z: 5
+      - x: 14
+        y: 0
+        z: 6
+      enabled: 1
+      adjacentCells: 4400000019000000
+    - adjacentTiles:
+      - x: 11
+        y: 0
+        z: 4
+      - x: 12
+        y: 0
+        z: 4
+      enabled: 1
+      adjacentCells: 4700000019000000
+    - adjacentTiles:
+      - x: 7
+        y: 0
+        z: -4
+      - x: 7
+        y: 0
+        z: -3
+      enabled: 1
+      adjacentCells: 5600000012000000
+    - adjacentTiles:
+      - x: 4
+        y: 0
+        z: -5
+      - x: 5
+        y: 0
+        z: -5
+      enabled: 1
+      adjacentCells: 5900000012000000
+    - adjacentTiles:
+      - x: -6
+        y: 0
+        z: -7
+      - x: -6
+        y: 0
+        z: -6
+      enabled: 1
+      adjacentCells: 6c00000032000000
+    - adjacentTiles:
+      - x: -2
+        y: 0
+        z: 13
+      - x: -1
+        y: 0
+        z: 13
+      enabled: 1
+      adjacentCells: 7000000010000000
+    - adjacentTiles:
+      - x: -9
+        y: 0
+        z: 12
+      - x: -9
+        y: 0
+        z: 13
+      enabled: 1
+      adjacentCells: 7400000015000000
+    - adjacentTiles:
+      - x: -12
+        y: 0
+        z: 11
+      - x: -11
+        y: 0
+        z: 11
+      enabled: 1
+      adjacentCells: 7600000015000000
+    - adjacentTiles:
+      - x: -14
+        y: 0
+        z: 8
+      - x: -14
+        y: 0
+        z: 9
+      enabled: 1
+      adjacentCells: 790000001c000000
+  Config: {fileID: 11457970}
+  Cells:
+  - id: 1
+    bounds:
+      location:
+        x: -12
+        y: 0
+        z: 13
+      size:
+        x: 3
+        y: 0
+        z: 2
+    cellType: 1
+    userDefined: 0
+  - id: 2
+    bounds:
+      location:
+        x: -6
+        y: 0
+        z: 10
+      size:
+        x: 4
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 5
+    bounds:
+      location:
+        x: 5
+        y: 0
+        z: 3
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 8
+    bounds:
+      location:
+        x: -8
+        y: 0
+        z: 13
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 9
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: -1
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 10
+    bounds:
+      location:
+        x: 13
+        y: 0
+        z: 11
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 16
+    bounds:
+      location:
+        x: -1
+        y: 0
+        z: 11
+      size:
+        x: 5
+        y: 0
+        z: 4
+    cellType: 0
+    userDefined: 0
+  - id: 17
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: 3
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 18
+    bounds:
+      location:
+        x: 5
+        y: 0
+        z: -7
+      size:
+        x: 4
+        y: 0
+        z: 4
+    cellType: 0
+    userDefined: 0
+  - id: 21
+    bounds:
+      location:
+        x: -11
+        y: 0
+        z: 9
+      size:
+        x: 4
+        y: 0
+        z: 4
+    cellType: 0
+    userDefined: 0
+  - id: 23
+    bounds:
+      location:
+        x: 11
+        y: 0
+        z: 15
+      size:
+        x: 3
+        y: 0
+        z: 2
+    cellType: 1
+    userDefined: 0
+  - id: 25
+    bounds:
+      location:
+        x: 12
+        y: 0
+        z: 2
+      size:
+        x: 4
+        y: 0
+        z: 4
+    cellType: 0
+    userDefined: 0
+  - id: 26
+    bounds:
+      location:
+        x: -5
+        y: 0
+        z: 13
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 28
+    bounds:
+      location:
+        x: -16
+        y: 0
+        z: 5
+      size:
+        x: 5
+        y: 0
+        z: 4
+    cellType: 0
+    userDefined: 0
+  - id: 30
+    bounds:
+      location:
+        x: 12
+        y: 0
+        z: 7
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 37
+    bounds:
+      location:
+        x: 5
+        y: 0
+        z: 12
+      size:
+        x: 4
+        y: 0
+        z: 5
+    cellType: 0
+    userDefined: 0
+  - id: 38
+    bounds:
+      location:
+        x: 1
+        y: 0
+        z: -8
+      size:
+        x: 3
+        y: 0
+        z: 4
+    cellType: 1
+    userDefined: 0
+  - id: 39
+    bounds:
+      location:
+        x: -5
+        y: 0
+        z: -4
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 40
+    bounds:
+      location:
+        x: 10
+        y: 0
+        z: 13
+      size:
+        x: 3
+        y: 0
+        z: 2
+    cellType: 1
+    userDefined: 0
+  - id: 42
+    bounds:
+      location:
+        x: -3
+        y: 0
+        z: -9
+      size:
+        x: 3
+        y: 0
+        z: 4
+    cellType: 1
+    userDefined: 0
+  - id: 43
+    bounds:
+      location:
+        x: -15
+        y: 0
+        z: 10
+      size:
+        x: 3
+        y: 0
+        z: 3
+    cellType: 1
+    userDefined: 0
+  - id: 50
+    bounds:
+      location:
+        x: -8
+        y: 0
+        z: -12
+      size:
+        x: 4
+        y: 0
+        z: 6
+    cellType: 0
+    userDefined: 0
+  - id: 51
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: 13
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 52
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: 12
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 53
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 54
+    bounds:
+      location:
+        x: 9
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 55
+    bounds:
+      location:
+        x: 9
+        y: 0
+        z: 13
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 56
+    bounds:
+      location:
+        x: 9
+        y: 0
+        z: 15
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 57
+    bounds:
+      location:
+        x: 10
+        y: 0
+        z: 15
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 58
+    bounds:
+      location:
+        x: 13
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 59
+    bounds:
+      location:
+        x: 14
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 60
+    bounds:
+      location:
+        x: 14
+        y: 0
+        z: 15
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 61
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 62
+    bounds:
+      location:
+        x: 14
+        y: 0
+        z: 10
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 63
+    bounds:
+      location:
+        x: 13
+        y: 0
+        z: 10
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 64
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 10
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 65
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 9
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 66
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 8
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 67
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 7
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 68
+    bounds:
+      location:
+        x: 14
+        y: 0
+        z: 6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 69
+    bounds:
+      location:
+        x: 13
+        y: 0
+        z: 6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 70
+    bounds:
+      location:
+        x: 15
+        y: 0
+        z: 6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 71
+    bounds:
+      location:
+        x: 11
+        y: 0
+        z: 4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 72
+    bounds:
+      location:
+        x: 11
+        y: 0
+        z: 3
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 73
+    bounds:
+      location:
+        x: 11
+        y: 0
+        z: 5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 74
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: 2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 75
+    bounds:
+      location:
+        x: 6
+        y: 0
+        z: 2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 76
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: 2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 77
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: 1
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 78
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: 1
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 79
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: 0
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 80
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: 0
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 81
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: -1
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 82
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: -1
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 83
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: -2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 84
+    bounds:
+      location:
+        x: 6
+        y: 0
+        z: -2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 85
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: -2
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 86
+    bounds:
+      location:
+        x: 7
+        y: 0
+        z: -3
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 87
+    bounds:
+      location:
+        x: 6
+        y: 0
+        z: -3
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 88
+    bounds:
+      location:
+        x: 8
+        y: 0
+        z: -3
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 89
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 90
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 91
+    bounds:
+      location:
+        x: 4
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 92
+    bounds:
+      location:
+        x: 3
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 93
+    bounds:
+      location:
+        x: 2
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 94
+    bounds:
+      location:
+        x: 1
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 95
+    bounds:
+      location:
+        x: 0
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 96
+    bounds:
+      location:
+        x: 0
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 97
+    bounds:
+      location:
+        x: 0
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 98
+    bounds:
+      location:
+        x: -1
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 99
+    bounds:
+      location:
+        x: -1
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 100
+    bounds:
+      location:
+        x: -2
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 101
+    bounds:
+      location:
+        x: -2
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 102
+    bounds:
+      location:
+        x: -3
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 103
+    bounds:
+      location:
+        x: -4
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 104
+    bounds:
+      location:
+        x: -4
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 105
+    bounds:
+      location:
+        x: -5
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 106
+    bounds:
+      location:
+        x: -5
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 107
+    bounds:
+      location:
+        x: -6
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 108
+    bounds:
+      location:
+        x: -6
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 109
+    bounds:
+      location:
+        x: -6
+        y: 0
+        z: -4
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 110
+    bounds:
+      location:
+        x: -7
+        y: 0
+        z: -5
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 111
+    bounds:
+      location:
+        x: -7
+        y: 0
+        z: -6
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 112
+    bounds:
+      location:
+        x: -2
+        y: 0
+        z: 13
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 113
+    bounds:
+      location:
+        x: -2
+        y: 0
+        z: 12
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 114
+    bounds:
+      location:
+        x: -2
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 115
+    bounds:
+      location:
+        x: -7
+        y: 0
+        z: 12
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 116
+    bounds:
+      location:
+        x: -9
+        y: 0
+        z: 13
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 117
+    bounds:
+      location:
+        x: -9
+        y: 0
+        z: 14
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 118
+    bounds:
+      location:
+        x: -12
+        y: 0
+        z: 11
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 119
+    bounds:
+      location:
+        x: -12
+        y: 0
+        z: 10
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 120
+    bounds:
+      location:
+        x: -12
+        y: 0
+        z: 12
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 121
+    bounds:
+      location:
+        x: -14
+        y: 0
+        z: 9
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 122
+    bounds:
+      location:
+        x: -15
+        y: 0
+        z: 9
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
+  - id: 123
+    bounds:
+      location:
+        x: -13
+        y: 0
+        z: 9
+      size:
+        x: 1
+        y: 0
+        z: 1
+    cellType: 2
+    userDefined: 0
 --- !u!114 &11455964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,7 +1354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugDraw: 0
   dungeonThemes:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 3b61ea360b1876c4eb4e1b36ab36ff56, type: 2}
+  - {fileID: 11400000, guid: 7a37f944b6d33a34eac317a6046faf63, type: 2}
 --- !u!114 &11457970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,10 +1367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa559a52eac3b3d4895f08f568de6a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Seed: 100
+  Seed: 1866017536
   Mode2D: 0
   GridCellSize: {x: 4, y: 2, z: 4}
-  NumCells: 100
+  NumCells: 50
   MinCellSize: 3
   MaxCellSize: 4
   RoomAreaThreshold: 16
@@ -137,6 +1386,9 @@ MonoBehaviour:
   NormalStd: 0.3
   InitialRoomRadius: 20
   FloorHeight: 0
+  UseFastCellDistribution: 0
+  CellDistributionWidth: 20
+  CellDistributionLength: 30
 --- !u!114 &11471214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,8 +1415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d95bf46de5acb25459bc6ed03ea0dc1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorsOccupySpace: 1
-  mergeRoomCorridor: 0
 --- !u!114 &11486402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,4 +1455,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableRuntimeNavigation: 0
   boundsPadding: {x: 0, y: 0, z: 0}
-  landscapeBaking: 1
+  bakeTerrain: 1
+  terrain: {fileID: 0}
+--- !u!114 &114718898270895876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fedb7d4082a53142b0ea79a9985266b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMarker: StartRoom
+  endMarker: EndRoom

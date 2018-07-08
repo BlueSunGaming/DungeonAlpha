@@ -348,6 +348,7 @@
     <Compile Include="Assets\_core\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\_core\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\_core\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\_core\FurthestRoomsMarker.cs" />
     <Compile Include="Assets\_core\IDamageable.cs" />
     <Compile Include="Assets\_core\Interactable.cs" />
     <Compile Include="Assets\_core\Inventory\_Weapons\WeaponScripts\Projectile.cs" />
@@ -373,6 +374,7 @@
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomConnection.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomGenerator.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon Entrance\SceneChangeToWorldMap.cs" />
+    <Compile Include="Assets\_Environment\Scenes\Dungeon\SetupDungeon.cs" />
     <Compile Include="Assets\_Environment\Scenes\Player_House\SceneChangeToPlayerHouse.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\GerstnerDisplace.cs" />
@@ -834,6 +836,7 @@
     <Compile Include="Assets\RPGAIO\Scripts\Core\Interaction\InteractableType.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Core\Interaction\InteractiveObjectMono.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Core\Interaction\UIToggleHandler.cs" />
+    <Compile Include="Assets\RPGAIO\Scripts\Core\Interaction\UserStatistics.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Core\Items\Apparel.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Core\Items\AttributeBuff.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Core\Items\Book.cs" />
@@ -1114,6 +1117,7 @@
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Normal\StopSoundNode.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Normal\SubtractFloatNode.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Normal\SubtractIntNode.cs" />
+    <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Normal\TranslateEnumToBuildingObject.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Normal\UpdatePlayerStatsNode.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Routine\AsyncEventNode.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\RPGMaker\Nodes\Core\NodeObjects\Generic\Routine\CameraGoToPosition.cs" />

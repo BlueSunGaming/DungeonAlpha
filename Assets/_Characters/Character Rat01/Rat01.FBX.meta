@@ -1,0 +1,2986 @@
+fileFormatVersion: 2
+guid: eb72a7c2afb9de04b8820009cecc1099
+timeCreated: 1445437237
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: dLegL0
+    100002: dLegR0
+    100004: dPelvis
+    100006: fBoneEarL01
+    100008: fBoneEarR01
+    100010: fBoneFingerL00
+    100012: fBoneFingerL02
+    100014: fBoneFingerL03
+    100016: fBoneFingerL05
+    100018: fBoneFingerL06
+    100020: fBoneFingerL07
+    100022: fBoneFingerL09
+    100024: fBoneFingerL10
+    100026: fBoneFingerL12
+    100028: fBoneFingerR00
+    100030: fBoneFingerR02
+    100032: fBoneFingerR03
+    100034: fBoneFingerR05
+    100036: fBoneFingerR06
+    100038: fBoneFingerR08
+    100040: fBoneFingerR09
+    100042: fBoneFingerR11
+    100044: fBoneFingerR12
+    100046: fBoneHandL00
+    100048: fBoneHandL01
+    100050: fBoneHandL02
+    100052: fBoneHandL04
+    100054: fBoneHandL08
+    100056: fBoneHandR01
+    100058: fBoneHandR02
+    100060: fBoneHandR03
+    100062: fBoneHandR05
+    100064: fBoneHandR06
+    100066: fBoneHead01
+    100068: fBoneLegL00
+    100070: fBoneLegL01
+    100072: fBoneLegL02
+    100074: fBoneLegL04
+    100076: fBoneLegL06
+    100078: fBoneLegR00
+    100080: fBoneLegR01
+    100082: fBoneLegR03
+    100084: fBoneLegR04
+    100086: fBoneLegR06
+    100088: fBoneNeck02
+    100090: fBoneNeck03
+    100092: fBoneNeck04
+    100094: fBonePalmL01
+    100096: fBonePalmR01
+    100098: fBoneSpine01
+    100100: fBoneSpine02
+    100102: fBoneSpine03
+    100104: fxBone_Object01
+    100106: Hyen_MArmor01_Chest
+    100108: //RootNode
+    100110: Rat_MBody
+    100112: Rat_MSet_BootL
+    100114: Rat_MSet_BootR
+    100116: Rat_MSet_BrL
+    100118: Rat_MSet_BrR
+    100120: Rat_MSet_Cap
+    100122: Rat_MSet_HilL
+    100124: Rat_MSet_HilR
+    100126: Rat_MSet_LegL
+    100128: Rat_MSet_LegR
+    100130: Rat_MSet_ShL
+    100132: Rat_MSet_ShR
+    100134: Rat_MSword01
+    100136: Rat_MSet_Chest
+    100138: Rat_Down_Spine
+    100140: Rat_Head
+    100142: Rat_Left_Arm
+    100144: Rat_Left_Ear
+    100146: Rat_Left_Elbow
+    100148: Rat_Left_ElbowRot
+    100150: Rat_Left_Finger11
+    100152: Rat_Left_Finger12
+    100154: Rat_Left_Finger21
+    100156: Rat_Left_Finger22
+    100158: Rat_Left_Finger31
+    100160: Rat_Left_Finger32
+    100162: Rat_Left_Finger41
+    100164: Rat_Left_Finger42
+    100166: Rat_Left_Finger43
+    100168: Rat_Left_Foot
+    100170: Rat_Left_FootFingers
+    100172: Rat_Left_Hips
+    100174: Rat_Left_Knee
+    100176: Rat_Left_Palm
+    100178: Rat_Left_Shoulder
+    100180: Rat_Middle_Spine
+    100182: Rat_Neck
+    100184: Rat_Pelvis
+    100186: Rat_Right_Arm
+    100188: Rat_Right_Ear
+    100190: Rat_Right_Elbow
+    100192: Rat_Right_ElbowRot
+    100194: Rat_Right_Finger11
+    100196: Rat_Right_Finger12
+    100198: Rat_Right_Finger21
+    100200: Rat_Right_Finger22
+    100202: Rat_Right_Finger31
+    100204: Rat_Right_Finger32
+    100206: Rat_Right_Finger41
+    100208: Rat_Right_Finger42
+    100210: Rat_Right_Finger43
+    100212: Rat_Right_Foot
+    100214: Rat_Right_FootFingers
+    100216: Rat_Right_Hips
+    100218: Rat_Right_Knee
+    100220: Rat_Right_Palm
+    100222: Rat_Right_Shoulder
+    100224: Rat_Spine_Hips
+    100226: Rat_Weapon
+    400000: dLegL0
+    400002: dLegR0
+    400004: dPelvis
+    400006: fBoneEarL01
+    400008: fBoneEarR01
+    400010: fBoneFingerL00
+    400012: fBoneFingerL02
+    400014: fBoneFingerL03
+    400016: fBoneFingerL05
+    400018: fBoneFingerL06
+    400020: fBoneFingerL07
+    400022: fBoneFingerL09
+    400024: fBoneFingerL10
+    400026: fBoneFingerL12
+    400028: fBoneFingerR00
+    400030: fBoneFingerR02
+    400032: fBoneFingerR03
+    400034: fBoneFingerR05
+    400036: fBoneFingerR06
+    400038: fBoneFingerR08
+    400040: fBoneFingerR09
+    400042: fBoneFingerR11
+    400044: fBoneFingerR12
+    400046: fBoneHandL00
+    400048: fBoneHandL01
+    400050: fBoneHandL02
+    400052: fBoneHandL04
+    400054: fBoneHandL08
+    400056: fBoneHandR01
+    400058: fBoneHandR02
+    400060: fBoneHandR03
+    400062: fBoneHandR05
+    400064: fBoneHandR06
+    400066: fBoneHead01
+    400068: fBoneLegL00
+    400070: fBoneLegL01
+    400072: fBoneLegL02
+    400074: fBoneLegL04
+    400076: fBoneLegL06
+    400078: fBoneLegR00
+    400080: fBoneLegR01
+    400082: fBoneLegR03
+    400084: fBoneLegR04
+    400086: fBoneLegR06
+    400088: fBoneNeck02
+    400090: fBoneNeck03
+    400092: fBoneNeck04
+    400094: fBonePalmL01
+    400096: fBonePalmR01
+    400098: fBoneSpine01
+    400100: fBoneSpine02
+    400102: fBoneSpine03
+    400104: fxBone_Object01
+    400106: Hyen_MArmor01_Chest
+    400108: //RootNode
+    400110: Rat_MBody
+    400112: Rat_MSet_BootL
+    400114: Rat_MSet_BootR
+    400116: Rat_MSet_BrL
+    400118: Rat_MSet_BrR
+    400120: Rat_MSet_Cap
+    400122: Rat_MSet_HilL
+    400124: Rat_MSet_HilR
+    400126: Rat_MSet_LegL
+    400128: Rat_MSet_LegR
+    400130: Rat_MSet_ShL
+    400132: Rat_MSet_ShR
+    400134: Rat_MSword01
+    400136: Rat_MSet_Chest
+    400138: Rat_Down_Spine
+    400140: Rat_Head
+    400142: Rat_Left_Arm
+    400144: Rat_Left_Ear
+    400146: Rat_Left_Elbow
+    400148: Rat_Left_ElbowRot
+    400150: Rat_Left_Finger11
+    400152: Rat_Left_Finger12
+    400154: Rat_Left_Finger21
+    400156: Rat_Left_Finger22
+    400158: Rat_Left_Finger31
+    400160: Rat_Left_Finger32
+    400162: Rat_Left_Finger41
+    400164: Rat_Left_Finger42
+    400166: Rat_Left_Finger43
+    400168: Rat_Left_Foot
+    400170: Rat_Left_FootFingers
+    400172: Rat_Left_Hips
+    400174: Rat_Left_Knee
+    400176: Rat_Left_Palm
+    400178: Rat_Left_Shoulder
+    400180: Rat_Middle_Spine
+    400182: Rat_Neck
+    400184: Rat_Pelvis
+    400186: Rat_Right_Arm
+    400188: Rat_Right_Ear
+    400190: Rat_Right_Elbow
+    400192: Rat_Right_ElbowRot
+    400194: Rat_Right_Finger11
+    400196: Rat_Right_Finger12
+    400198: Rat_Right_Finger21
+    400200: Rat_Right_Finger22
+    400202: Rat_Right_Finger31
+    400204: Rat_Right_Finger32
+    400206: Rat_Right_Finger41
+    400208: Rat_Right_Finger42
+    400210: Rat_Right_Finger43
+    400212: Rat_Right_Foot
+    400214: Rat_Right_FootFingers
+    400216: Rat_Right_Hips
+    400218: Rat_Right_Knee
+    400220: Rat_Right_Palm
+    400222: Rat_Right_Shoulder
+    400224: Rat_Spine_Hips
+    400226: Rat_Weapon
+    2300000: Hyen_MArmor01_Chest
+    2300002: Rat_MSet_BootL
+    2300004: Rat_MSet_BootR
+    2300006: Rat_MSet_BrL
+    2300008: Rat_MSet_BrR
+    2300010: Rat_MSet_Cap
+    2300012: Rat_MSet_HilL
+    2300014: Rat_MSet_HilR
+    2300016: Rat_MSet_LegL
+    2300018: Rat_MSet_LegR
+    2300020: Rat_MSet_ShL
+    2300022: Rat_MSet_ShR
+    2300024: Rat_MSword01
+    2300026: Rat_MSet_Chest
+    3300000: Hyen_MArmor01_Chest
+    3300002: Rat_MSet_BootL
+    3300004: Rat_MSet_BootR
+    3300006: Rat_MSet_BrL
+    3300008: Rat_MSet_BrR
+    3300010: Rat_MSet_Cap
+    3300012: Rat_MSet_HilL
+    3300014: Rat_MSet_HilR
+    3300016: Rat_MSet_LegL
+    3300018: Rat_MSet_LegR
+    3300020: Rat_MSet_ShL
+    3300022: Rat_MSet_ShR
+    3300024: Rat_MSword01
+    3300026: Rat_MSet_Chest
+    4300000: Rat_MSet_LegR
+    4300002: Rat_MSet_HilR
+    4300004: Rat_MSet_Cap
+    4300006: Rat_MSet_BrL
+    4300008: Rat_MSet_ShL
+    4300010: Hyen_MArmor01_Chest
+    4300012: Rat_MSet_BootL
+    4300014: Rat_MSword01
+    4300016: Rat_MBody
+    4300018: Rat_MSet_Chest
+    4300020: Rat_MSet_BootR
+    7400000: Rat_Full01
+    7400002: Rat_Stay01
+    7400004: Rat_Walk01
+    7400006: Rat_WalkFast01
+    7400008: Rat_Attack01
+    7400010: Rat_GetHit01
+    7400012: Rat_Fall01
+    7400014: Rat_Down01
+    7400016: Rat_StandUp01
+    7400018: Rat_Fly01
+    7400020: Rat_Walk02
+    7400022: Rat_Run01
+    7400024: Rat_Attack02
+    7400026: Rat_Fall02
+    7400028: Rat_Down02
+    7400030: Rat_StandUp02
+    7400032: Rat_Stay02
+    7400034: Rat_Stay03
+    9500000: //RootNode
+    13700000: Rat_MBody
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Rat_Full01
+      takeName: Rat_Angry01
+      firstFrame: 10
+      lastFrame: 980
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Stay01
+      takeName: Rat_Angry01
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Walk01
+      takeName: Rat_Angry01
+      firstFrame: 90
+      lastFrame: 124
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_WalkFast01
+      takeName: Rat_Angry01
+      firstFrame: 135
+      lastFrame: 164
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Attack01
+      takeName: Rat_Angry01
+      firstFrame: 170
+      lastFrame: 216
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_GetHit01
+      takeName: Rat_Angry01
+      firstFrame: 220
+      lastFrame: 262
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Fall01
+      takeName: Rat_Angry01
+      firstFrame: 265
+      lastFrame: 283
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Down01
+      takeName: Rat_Angry01
+      firstFrame: 284
+      lastFrame: 285
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_StandUp01
+      takeName: Rat_Angry01
+      firstFrame: 285
+      lastFrame: 336
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Fly01
+      takeName: Rat_Angry01
+      firstFrame: 345
+      lastFrame: 370
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Walk02
+      takeName: Rat_Angry01
+      firstFrame: 380
+      lastFrame: 406
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Run01
+      takeName: Rat_Angry01
+      firstFrame: 410
+      lastFrame: 429
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Attack02
+      takeName: Rat_Angry01
+      firstFrame: 440
+      lastFrame: 484
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Fall02
+      takeName: Rat_Angry01
+      firstFrame: 490
+      lastFrame: 521
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Down02
+      takeName: Rat_Angry01
+      firstFrame: 522
+      lastFrame: 523
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_StandUp02
+      takeName: Rat_Angry01
+      firstFrame: 525
+      lastFrame: 585
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Stay02
+      takeName: Rat_Angry01
+      firstFrame: 590
+      lastFrame: 800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rat_Stay03
+      takeName: Rat_Angry01
+      firstFrame: 810
+      lastFrame: 980
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Rat_MBody
+        weight: 1
+      - path: Rat_Pelvis
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger11/Rat_Left_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger21/Rat_Left_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger31/Rat_Left_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_Left_Palm/Rat_Left_Finger41/Rat_Left_Finger42/Rat_Left_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_Left_Arm/Rat_Left_Elbow/Rat_MSet_BrL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Left_Shoulder/Rat_MSet_ShL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_MSet_Chest
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Left_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_MSet_Cap
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Neck/Rat_Head/Rat_Right_Ear
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_MSet_ShR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_MSet_BrR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_ElbowRot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger11/Rat_Right_Finger12
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger21/Rat_Right_Finger22
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger31/Rat_Right_Finger32
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42
+        weight: 1
+      - path: Rat_Pelvis/Rat_Down_Spine/Rat_Middle_Spine/Rat_Right_Shoulder/Rat_Right_Arm/Rat_Right_Elbow/Rat_Right_Palm/Rat_Right_Finger41/Rat_Right_Finger42/Rat_Right_Finger43
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_Left_FootFingers
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_Left_Foot/Rat_MSet_BootL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_Left_Knee/Rat_MSet_LegL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Left_Hips/Rat_MSet_HilL
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_MSet_HilR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_MSet_LegR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_MSet_BootR
+        weight: 1
+      - path: Rat_Pelvis/Rat_Spine_Hips/Rat_Right_Hips/Rat_Right_Knee/Rat_Right_Foot/Rat_Right_FootFingers
+        weight: 1
+      - path: Rat_Weapon
+        weight: 1
+      - path: Rat_Weapon/Rat_MSword01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
