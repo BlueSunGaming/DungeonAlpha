@@ -29,6 +29,8 @@ TagManager:
   - Draggable
   - PlayerBuilding
   - DungeonCreator
+  - Waypoint
+  - PlayerSpawnPlaceholder
   layers:
   - Default
   - TransparentFX

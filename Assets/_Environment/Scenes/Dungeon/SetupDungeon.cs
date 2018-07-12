@@ -1,10 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DAShooter;
 using DungeonArchitect;
+
 
 public class SetupDungeon : MonoBehaviour
 {
+    private static SetupDungeon instance;
     public Dungeon dungeon;
+
+    private LevelNpcSpawner enemySpawner;
+    private PlayerPlacementSpawner ppSpawner;
 
     /// <summary>
     /// If we have static geometry already in the level created during design time, then the pooled scene
@@ -13,23 +19,39 @@ public class SetupDungeon : MonoBehaviour
     /// </summary>
     bool performCleanRebuild = true;
 
-    // Use this for initialization
-    void Start()
+    public static SetupDungeon Instance
     {
-        Debug.Log("Hello from SetupDungeon:Start");
-        StartCoroutine(RebuildDungeon());
+        get { return instance; }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    StartCoroutine(RebuildDungeon());
-        //}
+        instance = this;
+        enemySpawner = GetComponent<LevelNpcSpawner>();
+        ppSpawner = GetComponent<PlayerPlacementSpawner>();
+
+
+        CreateNewLevel();
     }
 
-    IEnumerator RebuildDungeon()
+    public void CreateNewLevel()
+    {
+        // Assing a different seed to create a new layout
+        int seed = Mathf.FloorToInt(Random.value * int.MaxValue);
+        if (dungeon != null)
+        {
+            dungeon.Config.Seed = (uint) seed;
+        }
+        else
+        {
+            Debug.Log("dungeon was null during the call to create new level");
+        }
+
+        // Rebuild a new dungeon
+        StartCoroutine(RebuildLevel());
+    }
+    
+    IEnumerator RebuildLevel()
     {
         if (dungeon != null)
         {
@@ -50,6 +72,18 @@ public class SetupDungeon : MonoBehaviour
             {
                 config.Seed = (uint)(Random.value * uint.MaxValue);
                 dungeon.Build();
+
+                yield return 0;
+
+                ppSpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
+
+                GameObject player = GameObject.FindGameObjectWithTag("Player");
+                GameObject spawnPosition = GameObject.FindGameObjectWithTag("SpawnPosition");
+
+                //if (player != null && spawnPosition != null)
+                //{
+                //    player.transform.position = spawnPosition.transform.position;
+                //}
             }
         }
     }

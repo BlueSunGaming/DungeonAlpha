@@ -374,6 +374,7 @@
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomConnection.cs" />
     <Compile Include="Assets\_Environment\DungeonGenerator\RoomGenerator.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon Entrance\SceneChangeToWorldMap.cs" />
+    <Compile Include="Assets\_Environment\Scenes\Dungeon\PlayerPlacementSpawner.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon\SetupDungeon.cs" />
     <Compile Include="Assets\_Environment\Scenes\Player_House\SceneChangeToPlayerHouse.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\Displace.cs" />

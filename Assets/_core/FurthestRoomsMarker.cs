@@ -18,12 +18,13 @@ public class FurthestRoomsMarker : DungeonMarkerEmitter
             // Can only be used with a grid dungeon
             return;
         }
-        var cellSize = gridModel.Config.GridCellSize;
-
         var furthestCells = GridDungeonModelUtils.FindFurthestRooms(gridModel);
+        var cellSize = gridModel.Config.GridCellSize;
         EmitMarkerOnCell(furthestCells[0], cellSize, builder, startMarker);
         Debug.Log(furthestCells[0] + " represents the start marker");
         EmitMarkerOnCell(furthestCells[1], cellSize, builder, endMarker);
+        
+
         Debug.Log(furthestCells[1] + " represents the end marker");
     }
 

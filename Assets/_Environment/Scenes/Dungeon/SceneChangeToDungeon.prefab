@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 136347393809146378}
   - component: {fileID: 114621350344634896}
   - component: {fileID: 114791533819716722}
-  - component: {fileID: 114737413948897004}
   m_Layer: 0
   m_Name: SceneChangeToDungeon
   m_TagString: Untagged
@@ -222,17 +221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectID: bf0bec09-c197-4c17-8767-e84af1abd8f1
---- !u!114 &114737413948897004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1137102856406692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe12fdbd68331bd4595cbac3be96aef1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114783665431272994
 MonoBehaviour:
   m_ObjectHideFlags: 1
