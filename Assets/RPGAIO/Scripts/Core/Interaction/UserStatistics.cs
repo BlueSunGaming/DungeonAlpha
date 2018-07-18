@@ -12,7 +12,8 @@ namespace LogicSpawn.RPGMaker.Core
     public class UserStatistics : MonoBehaviour
     {
         public static UserStatistics Instance;
-        public int maxFloorReached = 0;
+        public static int maxFloorReached = 0;
+        public static int currentFloor = 0;
         public int timePlayed = 0;
         public int stepsTaken = 0;
         public int numBooksRead = 0;
@@ -29,6 +30,29 @@ namespace LogicSpawn.RPGMaker.Core
             }
         }
 
+        public static int GetHighestFloor()
+        {
+            return maxFloorReached;
+        }
+
+        public static void IncrementCurrentFloor()
+        {
+            SetCurrentFloor(++currentFloor);
+        }
+
+        public static int GetCurrentFloor()
+        {
+            return currentFloor;
+        }
+
+        public static void SetCurrentFloor(int newcurrentFloor)
+        {
+            currentFloor = newcurrentFloor;
+            if (currentFloor > maxFloorReached)
+            {
+                maxFloorReached = currentFloor;
+            }
+        }
 
         void Update()
         {

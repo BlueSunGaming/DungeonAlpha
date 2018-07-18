@@ -2,6 +2,7 @@
 using System.Collections;
 using DAShooter;
 using DungeonArchitect;
+using LogicSpawn.RPGMaker.Core;
 
 
 public class SetupDungeon : MonoBehaviour
@@ -12,6 +13,7 @@ public class SetupDungeon : MonoBehaviour
     private LevelNpcSpawner enemySpawner;
     private PlayerPlacementSpawner ppSpawner;
 
+    private int currentFloor;
     /// <summary>
     /// If we have static geometry already in the level created during design time, then the pooled scene
     /// provider cannot re-use it because the editor would have performed optimizations on it and might not be able to move it
@@ -24,12 +26,19 @@ public class SetupDungeon : MonoBehaviour
         get { return instance; }
     }
 
+    //void OnDestroy()
+    //{
+    //    dungeon.DestroyDungeon();
+    //}
+
     void Awake()
     {
         instance = this;
         enemySpawner = GetComponent<LevelNpcSpawner>();
         ppSpawner = GetComponent<PlayerPlacementSpawner>();
 
+        currentFloor = UserStatistics.GetCurrentFloor();
+        Debug.Log("Setup Dungeon has awoken and the Highest floor is " + UserStatistics.GetHighestFloor() + " and the current floor is " + currentFloor);
 
         CreateNewLevel();
     }
@@ -47,6 +56,8 @@ public class SetupDungeon : MonoBehaviour
             Debug.Log("dungeon was null during the call to create new level");
         }
 
+        // TODO: Utilize currentFloor to seed number monsters, chests, or size of dungeon
+        Debug.Log("Current floor level is " + currentFloor);
         // Rebuild a new dungeon
         StartCoroutine(RebuildLevel());
     }
@@ -55,8 +66,8 @@ public class SetupDungeon : MonoBehaviour
     {
         if (dungeon != null)
         {
-            if (performCleanRebuild)
-            {
+            //if (performCleanRebuild)
+            //{
                 // We want to remove design time data with a clean destroy since editor would allow modification of optimized static game objects
                 // We want to do this only for the first time
                 dungeon.DestroyDungeon();
@@ -64,7 +75,7 @@ public class SetupDungeon : MonoBehaviour
 
                 // Wait for 1 frame to make sure our design time objects were destroyed
                 yield return 0;
-            }
+            //}
 
             // Build the dungeon
             var config = dungeon.Config;
@@ -77,8 +88,8 @@ public class SetupDungeon : MonoBehaviour
 
                 ppSpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
 
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-                GameObject spawnPosition = GameObject.FindGameObjectWithTag("SpawnPosition");
+                //GameObject player = GameObject.FindGameObjectWithTag("Player");
+                //GameObject spawnPosition = GameObject.FindGameObjectWithTag("SpawnPosition");
 
                 //if (player != null && spawnPosition != null)
                 //{

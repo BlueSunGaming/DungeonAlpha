@@ -11,7 +11,10 @@ namespace LogicSpawn.RPGMaker.Core
     public class RPG_LevelSwitchTrigger : MonoBehaviour
     {
         //todo: custom inspector links to EventNodeBank events
+        [SerializeField]
         public string SceneName;
+        [SerializeField]
+        private int BuildIndex;
         public InteractType InteractType;
         public float Distance;
         private Transform _myTransform;
@@ -64,7 +67,22 @@ namespace LogicSpawn.RPGMaker.Core
 
         void PerformEvent()
         {
-            RPG.LoadLevel(SceneName, true, true);
+            if (BuildIndex != 0)
+            {
+                RPG.LoadLevel(BuildIndex);
+                UserStatistics.IncrementCurrentFloor();
+            }
+            else if (SceneName != "")
+            {
+                RPG.LoadLevel(SceneName, true, true);
+                UserStatistics.IncrementCurrentFloor();
+            }
+            else
+            {
+                Debug.Log("Attempted to load via build index and Scene name but both were default values.");
+                RPG.LoadLevel("Dungeon", true, true);
+                UserStatistics.IncrementCurrentFloor();
+            }
         }
     }
 }
