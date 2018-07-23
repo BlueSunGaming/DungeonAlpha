@@ -9771,7 +9771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 473886, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11455964, guid: b6ed04db3c3704ec18271f4fc8c52c2d, type: 2}
       propertyPath: dungeonThemes.Array.data[1]
@@ -16693,76 +16693,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1001 &285899263
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 78
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1910768419494762, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4759767178998354, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 778589e5d977cc34aa06cf808c907ef2, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &285899264 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1910768419494762, guid: 778589e5d977cc34aa06cf808c907ef2,
-    type: 2}
-  m_PrefabInternal: {fileID: 285899263}
---- !u!114 &285899265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285899264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24dcf6805ba2c44f69a5c394d31a3392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeId: f28fe610-1b06-409d-918e-227f4ea983c6
-  dungeon: {fileID: 159285866}
-  affectsNavigation: 1
-  userData: 25
 --- !u!1 &286703555
 GameObject:
   m_ObjectHideFlags: 0
@@ -38552,7 +38482,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4823053830460724, guid: 2e3900bff39dc074d8695ccc603284fe, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e3900bff39dc074d8695ccc603284fe, type: 2}
@@ -38998,7 +38928,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4178813516080516, guid: 21ea251e8b3d5f04c9e7b0ffd4eae287, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21ea251e8b3d5f04c9e7b0ffd4eae287, type: 2}
@@ -69056,7 +68986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4173162268975634, guid: 4bbd142fc544cdb43ae868f43e804b67, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114119934933701202, guid: 4bbd142fc544cdb43ae868f43e804b67,
         type: 2}
@@ -69068,6 +68998,16 @@ Prefab:
       propertyPath: parentObject
       value: 
       objectReference: {fileID: 648015437}
+    - target: {fileID: 114796926034737216, guid: 4bbd142fc544cdb43ae868f43e804b67,
+        type: 2}
+      propertyPath: npcOffset.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796926034737216, guid: 4bbd142fc544cdb43ae868f43e804b67,
+        type: 2}
+      propertyPath: spawnProbability
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bbd142fc544cdb43ae868f43e804b67, type: 2}
   m_IsPrefabParent: 0
@@ -78856,7 +78796,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1364186712
 GameObject:
@@ -79832,7 +79772,7 @@ RectTransform:
   - {fileID: 166051662}
   - {fileID: 668087270}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -86377,7 +86317,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4649861419321054, guid: 32a6b2b9c18c3af42939ff8ff6600950, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b2b9c18c3af42939ff8ff6600950, type: 2}
@@ -106673,7 +106613,7 @@ RectTransform:
   - {fileID: 2023279986}
   - {fileID: 31672061}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

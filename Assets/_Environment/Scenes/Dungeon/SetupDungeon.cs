@@ -87,6 +87,7 @@ public class SetupDungeon : MonoBehaviour
                 yield return 0;
 
                 ppSpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
+                enemySpawner.OnPostDungeonBuild(dungeon, dungeon.ActiveModel);
 
                 //GameObject player = GameObject.FindGameObjectWithTag("Player");
                 //GameObject spawnPosition = GameObject.FindGameObjectWithTag("SpawnPosition");
