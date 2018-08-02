@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6768cfb522aeda744a33fe396e4b9f86
+labels:
+- Materials
+- emission
+- environment
+- pbr
+- specialeffects
+timeCreated: 1485873067
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

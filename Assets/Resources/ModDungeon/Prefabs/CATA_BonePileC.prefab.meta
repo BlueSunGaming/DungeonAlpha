@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 14bc1c57fa6018d46b8315e7b5dae091
+labels:
+- bones
+- catacombs
+- dungeon
+- prefabs
+- props
+- skull
+- skulls
+timeCreated: 1484653400
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

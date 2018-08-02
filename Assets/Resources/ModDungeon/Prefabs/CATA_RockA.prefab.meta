@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 64723bc4951c7184982ea362c9429e8c
+labels:
+- catacombs
+- cave
+- dirt
+- dungeon
+- environment
+- ground
+- prefabs
+- props
+- rocks
+- rubble
+- stones
+timeCreated: 1484675100
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e68b74603eb7b3443bc27ab07becf288
+labels:
+- catacombs
+- demo
+- dungeon
+- environment
+- levels
+- scenes
+timeCreated: 1484856083
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: scenes
+  assetBundleVariant: 

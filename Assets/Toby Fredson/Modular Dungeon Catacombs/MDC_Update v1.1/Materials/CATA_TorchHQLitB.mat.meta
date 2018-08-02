@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b55512d424e0c254d93e2efd1f92c740
+labels:
+- Materials
+- catacombs
+- cave
+- dungeon
+- props
+- torch
+- wood
+timeCreated: 1495975161
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 87a38a910b2a0fa43971685e8851d74b
+labels:
+- braziers
+- catacombs
+- dungeon
+- prefabs
+- torch
+timeCreated: 1484653689
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
 
     //public DialogueRunner dr = null;
-    private DungeonGenerator dungeonGenteratorScript; //Store a reference to our DungeonGenerator which will set up the level.
+   // private DungeonGenerator dungeonGenteratorScript; //Store a reference to our DungeonGenerator which will set up the level.
 
     private GameObject mUITriggeringGO = null;
 
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
         //Get a component reference to the attached DungeonGenerator script
-        dungeonGenteratorScript = GetComponent<DungeonGenerator>();
+        //dungeonGenteratorScript = GetComponent<DungeonGenerator>();
 
         //Call the InitGame function to initialize the first level 
         InitGame();

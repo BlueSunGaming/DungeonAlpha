@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8bb4b311c73c54e468698d8ae54b4bcc
+labels:
+- buildings
+- catacombs
+- dungeon
+- floors
+- props
+- ruins
+- stairs
+- stones
+timeCreated: 1496098621
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

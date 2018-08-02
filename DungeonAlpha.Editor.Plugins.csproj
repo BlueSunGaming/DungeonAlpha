@@ -375,6 +375,7 @@
     <None Include="Assets\RPGAIO\Shaders\Projector Additive Shader.shader" />
     <None Include="Assets\Resources\GameData\main.GAMEDATA.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author&apos;s Note!.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />

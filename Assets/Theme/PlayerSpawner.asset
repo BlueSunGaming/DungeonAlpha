@@ -14,7 +14,7 @@ MonoBehaviour:
   indexCounter:
     index: 7
   topZIndex:
-    index: 78
+    index: 87
   nodes:
   - {fileID: 114085542207242856}
   - {fileID: 114370445047459288}
@@ -77,15 +77,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 629.256
-    y: 283.40305
+    x: 583.256
+    y: 252.40305
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 78
+  zIndex: 87
   inputPins:
   - {fileID: 114705821480110126}
   outputPins:
@@ -97,7 +97,7 @@ MonoBehaviour:
     e02: 0
     e03: 0
     e10: 0
-    e11: 1.4445
+    e11: 3
     e12: 0
     e13: 0
     e20: 0

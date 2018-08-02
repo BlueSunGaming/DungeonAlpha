@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f304c4329711c824d95e67536813b3c8
+labels:
+- catacombs
+- dungeon
+- graves
+- prefabs
+- tombstone
+timeCreated: 1484671106
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

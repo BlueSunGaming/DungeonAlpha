@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4029979a17e17e944af5d250b23e8ded
+labels:
+- Materials
+- pbr
+- sky
+- skybox
+timeCreated: 1485707786
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

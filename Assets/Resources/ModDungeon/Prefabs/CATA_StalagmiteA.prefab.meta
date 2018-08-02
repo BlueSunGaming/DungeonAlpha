@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4dff7f6ab0880aa4d887e3acc2261408
+labels:
+- Stalagmite
+- catacombs
+- cave
+- dirt
+- dungeon
+- environment
+- ground
+- prefabs
+- props
+- rocks
+- rubble
+- stones
+timeCreated: 1484675714
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

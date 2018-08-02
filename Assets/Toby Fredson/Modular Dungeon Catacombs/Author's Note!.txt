@@ -1,0 +1,3 @@
+Just be sure to set the number of pixel lights to more than "7" for "Level 2" so that the lighting looks right if you use forward rendering, also take note that the lighting was made for the gamma workflow so be sure to adjust your lighting accordingly and set the main "containers objects" for each level block to static.
+
+Have Fun!

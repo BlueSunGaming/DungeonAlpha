@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0fd117317fb3e684ab22d5948a0a65c7
+labels:
+- bricks
+- catacombs
+- debries
+- dungeon
+- prefabs
+- props
+- rubble
+- ruins
+timeCreated: 1484667179
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

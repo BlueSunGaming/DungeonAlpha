@@ -369,10 +369,6 @@
     <Compile Include="Assets\_core\System Prefabs\ItemChest.cs" />
     <Compile Include="Assets\_core\UIConstants.cs" />
     <Compile Include="Assets\_core\WorldInteractions.cs" />
-    <Compile Include="Assets\_Environment\DungeonGenerator\DungeonGenerator.cs" />
-    <Compile Include="Assets\_Environment\DungeonGenerator\Room.cs" />
-    <Compile Include="Assets\_Environment\DungeonGenerator\RoomConnection.cs" />
-    <Compile Include="Assets\_Environment\DungeonGenerator\RoomGenerator.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon Entrance\SceneChangeToWorldMap.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon\PlayerPlacementSpawner.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon\SetupDungeon.cs" />
@@ -1330,6 +1326,7 @@
     <None Include="Assets\RPGAIO\Shaders\Projector Additive Shader.shader" />
     <None Include="Assets\Resources\GameData\main.GAMEDATA.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author&apos;s Note!.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 793298119bcb17a4b8a6372c395c1f49
+labels:
+- buildings
+- catacombs
+- dungeon
+- pillars
+- props
+- ruins
+timeCreated: 1492717886
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

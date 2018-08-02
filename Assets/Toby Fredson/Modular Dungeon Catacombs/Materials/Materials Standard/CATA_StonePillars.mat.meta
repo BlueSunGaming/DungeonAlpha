@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c492c43558f8fbd4fbb6e8878a91fd06
+labels:
+- Materials
+- ornaments
+- pbr
+- pillars
+timeCreated: 1484612192
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

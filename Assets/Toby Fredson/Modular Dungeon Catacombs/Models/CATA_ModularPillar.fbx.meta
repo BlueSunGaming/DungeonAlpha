@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: 1d4e2e797fc03f54dabee499f0ab5e3e
+labels:
+- catacombs
+- dungeon
+- models
+timeCreated: 1484592680
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: CATA_ModularPillarBaseA
+    100004: CATA_ModularPillarBaseB
+    100006: CATA_ModularPillarCylinderA
+    100008: CATA_ModularPillarCylinderB
+    100010: CATA_ModularPillarCylinderC
+    100012: CATA_ModularPillarCylinderD
+    100014: CATA_ModularPillarTop
+    400000: //RootNode
+    400002: CATA_ModularPillarBaseA
+    400004: CATA_ModularPillarBaseB
+    400006: CATA_ModularPillarCylinderA
+    400008: CATA_ModularPillarCylinderB
+    400010: CATA_ModularPillarCylinderC
+    400012: CATA_ModularPillarCylinderD
+    400014: CATA_ModularPillarTop
+    2300000: CATA_ModularPillarBaseA
+    2300002: CATA_ModularPillarBaseB
+    2300004: CATA_ModularPillarCylinderA
+    2300006: CATA_ModularPillarCylinderB
+    2300008: CATA_ModularPillarCylinderC
+    2300010: CATA_ModularPillarCylinderD
+    2300012: CATA_ModularPillarTop
+    3300000: CATA_ModularPillarBaseA
+    3300002: CATA_ModularPillarBaseB
+    3300004: CATA_ModularPillarCylinderA
+    3300006: CATA_ModularPillarCylinderB
+    3300008: CATA_ModularPillarCylinderC
+    3300010: CATA_ModularPillarCylinderD
+    3300012: CATA_ModularPillarTop
+    4300000: CATA_ModularPillarBaseB
+    4300002: CATA_ModularPillarBaseA
+    4300004: CATA_ModularPillarTop
+    4300006: CATA_ModularPillarCylinderC
+    4300008: CATA_ModularPillarCylinderB
+    4300010: CATA_ModularPillarCylinderA
+    4300012: CATA_ModularPillarCylinderD
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: models
+  assetBundleVariant: 

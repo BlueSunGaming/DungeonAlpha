@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c30a0e56ff22b8642a7829f6b777b38a
+labels:
+- HQ
+- Materials
+- catacombs
+- cave
+- dirt
+- dungeon
+- environment
+- ground
+- rocks
+- ruins
+timeCreated: 1484959397
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

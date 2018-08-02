@@ -78,6 +78,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentObject: {fileID: 0}
   npcTemplates:
-  - {fileID: 1844560413819162, guid: 35940f31d6fcb274686886a4196a84da, type: 2}
-  npcOffset: {x: 0, y: 0, z: 0}
-  spawnProbability: 1
+  - {fileID: 1192133047981696, guid: 54236e5b165e0614ba35c3081a6d1f80, type: 2}
+  npcOffset: {x: 0, y: -1, z: 0}
+  spawnProbability: 0.05

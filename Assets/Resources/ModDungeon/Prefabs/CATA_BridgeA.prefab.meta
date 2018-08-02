@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bbf81ab3c4ca6c14a8a616381453f9bf
+labels:
+- bridge
+- buildings
+- catacombs
+- dungeon
+- prefabs
+- props
+- stones
+timeCreated: 1484666347
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

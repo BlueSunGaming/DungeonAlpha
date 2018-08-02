@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cfca9049c8a57fe4d85ca412314dd02b
+labels:
+- Materials
+- braziers
+- bricks
+- buildings
+- catacombs
+- dungeon
+- metal
+- pbr
+- props
+- rubble
+- ruins
+- stones
+- torch
+- walls
+timeCreated: 1484610059
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

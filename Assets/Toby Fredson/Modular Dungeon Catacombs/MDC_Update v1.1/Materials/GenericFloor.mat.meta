@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 64fbc7ccdc70f14408e9aa8f66c5d567
+labels:
+- Materials
+- buildings
+- catacombs
+- cave
+- dungeon
+- floors
+- ground
+- pillars
+- props
+- rocks
+- stones
+- tombstone
+- wood
+timeCreated: 1493292255
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 51f12ce4e19dfe5409e0ba2c18c25792
+labels:
+- catacombs
+- dungeon
+- metal
+- props
+- ruins
+- torch
+- wood
+timeCreated: 1494450698
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 

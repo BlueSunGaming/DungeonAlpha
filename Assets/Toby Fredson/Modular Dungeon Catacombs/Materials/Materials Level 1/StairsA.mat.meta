@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 28512e769df9a074d98c2b3bf6097bdf
+labels:
+- Materials
+- environment
+- lightmap
+timeCreated: 1486304716
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

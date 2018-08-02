@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5bc3760032705d148bae929a9b7e90bf
+labels:
+- Materials
+- catacombs
+- dungeon
+- graves
+- pbr
+- skull
+- skulls
+- tombstone
+timeCreated: 1485878864
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

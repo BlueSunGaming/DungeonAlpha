@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f170cd9c0c70b754da48333ba5b66b46
+labels:
+- Materials
+- bones
+- catacombs
+- dungeon
+- pbr
+timeCreated: 1484609735
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

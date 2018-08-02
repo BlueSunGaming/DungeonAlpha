@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: b463628441a8be3489e6c37a12895319
+labels:
+- Materials
+- pbr
+timeCreated: 1484606850
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: materials
+  assetBundleVariant: 

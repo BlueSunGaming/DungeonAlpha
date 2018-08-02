@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: caa3ee13a1134334ba5765f5bcd507b6
+labels:
+- bricks
+- buildings
+- catacombs
+- dungeon
+- prefabs
+- ruins
+- stones
+- walls
+timeCreated: 1484684461
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: prefabs
+  assetBundleVariant: 
