@@ -2905,8 +2905,8 @@
           "CurrentCooldown": 0.0,
           "RemovesStatusEffect": false,
           "RemoveStatusEffectID": "",
-          "AddsStatusEffect": false,
-          "AddStatusEffectID": "",
+          "AddsStatusEffect": true,
+          "AddStatusEffectID": "b2130e0f-eafb-4341-a0b7-2583e63775d6",
           "ID": "c176e48f-9aa0-456e-a73c-72f2c34947da",
           "InventoryRefID": null,
           "Name": "Return Crystal",
@@ -2925,9 +2925,9 @@
           "EventTreeIdToRunOnPickup": "",
           "PickupEventHasRun": false,
           "RunEventOnDrop": false,
-          "EventTreeIdToRunOnDrop": "",
+          "EventTreeIdToRunOnDrop": "15cbdb23-5fc2-45cf-b9e3-497daef1f649",
           "DropEventHasRun": false,
-          "CustomGroundPrefabPath": "",
+          "CustomGroundPrefabPath": "Prefabs/GroundLootItems/ReturnCrystalPrefab",
           "CurrentStacks": 1,
           "RequiredLevel": 0
         }
@@ -7294,8 +7294,8 @@
           "AttackCounter": 1,
           "AttackedOnceByPlayer": false,
           "RetreatsWhenLow": false,
-          "CharPrefabPath": "RPGAIOPrefabRepository/Enemy_Prefab_6",
-          "Name": "Ratkin1",
+          "CharPrefabPath": "Prefabs/Enemy/Ratkin",
+          "Name": "Ratkin",
           "Level": 1,
           "Attributes": [
             {
@@ -9919,6 +9919,105 @@
           "WithinRadius": 0.0,
           "HasSkillMeta": false,
           "SkillMetaID": null
+        },
+        {
+          "$type": "LogicSpawn.RPGMaker.Core.StatusEffect, Assembly-CSharp",
+          "ID": "b2130e0f-eafb-4341-a0b7-2583e63775d6",
+          "Name": "Teleport",
+          "Effect": {
+            "$type": "LogicSpawn.RPGMaker.Core.TimedPassiveEffect, Assembly-CSharp",
+            "ID": "c345ba0b-31af-43d4-8915-b90abeae1323",
+            "ActivePrefab": "",
+            "OnActivatePrefab": "",
+            "OnExpiredPrefab": "",
+            "CanBeCancelled": false,
+            "CancellingStatusEffectID": null,
+            "HasDuration": false,
+            "Duration": 10.0,
+            "AttributeBuffs": [],
+            "VitalBuffs": [],
+            "StatisticBuffs": [],
+            "VitalRegenBonuses": [],
+            "CustomVariableSetters": [
+              {
+                "$type": "LogicSpawn.RPGMaker.Rm_CustomVariableGetSet, Assembly-CSharp",
+                "VariableID": "1c98e231-9723-495d-aace-01efb44ff744",
+                "FloatValue": 0.0,
+                "StringValue": "",
+                "IntValue": 0,
+                "BoolValue": true
+              }
+            ],
+            "CustomVariableSettersOnDisable": [],
+            "StatusDurationReduction": [],
+            "RemoveStatusEffect": false,
+            "RemoveStatusEffectID": null,
+            "AddSkillImmunity": false,
+            "SkillImmunityID": null,
+            "AddSkillSusceptibility": false,
+            "SkillSusceptibilityID": null,
+            "SkillSusceptibilityAmount": 0.0,
+            "RunsEvent": false,
+            "RunEventID": null,
+            "HasProcEffect": false,
+            "ProcEffect": {
+              "$type": "LogicSpawn.RPGMaker.Core.Rm_ProcEffect, Assembly-CSharp",
+              "ProcCondition": 2,
+              "Parameter": 1.0,
+              "ParameterCounter": 0,
+              "ProcEffectType": 3,
+              "PullType": 0,
+              "PullAllTheWay": true,
+              "EffectParameter": 1.0,
+              "EffectParameterString": null,
+              "HasDuration": false,
+              "Duration": 0.0
+            }
+          },
+          "CausesDOT": false,
+          "DamageOverTime": {
+            "$type": "LogicSpawn.RPGMaker.Core.DamageOverTime, Assembly-CSharp",
+            "ID": "f4900c31-1a4f-4a7a-a6a7-92d0d8c42dfc",
+            "InstanceID": null,
+            "DoTName": "",
+            "HasDuration": true,
+            "Duration": 1.0,
+            "TimeBetweenTick": 1.0,
+            "DamagePerTick": {
+              "$type": "LogicSpawn.RPGMaker.Core.Damage, Assembly-CSharp",
+              "MinDamage": 0,
+              "MaxDamage": 0,
+              "CriticalChance": 0.0,
+              "ElementalDamages": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.ElementalDamage, Assembly-CSharp",
+                  "ElementID": "d54cf78d-57ad-4db9-b82b-45735f7cd165",
+                  "MinDamage": 0,
+                  "MaxDamage": 0
+                }
+              ],
+              "SkillMetaID": null,
+              "IsCritical": false
+            },
+            "IntervalTimer": 0.0,
+            "SkillMetaID": null,
+            "ActivePrefab": null,
+            "DamageTickPrefab": null,
+            "OnExpiredPrefab": null,
+            "OnActivatePrefab": null
+          },
+          "CauseStun": false,
+          "CauseAnimationFreeze": false,
+          "CauseRetreat": false,
+          "CauseSilence": false,
+          "Image": {
+            "$type": "LogicSpawn.RPGMaker.Core.ImageContainer, Assembly-CSharp",
+            "ImagePath": ""
+          },
+          "ApplyToNearbyAllies": false,
+          "WithinRadius": 0.0,
+          "HasSkillMeta": false,
+          "SkillMetaID": null
         }
       ]
     },
@@ -11889,10 +11988,10 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 0.0,
-                "Y": 0.0,
-                "Width": 80.0,
-                "Height": 82.0
+                "X": 87.5,
+                "Y": 150.0,
+                "Width": 87.5,
+                "Height": 87.5
               },
               "WindowID": 13,
               "Identifier": null,
@@ -11914,10 +12013,10 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 595.0,
-                "Y": 153.0,
-                "Width": 66.0,
-                "Height": 82.0
+                "X": 600.0,
+                "Y": 162.5,
+                "Width": 75.0,
+                "Height": 87.5
               },
               "WindowID": 15,
               "Identifier": null,
@@ -11939,10 +12038,10 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 251.0,
-                "Y": 157.0,
-                "Width": 220.0,
-                "Height": 103.0
+                "X": 291.5,
+                "Y": 150.0,
+                "Width": 225.0,
+                "Height": 112.5
               },
               "WindowID": 16,
               "Identifier": null,
@@ -11981,6 +12080,396 @@
             }
           ],
           "ID": "08cfd69f-d17f-486f-8e6d-891e4e9b5f63",
+          "Required": false,
+          "Type": 2,
+          "Variables": []
+        },
+        {
+          "$type": "LogicSpawn.RPGMaker.Core.NodeTree, Assembly-CSharp",
+          "Name": "ShouldProcessTeleportEvent",
+          "Nodes": [
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.EventStartNode, Assembly-CSharp",
+              "ReturnType": 0,
+              "ID": "88b34146-7e6f-4c0c-a39d-43db3c57a554",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 49.0,
+                "Y": 84.0,
+                "Width": 80.0,
+                "Height": 82.0
+              },
+              "WindowID": 17,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "637e4ebb-6b3c-4e03-912d-1e676a32ed0d"
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib"
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.BoolComparison, Assembly-CSharp",
+              "ID": "76d8a621-c73f-4563-9e29-ef7f047ffa99",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 417.0,
+                "Y": 424.0,
+                "Width": 137.0,
+                "Height": 124.0
+              },
+              "WindowID": 18,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": ""
+                },
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": ""
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "A": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "A",
+                  "PropertyType": 4,
+                  "PropertyFamily": 0,
+                  "Source": 2,
+                  "Property": null,
+                  "Value": true,
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                },
+                "B": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "B",
+                  "PropertyType": 4,
+                  "PropertyFamily": 0,
+                  "Source": 2,
+                  "Property": null,
+                  "Value": false,
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": "87bc2508-e85e-4a05-8d55-f238c839f94f"
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.GetCustomVarBool, Assembly-CSharp",
+              "InheritedPropertyType": 44,
+              "ID": "87bc2508-e85e-4a05-8d55-f238c839f94f",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 68.0,
+                "Y": 376.0,
+                "Width": 207.0,
+                "Height": 68.0
+              },
+              "PropertyFamily": 0,
+              "PropertyType": 4,
+              "WindowID": 19,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": null
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Custom Variable": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Custom Variable",
+                  "PropertyType": 23,
+                  "PropertyFamily": 1,
+                  "Source": 2,
+                  "Property": null,
+                  "Value": "1c98e231-9723-495d-aace-01efb44ff744",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.LoadSceneNode, Assembly-CSharp",
+              "ID": "cdf6e46c-983a-4544-b56b-c5f84d4e4795",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 824.0,
+                "Y": 78.0,
+                "Width": 220.0,
+                "Height": 103.0
+              },
+              "WindowID": 20,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "3eef67df-90b0-4976-9603-1826ae562d97"
+                }
+              ],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "e55f9aba-5749-4678-b59e-d7b3e4bd8990"
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Name": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Name",
+                  "PropertyType": 0,
+                  "PropertyFamily": 0,
+                  "Source": 2,
+                  "Property": null,
+                  "Value": "Desert Island",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.EndNode, Assembly-CSharp",
+              "ID": "e55f9aba-5749-4678-b59e-d7b3e4bd8990",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 1091.0,
+                "Y": 145.0,
+                "Width": 66.0,
+                "Height": 82.0
+              },
+              "WindowID": 21,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "cdf6e46c-983a-4544-b56b-c5f84d4e4795"
+                },
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "da233b5d-76de-4bce-b425-ee76210de172"
+                }
+              ],
+              "NextNodeLinks": [],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib"
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.DialogNode, Assembly-CSharp",
+              "ID": "637e4ebb-6b3c-4e03-912d-1e676a32ed0d",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 175.0,
+                "Y": 70.0,
+                "Width": 282.0,
+                "Height": 157.0
+              },
+              "WindowID": 22,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "88b34146-7e6f-4c0c-a39d-43db3c57a554"
+                }
+              ],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "3eef67df-90b0-4976-9603-1826ae562d97"
+                },
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "da233b5d-76de-4bce-b425-ee76210de172"
+                },
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": ""
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Dialog": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Dialog",
+                  "PropertyType": 1,
+                  "PropertyFamily": 0,
+                  "Source": 1,
+                  "Property": {
+                    "$type": "LogicSpawn.RPGMaker.Core.RPGVector2, Assembly-CSharp",
+                    "X": 0.0,
+                    "Y": 0.0
+                  },
+                  "Value": "Would you like to teleport out of the dungeon?",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                },
+                "Voice": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Voice",
+                  "PropertyType": 38,
+                  "PropertyFamily": 0,
+                  "Source": 1,
+                  "Property": null,
+                  "Value": "",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.PlayerResponseNode, Assembly-CSharp",
+              "ID": "3eef67df-90b0-4976-9603-1826ae562d97",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 496.0,
+                "Y": 71.0,
+                "Width": 299.0,
+                "Height": 107.0
+              },
+              "WindowID": 23,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "637e4ebb-6b3c-4e03-912d-1e676a32ed0d"
+                }
+              ],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "cdf6e46c-983a-4544-b56b-c5f84d4e4795"
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Dialog": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Dialog",
+                  "PropertyType": 1,
+                  "PropertyFamily": 0,
+                  "Source": 1,
+                  "Property": {
+                    "$type": "LogicSpawn.RPGMaker.Core.RPGVector2, Assembly-CSharp",
+                    "X": 0.0,
+                    "Y": 0.0
+                  },
+                  "Value": "Yes",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            },
+            {
+              "$type": "LogicSpawn.RPGMaker.Core.PlayerResponseNode, Assembly-CSharp",
+              "ID": "da233b5d-76de-4bce-b425-ee76210de172",
+              "NodeChainName": "NodeChain",
+              "SerializableRect": {
+                "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
+                "X": 546.0,
+                "Y": 259.0,
+                "Width": 299.0,
+                "Height": 107.0
+              },
+              "WindowID": 24,
+              "Identifier": null,
+              "Target": 0,
+              "PrevNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "637e4ebb-6b3c-4e03-912d-1e676a32ed0d"
+                }
+              ],
+              "NextNodeLinks": [
+                {
+                  "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                  "ID": "e55f9aba-5749-4678-b59e-d7b3e4bd8990"
+                }
+              ],
+              "Parameters": {
+                "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp]], mscorlib",
+                "Dialog": {
+                  "$type": "LogicSpawn.RPGMaker.Core.NodeParameter, Assembly-CSharp",
+                  "Name": "Dialog",
+                  "PropertyType": 1,
+                  "PropertyFamily": 0,
+                  "Source": 1,
+                  "Property": {
+                    "$type": "LogicSpawn.RPGMaker.Core.RPGVector2, Assembly-CSharp",
+                    "X": 0.0,
+                    "Y": 0.0
+                  },
+                  "Value": "No",
+                  "InputNodeId": {
+                    "$type": "LogicSpawn.RPGMaker.Core.StringField, Assembly-CSharp",
+                    "ID": ""
+                  },
+                  "SubParams": {
+                    "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[LogicSpawn.RPGMaker.Core.SubNodeParameter, Assembly-CSharp]], mscorlib"
+                  }
+                }
+              }
+            }
+          ],
+          "ID": "b719900c-bcae-4663-bf5a-0a2187f3cce6",
           "Required": false,
           "Type": 2,
           "Variables": []
@@ -16917,6 +17406,16 @@
         "IntValue": 0,
         "BoolValue": false,
         "VariableType": 1
+      },
+      {
+        "$type": "LogicSpawn.RPGMaker.Rmh_CustomVariable, Assembly-CSharp",
+        "ID": "1c98e231-9723-495d-aace-01efb44ff744",
+        "Name": "ShouldTeleport",
+        "FloatValue": 0.0,
+        "StringValue": "",
+        "IntValue": 0,
+        "BoolValue": false,
+        "VariableType": 2
       }
     ]
   },

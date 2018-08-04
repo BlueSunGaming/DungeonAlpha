@@ -41,7 +41,7 @@ namespace LogicSpawn.RPGMaker.Core
 
         protected override void Eval(NodeChain nodeChain)
         {
-            RPG.LoadLevel((string)ValueOf("Name"));
+            RPG.LoadLevel((string)ValueOf("Name"),true);
         }
     }
 }
