@@ -14,7 +14,7 @@ MonoBehaviour:
   indexCounter:
     index: 2
   topZIndex:
-    index: 21
+    index: 22
   nodes:
   - {fileID: 114350933560399164}
   - {fileID: 114447925724324282}
@@ -125,7 +125,7 @@ MonoBehaviour:
   canBeSelected: 1
   canBeMoved: 1
   selected: 1
-  zIndex: 21
+  zIndex: 22
   inputPins:
   - {fileID: 114451936028233958}
   outputPins:
@@ -148,7 +148,7 @@ MonoBehaviour:
     e31: 0
     e32: 0
     e33: 1
-  consumeOnAttach: 1
+  consumeOnAttach: 0
   attachmentProbability: 1
   IsStatic: 1
   affectsNavigation: 1
