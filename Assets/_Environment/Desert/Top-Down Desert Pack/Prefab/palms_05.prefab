@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4677971500773892}
   - component: {fileID: 33075253926251362}
   - component: {fileID: 23085311848090970}
+  - component: {fileID: 136592678714919314}
   m_Layer: 0
   m_Name: palms_05
   m_TagString: Untagged
@@ -34,9 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1613229541685612}
-  m_LocalRotation: {x: 0.000000021855694, y: 0.00000008742278, z: -1.9106855e-15,
-    w: 1}
-  m_LocalPosition: {x: 9.375274, y: -0.04844491, z: 12.059119}
+  m_LocalRotation: {x: -0, y: 0.00000008742278, z: -3.821371e-15, w: 1}
+  m_LocalPosition: {x: -9.701172, y: -2.9088285, z: 3.5919802}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +84,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1613229541685612}
   m_Mesh: {fileID: 4300000, guid: 0bf476554ba8df545a53bace8e7529b2, type: 3}
+--- !u!136 &136592678714919314
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613229541685612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.14677864
+  m_Height: 1.8843437
+  m_Direction: 1
+  m_Center: {x: 0.047107607, y: 0.9522069, z: -0.11781961}

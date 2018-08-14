@@ -421,7 +421,6 @@ GameObject:
   - component: {fileID: 143827702051036218}
   - component: {fileID: 195514470272775502}
   - component: {fileID: 54981617290251866}
-  - component: {fileID: 65504939870848094}
   - component: {fileID: 114689184394946214}
   - component: {fileID: 114447246584701288}
   - component: {fileID: 114053594764183952}
@@ -430,6 +429,7 @@ GameObject:
   - component: {fileID: 114112613800173518}
   - component: {fileID: 114563350278096288}
   - component: {fileID: 114335710611954774}
+  - component: {fileID: 65211938383874150}
   m_Layer: 8
   m_Name: Ratkin
   m_TagString: Enemy
@@ -1478,7 +1478,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1392579400472896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 125.45534, y: 100, z: 183.78452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4604854983554316}
@@ -2580,7 +2580,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &65504939870848094
+--- !u!65 &65211938383874150
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2590,8 +2590,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 1.2840118, y: 3.5752258, z: 2.1405945}
+  m_Center: {x: -0.02823639, y: 1.2876129, z: 0.57029724}
 --- !u!95 &95610728770751528
 Animator:
   serializedVersion: 3

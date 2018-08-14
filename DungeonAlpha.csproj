@@ -18,7 +18,8 @@
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -332,6 +333,7 @@
     <Compile Include="Assets\_CameraUI\CameraRaycaster.cs" />
     <Compile Include="Assets\_CameraUI\CameraRaycasterEditor.cs" />
     <Compile Include="Assets\_CameraUI\CursorAffordance.cs" />
+    <Compile Include="Assets\_CameraUI\GameClock\GameClock.cs" />
     <Compile Include="Assets\_Characters\_Enemies\Enemy.cs" />
     <Compile Include="Assets\_Characters\_Enemies\EnemyHealthBar.cs" />
     <Compile Include="Assets\_Characters\_Enemies\EnemyUI.cs" />
@@ -1326,7 +1328,7 @@
     <None Include="Assets\RPGAIO\Shaders\Projector Additive Shader.shader" />
     <None Include="Assets\Resources\GameData\main.GAMEDATA.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author&apos;s Note!.txt" />
+    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author's Note!.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />
