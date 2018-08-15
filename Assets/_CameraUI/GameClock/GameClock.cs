@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameClock : MonoBehaviour
 {
-    [SerializeField]
+    //[SerializeField]
     private Text floatingClockLabel;
     private float lastchange = 0.0f;
     private int day = 0;
@@ -15,9 +15,15 @@ public class GameClock : MonoBehaviour
 
     private void Start()
     {
+        floatingClockLabel = GameObject.Find("GameClock").GetComponent<Text>();
         if (floatingClockLabel == null)
         {
             //floatingClockLabel;
+            Debug.Log("GameClock game Object was not found.");
+        }
+        else
+        {
+            floatingClockLabel.text = (hour.ToString() + ":" + minutes.ToString() + "0" + ampm);
         }
         Debug.Log(hour.ToString() + ":" + minutes.ToString() + "0" + ampm);
         // We want this object to persist between scene loads
@@ -26,7 +32,8 @@ public class GameClock : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time - lastchange > 30.0)
+        // Every 12 seconds increment as much as possible
+        if ((Time.time - lastchange) > 12.0f)
         {
             minutes++;
             if (minutes == 6)
@@ -45,6 +52,7 @@ public class GameClock : MonoBehaviour
                     }
                 }
 
+                // support wrap around for AM/PM trickiness of 12:00 clocks
                 if (hour == 13)
                 {
                     hour = 1;
