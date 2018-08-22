@@ -15,10 +15,10 @@ namespace RockVR.Video.Demo
         void Update()
         {
             // Rotate the object around its local X axis at 100 degree per second
-            transform.Rotate(Vector3.right * Time.deltaTime * 100);
+            transform.Rotate(Vector3.right * Time.deltaTime * 1/4);
 
             // ...also rotate around the World's Y axis
-            transform.Rotate(Vector3.up * Time.deltaTime * 100, Space.World);
+           // transform.Rotate(Vector3.up * Time.deltaTime * 15, Space.World);
         }
     }
 }
