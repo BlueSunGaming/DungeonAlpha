@@ -18,8 +18,7 @@
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -339,6 +338,7 @@
     <Compile Include="Assets\_Characters\_Enemies\EnemyUI.cs" />
     <Compile Include="Assets\_Characters\_Enemies\IEnemyAttributes.cs" />
     <Compile Include="Assets\_Characters\_NPCs\Npc.cs" />
+    <Compile Include="Assets\_Characters\_NPCs\NPCAIScheduledNavigation.cs" />
     <Compile Include="Assets\_Characters\_Player\Player.cs" />
     <Compile Include="Assets\_Characters\_Player\PlayerAttributes.cs" />
     <Compile Include="Assets\_Characters\_Player\PlayerHealthBar.cs" />
@@ -693,6 +693,17 @@
     <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoCapture.cs" />
     <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoCaptureCtrl.cs" />
     <Compile Include="Assets\External Assets\RockVR\Video\Scripts\VideoPlayer.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\CharacterMovementController.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\DetectionTrigger.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\General\CameraBumper.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\General\CameraControl.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\General\LimitedFloat.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\GUIScript.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\IKScript.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\LayerMaskExampleScript.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\PropsUnityObject.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\RollerBladeScript.cs" />
+    <Compile Include="Assets\Props Animations\Scripts\SmoothCameraAdvanced.cs" />
     <Compile Include="Assets\RPGAIO\AdditionalScripts\APIExample.cs" />
     <Compile Include="Assets\RPGAIO\AdditionalScripts\Fix.cs" />
     <Compile Include="Assets\RPGAIO\CustomScripts\CustomExpFormula.cs" />
@@ -718,6 +729,7 @@
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionFactory.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionQueue.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionType.cs" />
+    <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGAIController.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGAnimation.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGCombat.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGController.cs" />
@@ -1328,7 +1340,7 @@
     <None Include="Assets\RPGAIO\Shaders\Projector Additive Shader.shader" />
     <None Include="Assets\Resources\GameData\main.GAMEDATA.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author's Note!.txt" />
+    <None Include="Assets\Toby Fredson\Modular Dungeon Catacombs\Author&apos;s Note!.txt" />
     <None Include="Assets\_Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\_Environment\Desert\Top-Down Desert Pack\Shader\StandardDoubleSided.shader" />
     <None Include="Assets\_Environment\Water\Shaders\FXWaterPro.shader" />

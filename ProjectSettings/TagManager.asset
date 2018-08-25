@@ -31,6 +31,7 @@ TagManager:
   - DungeonCreator
   - Waypoint
   - PlayerSpawnPlaceholder
+  - Destination
   layers:
   - Default
   - TransparentFX

@@ -13679,8 +13679,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 1473.0,
-                "Y": 256.5,
+                "X": 1471.0,
+                "Y": 180.5,
                 "Width": 200.0,
                 "Height": 75.0
               },
@@ -13722,8 +13722,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 1562.5,
-                "Y": 575.0,
+                "X": 1984.5,
+                "Y": 639.0,
                 "Width": 100.0,
                 "Height": 87.5
               },
@@ -13811,8 +13811,8 @@
               "NodeChainName": "NodeChain",
               "SerializableRect": {
                 "$type": "LogicSpawn.RPGMaker.SerializableRect, Assembly-CSharp",
-                "X": 1094.07544,
-                "Y": 372.0,
+                "X": 1119.07544,
+                "Y": 387.0,
                 "Width": 196.0,
                 "Height": 68.0
               },
