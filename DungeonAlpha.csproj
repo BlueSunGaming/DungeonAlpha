@@ -729,7 +729,6 @@
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionFactory.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionQueue.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGActionType.cs" />
-    <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGAIController.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGAnimation.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGCombat.cs" />
     <Compile Include="Assets\RPGAIO\Scripts\Beta\NewImplementation\RPGController.cs" />

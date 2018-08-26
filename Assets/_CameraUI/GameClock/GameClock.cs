@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameClock : MonoBehaviour
 {
+    public static GameClock instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
     //[SerializeField]
     private Text floatingClockLabel;
     private float lastchange = 0.0f;
@@ -12,6 +13,24 @@ public class GameClock : MonoBehaviour
     private int hour = 6;
     private int minutes = 0;
     private string ampm = "am";
+
+    //Awake is always called before any Start functions
+    void Awake()
+    {
+        //Check if instance already exists
+        if (instance == null)
+        {
+            //if not, set instance to this
+            instance = this;
+        }
+        //If instance already exists and it's not this:
+        else if (instance != this)
+        {
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+            Destroy(gameObject);
+        }
+
+    }
 
     private void Start()
     {
@@ -28,6 +47,21 @@ public class GameClock : MonoBehaviour
         Debug.Log(hour.ToString() + ":" + minutes.ToString() + "0" + ampm);
         // We want this object to persist between scene loads
         //DontDestroyOnLoad(this);
+    }
+
+    public string GetCurrentTime()
+    {
+        return hour.ToString() + ":" + minutes.ToString() + "0" + ampm;
+    }
+
+    public int GetCurrentHour()
+    {
+        return hour;
+    }
+
+    public bool GetCurrentIsAM()
+    {
+        return ampm == "am";
     }
 
     private void Update()
@@ -48,7 +82,7 @@ public class GameClock : MonoBehaviour
                     }
                     else
                     {
-                        NewDay();
+                        day = NewDay();
                     }
                 }
 
@@ -60,7 +94,7 @@ public class GameClock : MonoBehaviour
             }
 
             lastchange = Time.time;
-            floatingClockLabel.text = (hour.ToString() + ":" + minutes.ToString() + "0" + ampm);
+            floatingClockLabel.text = GetCurrentTime();
         }
     }
 
