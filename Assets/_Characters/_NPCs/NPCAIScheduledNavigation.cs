@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using LogicSpawn.RPGMaker.Core;
 using UnityEngine;
 using UnityEngine.AI;
@@ -7,8 +8,8 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class NPCAIScheduledNavigation : MonoBehaviour {
 
-    public GameObject targetDestination1 = null;
-    public GameObject targetDestination2 = null;
+    public List<GameObject> targetDestinationList;
+    private int currentDestinationIndex = 0;
 
     public float speed = 1;
 
@@ -37,13 +38,13 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
 	            {
                     case 6:
                         // Go towards destination 1
-                        transform.position = Vector3.MoveTowards(transform.position, targetDestination1.transform.position, move);
+                        transform.position = Vector3.MoveTowards(transform.position, GetFirstGameObject().transform.position, move);
                         break;
 	                case 7:
                     case 8:
                     case 9:
                         // Go towards destination 2
-                        transform.position = Vector3.MoveTowards(transform.position, targetDestination2.transform.position, move);
+                        transform.position = Vector3.MoveTowards(transform.position, GetCurrentGameObject().transform.position, move);
                         break;
                     default:
                         // Something bad may be afoot.
@@ -51,13 +52,34 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
 	            }
 	        }
 	    }
-	    //else
-	    //{
-	    //    GameObject.Instantiate(GameClock.instance);
-	    //}
-	    
-	}
+        else
+        {
+            GameObject.Instantiate(GameClock.instance);
+        }
+    }
 
+    private GameObject GetFirstGameObject()
+    {
+        GameObject returnGameObject = null;
 
+        if (targetDestinationList.Count > 0)
+        {
+            returnGameObject = targetDestinationList[0];
+        }
+        return returnGameObject;
+    }
+    private GameObject GetCurrentGameObject()
+    {
+        GameObject returnGameObject = null;
+        if (currentDestinationIndex == 0)
+        {
+            currentDestinationIndex++;
+        }
+        if (targetDestinationList.Count > 0 && currentDestinationIndex <= (targetDestinationList.Count -1))
+        {
+            returnGameObject = targetDestinationList[currentDestinationIndex];
+        }
+        return returnGameObject;
+    }
 }
 
