@@ -8,12 +8,17 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class NPCAIScheduledNavigation : MonoBehaviour {
 
+    //Movement block
     public List<GameObject> targetDestinationList;
     private int currentDestinationIndex = 0;
-
     public float speed = 1;
 
-    // Use this for initialization
+    //Animation block
+    public AnimationClip attackAnimation;
+    private Animator animator;
+    [SerializeField]
+    AnimatorOverrideController animatorOverrideController;
+
     void Start()
     {
         if (GameClock.instance == null)
@@ -21,9 +26,12 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
             GameObject.Instantiate(GameClock.instance);
         }
 
-        // Move to targeted point
-        //targetDestination1 = GameObject.FindGameObjectWithTag("Destination");
-        //targetDestination2 = GameObject.FindGameObjectWithTag("Destination");
+        //Setup Overriding animator        
+            animator = GetComponent<Animator>();
+
+            
+        
+
     }
 
     // Update is called once per frame
@@ -39,6 +47,7 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
                     case 6:
                         // Go towards destination 1
                         transform.position = Vector3.MoveTowards(transform.position, GetFirstGameObject().transform.position, move);
+                        animator.SetTrigger("DestinationAnimation");
                         break;
 	                case 7:
                     case 8:
@@ -47,7 +56,7 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
                         transform.position = Vector3.MoveTowards(transform.position, GetCurrentGameObject().transform.position, move);
                         break;
                     default:
-                        // Something bad may be afoot.
+                        // Something bad may be afoot. (Or a hand)
                         break;
 	            }
 	        }
