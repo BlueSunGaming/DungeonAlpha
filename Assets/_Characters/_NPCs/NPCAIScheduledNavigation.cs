@@ -6,32 +6,39 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
-public class NPCAIScheduledNavigation : MonoBehaviour {
-
+public class NPCAIScheduledNavigation : MonoBehaviour
+{
+    private const int HOURS_PER_DAY = 24;
     //Movement block
-    public List<GameObject> targetDestinationList;
+    public List<GameObject> targetDestinationList = new List<GameObject>();
+    
     private int currentDestinationIndex = 0;
     public float speed = 1;
 
     //Animation block
-    public AnimationClip attackAnimation;
+    public AnimationClip destinationAnimation;
+    public GameObject targetDestination;
     private Animator animator;
     [SerializeField]
     AnimatorOverrideController animatorOverrideController;
 
+    //Scheduled Destinations Block
+    
     void Start()
     {
         if (GameClock.instance == null)
         {
             GameObject.Instantiate(GameClock.instance);
         }
-
         //Setup Overriding animator        
-            animator = GetComponent<Animator>();
-
-            
-        
-
+        SetupRuntimeAnimator();
+        if (targetDestinationList.Count < HOURS_PER_DAY)
+        {
+            for (int i = targetDestinationList.Count; i < HOURS_PER_DAY; ++i)
+            {
+                targetDestinationList.Insert(i, null);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -41,24 +48,17 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
 	    {
 	        if (GameClock.instance.GetCurrentIsAM())
 	        {
+                // Retrieve current time from Unity Clock
 	            float move = speed * Time.deltaTime;
-                switch (GameClock.instance.GetCurrentHour())
+	            int index = (GameClock.instance.GetCurrentHour());
+                // Handle wrap-around for 24 hour clock
+	            index = index > HOURS_PER_DAY ? index % 24 : index;
+	            GameObject currentDestination = targetDestinationList[index];
+
+	            if (currentDestination != null)
 	            {
-                    case 6:
-                        // Go towards destination 1
-                        transform.position = Vector3.MoveTowards(transform.position, GetFirstGameObject().transform.position, move);
-                        animator.SetTrigger("DestinationAnimation");
-                        break;
-	                case 7:
-                    case 8:
-                    case 9:
-                        // Go towards destination 2
-                        transform.position = Vector3.MoveTowards(transform.position, GetCurrentGameObject().transform.position, move);
-                        break;
-                    default:
-                        // Something bad may be afoot. (Or a hand)
-                        break;
-	            }
+	                transform.position = Vector3.MoveTowards(transform.position, currentDestination.transform.position, move);
+                }
 	        }
 	    }
         else
@@ -77,6 +77,7 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
         }
         return returnGameObject;
     }
+
     private GameObject GetCurrentGameObject()
     {
         GameObject returnGameObject = null;
@@ -89,6 +90,15 @@ public class NPCAIScheduledNavigation : MonoBehaviour {
             returnGameObject = targetDestinationList[currentDestinationIndex];
         }
         return returnGameObject;
+    }
+
+    private void SetupRuntimeAnimator()
+    {
+        animator = GetComponent<Animator>();
+
+        animator.runtimeAnimatorController = animatorOverrideController;
+
+       // animatorOverrideController["DEFAULT ATTACK"] = targetDestination.GetAttackAnimClip();
     }
 }
 

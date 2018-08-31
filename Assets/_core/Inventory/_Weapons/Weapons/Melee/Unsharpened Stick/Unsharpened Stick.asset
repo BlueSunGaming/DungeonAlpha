@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50228ecd82488434abfbffb12468a32b, type: 3}
   m_Name: Unsharpened Stick
   m_EditorClassIdentifier: 
-  minTimeBetweenHits: 0.2
+  minTimeBetweenHits: 0.08
   maxAttackRange: 4.23
   weaponPrefab: {fileID: 1132402002615212, guid: d5ba7b0c5750525468956018640f8053,
     type: 2}
@@ -19,3 +19,4 @@ MonoBehaviour:
   attackAnimation: {fileID: 7400000, guid: 7b5b17e2d42e0424f9c36012595dc9b6, type: 3}
   weaponGripTransform: {fileID: 4445459785560790, guid: 76a55243c798ef74a88733044dc1af2c,
     type: 2}
+  m_fBaseDamage: 1
