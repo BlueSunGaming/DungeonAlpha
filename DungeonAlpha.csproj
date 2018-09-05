@@ -371,6 +371,7 @@
     <Compile Include="Assets\_core\System Prefabs\ItemChest.cs" />
     <Compile Include="Assets\_core\UIConstants.cs" />
     <Compile Include="Assets\_core\WorldInteractions.cs" />
+    <Compile Include="Assets\_Environment\Destinations\Destinations.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon Entrance\SceneChangeToWorldMap.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon\PlayerPlacementSpawner.cs" />
     <Compile Include="Assets\_Environment\Scenes\Dungeon\SetupDungeon.cs" />
