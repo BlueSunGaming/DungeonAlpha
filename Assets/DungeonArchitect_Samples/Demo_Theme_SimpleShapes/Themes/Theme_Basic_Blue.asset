@@ -14,7 +14,7 @@ MonoBehaviour:
   indexCounter:
     index: 122
   topZIndex:
-    index: 657
+    index: 659
   nodes:
   - {fileID: 11485762}
   - {fileID: 11467510}
@@ -762,7 +762,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
+  selected: 0
   zIndex: 657
   inputPins:
   - {fileID: 114992528024692874}

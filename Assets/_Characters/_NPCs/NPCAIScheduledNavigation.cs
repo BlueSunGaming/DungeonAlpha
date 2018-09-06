@@ -25,8 +25,7 @@ public class NPCAIScheduledNavigation : MonoBehaviour
     private Animator animator;
     [SerializeField]
     AnimatorOverrideController animatorOverrideController;
-    [SerializeField]
-    Destinations targetInUse;
+    private Destinations targetInUse;
 
 
 
@@ -56,33 +55,11 @@ public class NPCAIScheduledNavigation : MonoBehaviour
     void Update ()
     {
         SetAnimation();
-        
+        SetTargetDestination();
+        SetGameClock();
+        SetTargetInUse();
 
-        //TODO Set npc to face walking direction instead of target position
-        FaceTargetDestination();
 
-        if (GameClock.instance != null)
-	    {
-	        if (GameClock.instance.GetCurrentIsAM())
-	        {
-                // Retrieve current time from Unity Clock
-	            float move = speed * Time.deltaTime;
-	            int index = (GameClock.instance.GetCurrentHour());
-
-                // Handle wrap-around for 24 hour clock
-	            currentDestinationIndex = index > HOURS_PER_DAY ? index % 24 : index;
-                GameObject currentDestination = targetDestinationList[currentDestinationIndex];
-
-	           // if (currentDestination != null)
-	            //{
-	            //    transform.position = Vector3.MoveTowards(transform.position, currentDestination.transform.position, move);
-              //  }
-	        }
-	    }
-        else
-        {
-            GameObject.Instantiate(GameClock.instance);
-        }
     }
 
     private GameObject GetFirstGameObject()
@@ -110,14 +87,36 @@ public class NPCAIScheduledNavigation : MonoBehaviour
         return returnGameObject;
     }
 
+    void SetGameClock()
+    {
+        if (GameClock.instance != null)
+        {
+            if (GameClock.instance.GetCurrentIsAM())
+            {
+                // Retrieve current time from Unity Clock
+                float move = speed * Time.deltaTime;
+                int index = (GameClock.instance.GetCurrentHour());
+
+                // Handle wrap-around for 24 hour clock
+                currentDestinationIndex = index > HOURS_PER_DAY ? index % 24 : index;
+                GameObject currentDestination = targetDestinationList[currentDestinationIndex];
+
+
+            }
+        }
+        else
+        {
+            GameObject.Instantiate(GameClock.instance);
+        }
+    }
+
     private void SetupRuntimeAnimator()
     {
         animator = GetComponent<Animator>();
-       
-      
+        animator.runtimeAnimatorController = animatorOverrideController;
     }
 
-    private void FaceTargetDestination()
+    private void SetTargetDestination()
 
     {
         aiCharacterControl = GetComponent<AICharacterControl>();
@@ -140,25 +139,21 @@ public class NPCAIScheduledNavigation : MonoBehaviour
 
     private void SetAnimation()
     {
-        
-
         GameObject currentTargetDestination = targetDestinationList[currentDestinationIndex];
-        //targetInUse = currentTargetDestination;
+        
         if (currentTargetDestination != null)
         {
-            if (transform.position != currentTargetDestination.transform.position)
+            if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) >= 2.5f)
             {
                 animator.SetTrigger("moving");
             }
-            else
+            else  if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) <= 2.5f)
             {
-              
-                animator.SetTrigger("combatIdle");
-                animator.runtimeAnimatorController = animatorOverrideController;
-
-                animatorOverrideController["combatIdle"] = targetInUse.GetDestinationAnimClip();
-                //  Animator trigger is set to destination animation from Destinations.cs
-
+                Debug.Log("Animation overrider being called.");
+                animatorOverrideController["destinationAnimation"] = targetInUse.GetDestinationAnimClip();
+                animator.SetTrigger("destination");
+                
+                //targetInUse = currentTargetDestination;
             }
         }
         else
@@ -166,7 +161,15 @@ public class NPCAIScheduledNavigation : MonoBehaviour
             Debug.Log("There is no target destination set for the current Destination index " + currentDestinationIndex);
         }
 
-    } 
+        
+    }
+    private void SetTargetInUse()
+    {
+        GameObject currentTargetDestination = targetDestinationList[currentDestinationIndex];
+
+        Destinations targetDestinationComponent = currentTargetDestination.GetComponent<Destinations>();
+        targetInUse = targetDestinationComponent;
+    }
 }
 
 
