@@ -941,7 +941,10 @@ GameObject:
   - component: {fileID: 195581033569067936}
   - component: {fileID: 136234291148559656}
   - component: {fileID: 54595108527375326}
-  - component: {fileID: 114676042364074530}
+  - component: {fileID: 114520769674607976}
+  - component: {fileID: 114509126154974368}
+  - component: {fileID: 114311657661991110}
+  - component: {fileID: 114482921196544058}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -1300,7 +1303,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670450697830486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 284.6825, y: 100, z: 223.23914}
+  m_LocalPosition: {x: 286.55, y: 100, z: 216.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4388613939289550}
@@ -2486,7 +2489,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114542891573826820
+--- !u!114 &114311657661991110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2494,10 +2497,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670450697830486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604c61f7bf3a0be4591f7c473dab9d74, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c5335f0882fe4d478883cc8c58ce906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114676042364074530
+  target: {fileID: 0}
+--- !u!114 &114482921196544058
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2516,6 +2520,76 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.1
+--- !u!114 &114509126154974368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670450697830486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5335f0882fe4d478883cc8c58ce906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!114 &114520769674607976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670450697830486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 12
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: 0.1
+--- !u!114 &114542891573826820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670450697830486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604c61f7bf3a0be4591f7c473dab9d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDestinationList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 1.71
+  animatorOverrideController: {fileID: 22100000, guid: 51ff21d5ad044554895e722bb7e5c0cb,
+    type: 2}
 --- !u!136 &136234291148559656
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2711,7 +2785,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1670450697830486}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.39
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -2721,6 +2795,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.16
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

@@ -20,8 +20,8 @@ public class NPCAIScheduledNavigation : MonoBehaviour
    
 
     //Animation block
-    public AnimationClip targetAnimation;
-    public GameObject targetDestination;
+    AnimationClip targetAnimation;
+    GameObject targetDestination;
     private Animator animator;
     [SerializeField]
     AnimatorOverrideController animatorOverrideController;
@@ -143,17 +143,17 @@ public class NPCAIScheduledNavigation : MonoBehaviour
         
         if (currentTargetDestination != null)
         {
-            if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) >= 2.5f)
+            if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) >= .5f)
             {
                 animator.SetTrigger("moving");
             }
-            else  if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) <= 2.5f)
+            else  if (Vector3.Distance(transform.position, currentTargetDestination.transform.position) <=.5f)
             {
-                Debug.Log("Animation overrider being called.");
+                
                 animatorOverrideController["destinationAnimation"] = targetInUse.GetDestinationAnimClip();
                 animator.SetTrigger("destination");
                 
-                //targetInUse = currentTargetDestination;
+                
             }
         }
         else

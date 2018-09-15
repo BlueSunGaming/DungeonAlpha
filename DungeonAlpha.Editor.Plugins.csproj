@@ -281,12 +281,6 @@
     <Reference Include="GitHub.Unity">
       <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets/Plugins/GitHub/Editor/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>Assets/Plugins/GitHub/Editor/Mono.Posix.dll</HintPath>
-    </Reference>
     <Reference Include="ReadOnlyCollectionsInterfaces">
       <HintPath>Assets/Plugins/GitHub/Editor/ReadOnlyCollectionsInterfaces.dll</HintPath>
     </Reference>
@@ -328,6 +322,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\GitHub\Editor\ExtensionLoader.cs" />
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
