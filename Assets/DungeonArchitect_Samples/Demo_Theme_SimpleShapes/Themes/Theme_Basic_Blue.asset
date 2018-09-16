@@ -14,7 +14,7 @@ MonoBehaviour:
   indexCounter:
     index: 137
   topZIndex:
-    index: 783
+    index: 801
   nodes:
   - {fileID: 11485762}
   - {fileID: 11467510}
@@ -486,15 +486,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -137.44133
-    y: 551.5915
+    x: -132.25385
+    y: 554.18524
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 778
+  selected: 1
+  zIndex: 801
   inputPins:
   - {fileID: 114022833801182144}
   outputPins:
@@ -521,8 +521,8 @@ MonoBehaviour:
   attachmentProbability: 0.2
   IsStatic: 1
   affectsNavigation: 1
-  selectionRuleEnabled: 0
-  selectionRuleClassName: 
+  selectionRuleEnabled: 1
+  selectionRuleClassName: RoomSelectionRule
   transformRuleEnabled: 0
   transformRuleClassName: 
   useSpatialConstraint: 0
@@ -1033,15 +1033,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -321.36743
-    y: 514.18176
+    x: -305.8051
+    y: 477.86923
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 777
+  zIndex: 800
   inputPins:
   - {fileID: 114541082482884582}
   outputPins:
@@ -1068,8 +1068,8 @@ MonoBehaviour:
   attachmentProbability: 0.2
   IsStatic: 1
   affectsNavigation: 1
-  selectionRuleEnabled: 0
-  selectionRuleClassName: 
+  selectionRuleEnabled: 1
+  selectionRuleClassName: RoomSelectionRule
   transformRuleEnabled: 0
   transformRuleClassName: 
   useSpatialConstraint: 0
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
+  selected: 0
   zIndex: 783
   inputPins:
   - {fileID: 114278458761381220}
@@ -1816,15 +1816,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -662.065
-    y: 444.2448
+    x: -636.1276
+    y: 446.8388
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 775
+  zIndex: 798
   inputPins:
   - {fileID: 114149493030271782}
   outputPins:
@@ -1851,8 +1851,8 @@ MonoBehaviour:
   attachmentProbability: 0.2
   IsStatic: 1
   affectsNavigation: 1
-  selectionRuleEnabled: 0
-  selectionRuleClassName: 
+  selectionRuleEnabled: 1
+  selectionRuleClassName: RoomSelectionRule
   transformRuleEnabled: 0
   transformRuleClassName: 
   useSpatialConstraint: 0
@@ -3190,15 +3190,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -486.21747
-    y: 504.2151
+    x: -496.59253
+    y: 454.93393
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 776
+  zIndex: 799
   inputPins:
   - {fileID: 114970525780455758}
   outputPins:
@@ -3225,8 +3225,8 @@ MonoBehaviour:
   attachmentProbability: 0.2
   IsStatic: 1
   affectsNavigation: 1
-  selectionRuleEnabled: 0
-  selectionRuleClassName: 
+  selectionRuleEnabled: 1
+  selectionRuleClassName: RoomSelectionRule
   transformRuleEnabled: 0
   transformRuleClassName: 
   useSpatialConstraint: 0

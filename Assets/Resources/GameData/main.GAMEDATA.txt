@@ -2011,7 +2011,7 @@
       }
     ],
     "DefaultDifficultyID": "0a258eb4-35fb-4dfb-b313-5f1c765005a3",
-    "UseCustomExperienceFormula": false,
+    "UseCustomExperienceFormula": true,
     "PetDefinitions": [
       {
         "$type": "LogicSpawn.RPGMaker.Rm_PetDefinition, Assembly-CSharp",
@@ -2039,10 +2039,10 @@
       "ID": "Player_Exp_Definition",
       "Name": "Player Exp Definition",
       "MaxLevel": 50,
-      "XpForFirstLevel": 100,
-      "XpForLastLevel": 1000000,
-      "Constant": 100,
-      "ExpType": 0,
+      "XpForFirstLevel": 1,
+      "XpForLastLevel": 1000,
+      "Constant": 2,
+      "ExpType": 1,
       "ExpUse": 0,
       "IsDefault": true
     },
@@ -7851,9 +7851,9 @@
             "GainExp": true,
             "GainSkillPoints": false,
             "GainTraitExp": false,
-            "ExpGained": 1,
+            "ExpGained": 100,
             "SkillPointsGained": 1,
-            "TraitID": null,
+            "TraitID": "",
             "TraitExpGained": 1,
             "GainExpWithDefinition": false,
             "GainSkillWithDefinition": false,

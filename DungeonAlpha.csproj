@@ -254,6 +254,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -378,6 +381,7 @@
     <Compile Include="Assets\_Environment\Water\Scripts\Water.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\_Environment\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\_ProceduralDungeon\Scripts\DungeonDeco.cs" />
     <Compile Include="Assets\DungeonArchitect\Scripts\Builders\CircularCity\CircularCityDungeonBuilder.cs" />
     <Compile Include="Assets\DungeonArchitect\Scripts\Builders\CircularCity\CircularCityDungeonConfig.cs" />
     <Compile Include="Assets\DungeonArchitect\Scripts\Builders\CircularCity\CircularCityDungeonModel.cs" />
