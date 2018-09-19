@@ -14,7 +14,7 @@ MonoBehaviour:
   indexCounter:
     index: 137
   topZIndex:
-    index: 801
+    index: 814
   nodes:
   - {fileID: 11485762}
   - {fileID: 11467510}
@@ -486,15 +486,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -132.25385
-    y: 554.18524
+    x: -129.32565
+    y: 489.7645
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 1
-  zIndex: 801
+  selected: 0
+  zIndex: 813
   inputPins:
   - {fileID: 114022833801182144}
   outputPins:
@@ -523,8 +523,8 @@ MonoBehaviour:
   affectsNavigation: 1
   selectionRuleEnabled: 1
   selectionRuleClassName: RoomSelectionRule
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 114223268345660602}
   Template: {fileID: 1684037038553302, guid: c1032a29328864a46a1956908ebcae20, type: 2}
@@ -1033,15 +1033,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -305.8051
-    y: 477.86923
+    x: -260.41782
+    y: 445.65884
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 800
+  zIndex: 812
   inputPins:
   - {fileID: 114541082482884582}
   outputPins:
@@ -1070,8 +1070,8 @@ MonoBehaviour:
   affectsNavigation: 1
   selectionRuleEnabled: 1
   selectionRuleClassName: RoomSelectionRule
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 114761415373721670}
   Template: {fileID: 125922, guid: 76b5d23686a3ea24ba6ef71373bd62ed, type: 2}
@@ -1428,15 +1428,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: 132.66318
-    y: 464.8092
+    x: 1.0258062
+    y: 491.58633
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
-  selected: 0
-  zIndex: 770
+  selected: 1
+  zIndex: 814
   inputPins:
   - {fileID: 114799546265694832}
   outputPins:
@@ -1460,13 +1460,13 @@ MonoBehaviour:
     e32: 0
     e33: 1
   consumeOnAttach: 1
-  attachmentProbability: 0.2
+  attachmentProbability: 1
   IsStatic: 1
   affectsNavigation: 1
   selectionRuleEnabled: 0
   selectionRuleClassName: 
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 114263737550867874}
   Template: {fileID: 102710, guid: 1288d7757404a1b4e84b9fea1315937a, type: 2}
@@ -1816,15 +1816,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -636.1276
-    y: 446.8388
+    x: -663.9457
+    y: 443.05014
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 798
+  zIndex: 810
   inputPins:
   - {fileID: 114149493030271782}
   outputPins:
@@ -1853,8 +1853,8 @@ MonoBehaviour:
   affectsNavigation: 1
   selectionRuleEnabled: 1
   selectionRuleClassName: RoomSelectionRule
-  transformRuleEnabled: 0
-  transformRuleClassName: 
+  transformRuleEnabled: 1
+  transformRuleClassName: ClampToGroundTransformRule
   useSpatialConstraint: 0
   spatialConstraint: {fileID: 114491347708893100}
   Template: {fileID: 179998, guid: edc98e5c0deab7f40bbd1f1d33663c0a, type: 2}
@@ -2133,15 +2133,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -829.60925
-    y: 452.00415
+    x: -832.5374
+    y: 438.82718
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 774
+  zIndex: 809
   inputPins:
   - {fileID: 114018899510165438}
   outputPins:
@@ -3190,15 +3190,15 @@ MonoBehaviour:
   caption: Game Object Node
   bounds:
     serializedVersion: 2
-    x: -496.59253
-    y: 454.93393
+    x: -486.3438
+    y: 444.68527
     width: 120
     height: 120
   canBeDeleted: 1
   canBeSelected: 1
   canBeMoved: 1
   selected: 0
-  zIndex: 799
+  zIndex: 811
   inputPins:
   - {fileID: 114970525780455758}
   outputPins:
