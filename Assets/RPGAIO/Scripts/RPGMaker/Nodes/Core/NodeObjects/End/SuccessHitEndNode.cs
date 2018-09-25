@@ -28,7 +28,7 @@ namespace LogicSpawn.RPGMaker.Core
 
         public override bool ShowInSearch
         {
-            get { return false; }
+            get { return true; }
         }
 
         public override int MaxNextLinks
